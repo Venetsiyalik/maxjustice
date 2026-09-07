@@ -59,11 +59,10 @@ Ishga tushirishdan oldin quyidagilarni haqiqiy ma'lumot bilan almashtirish kerak
 - [ ] **Advokatlik litsenziyasi raqami** — `lib/site-config.ts`
 - [ ] **Ish staji raqamlari** (IIB, advokatlik yillari) — `lib/site-config.ts`
 - [ ] **Bino darajasidagi aniq koordinatalar** — hozir Farg'ona shahar markazi bo'yicha taxminiy (`lib/site-config.ts`); Google/Yandex xarita havolalari mavjud "Адвокатура" profili manzili+nomi bo'yicha qidiruv sifatida ishlaydi (to'g'ri joyni ochadi), lekin `schema.org` uchun aniq lat/long Google Business Profile panelidan olinishi tavsiya etiladi
-- [ ] **"Telegramda yozish" ommaviy tugmasi** (`lib/site-config.ts` → `telegram.handle`) — hozircha `maxjustice_uz` placeholder. @Maxjusticebot murojaat formasi xabarlarini qabul qilish uchun ishlatiladi, lekin unga yozgan tashrifchiga hozircha avtomatik javob yo'q — shu sabab bu tugma uchun alohida, real javob beradigan Telegram profil/handle tavsiya etiladi
 - [ ] **Professional fotosuratlar** — hozircha barcha rasm o'rnida CSS bilan yasalgan placeholder (initsiallar) bor: `components/sections/Hero.tsx`, `components/sections/AboutPreview.tsx`, `app/[locale]/advokat-haqida/page.tsx`
 - [ ] **Google Analytics / Yandex Metrika ID** — `.env.local` va Vercel Environment Variables
 - [ ] **Barcha matnlarning advokat tomonidan etika kodeksiga muvofiqligini tekshirish** (texnik topshiriq 7.1-band) — bu andoza kontent, yakuniy tasdiq advokatning o'zida
 
 ## Kelajakdagi rejalar (hozircha qo'shilmagan)
 
-- **Telegram botga AI orqali oddiy savollarga avtomatik javob** — buyurtmachi tomonidan so'ralgan, lekin alohida backend (webhook + AI API) talab qilgani sabab hozircha amalga oshirilmagan.
+- **Telegram botga AI orqali oddiy savollarga avtomatik javob** — buyurtmachi tomonidan so'ralgan, lekin alohida backend (webhook + AI API) talab qilgani sabab hozircha amalga oshirilmagan. Sayt bo'ylab "Telegramda yozish" tugmasi va murojaat formasi xabarlari ataylab bittasi — @Maxjusticebot — orqali ishlaydi (buyurtmachi tasdiqlagan); AI qo'shilgunga qadar botga yozgan tashrifchiga avtomatik javob kelmaydi.

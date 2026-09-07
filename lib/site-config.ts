@@ -22,14 +22,13 @@ export const siteConfig = {
     href: "tel:+998903009406",
   },
   telegram: {
-    // TODO: tasdiqlash — hozircha murojaat formasi xabarlari @Maxjusticebot
-    // orqali advokatga yuboriladi (TELEGRAM_BOT_TOKEN/CHAT_ID, .env.local).
-    // Bu handle esa "Telegramda yozish" tugmasi bosilganda ochiladigan
-    // OMMAVIY kontakt — botga yozilgan xabarga hozircha avtomatik javob
-    // yo'q, shuning uchun bu yerga haqiqiy shaxsiy/ishchi Telegram
-    // profilini qo'yish tavsiya etiladi.
-    handle: "maxjustice_uz",
-    href: "https://t.me/maxjustice_uz",
+    // @Maxjusticebot — hozircha murojaat formasi xabarlarini advokatga
+    // yuborish uchun ishlatiladi (TELEGRAM_BOT_TOKEN/CHAT_ID, .env.local)
+    // VA sayt bo'ylab "Telegramda yozish" ommaviy tugmasi ham shu botga
+    // ochiladi. Botda hozircha avtomatik javob logikasi yo'q — bu AI
+    // qo'shilgunga qadar ataylab shunday qoldirilgan (buyurtmachi so'rovi).
+    handle: "Maxjusticebot",
+    href: "https://t.me/Maxjusticebot",
   },
   email: {
     info: "info@maxjustice.uz",
