@@ -92,6 +92,20 @@
       "subtitle": "15 daqiqa ichida siz bilan bog'lanamiz"
     }
   },
+  "servicesHub": {
+    "title": "Xizmatlar",
+    "subtitle": "Har bir yo'nalish bo'yicha batafsil ma'lumot va amaliy maslahatlar uchun kerakli bo'limni tanlang.",
+    "metaTitle": "Advokatlik xizmatlari | MAXLEGAL AND JUSTICE",
+    "metaDescription": "Jinoiy, ma'muriy, fuqarolik va biznes ishlari bo'yicha advokatlik xizmatlari. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06"
+  },
+  "servicePage": {
+    "tipsTitle": "Bu holatda nima qilish kerak",
+    "howIHelpTitle": "Men qanday yordam beraman",
+    "processTitle": "Jarayon bosqichlari",
+    "faqTitle": "Ushbu yo'nalish bo'yicha savol-javob",
+    "ctaTitle": "Vaziyatingizni muhokama qilaylik",
+    "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy. 15 daqiqa ichida siz bilan bog'lanamiz."
+  },
   "services": {
     "jinoiy-ishlar": {
       "title": "Jinoiy ishlar bo'yicha himoya",

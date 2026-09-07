@@ -53,6 +53,7 @@ const PATTERN = new RegExp(
 const PROTECTED_TERMS = [
   "MAXLEGAL AND JUSTICE",
   "IMPERIUM LEGAL SOLUTIONS",
+  "MAXLEGAL",
   "Google",
   "Yandex",
 ];

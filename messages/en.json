@@ -92,6 +92,20 @@
       "subtitle": "We will contact you within 15 minutes"
     }
   },
+  "servicesHub": {
+    "title": "Services",
+    "subtitle": "Choose the section that matches your situation for details and practical guidance.",
+    "metaTitle": "Legal Services | MAXLEGAL AND JUSTICE",
+    "metaDescription": "Legal services for criminal, administrative, civil, and business matters. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06"
+  },
+  "servicePage": {
+    "tipsTitle": "What to do in this situation",
+    "howIHelpTitle": "How I can help",
+    "processTitle": "How the process works",
+    "faqTitle": "Frequently asked questions",
+    "ctaTitle": "Let's discuss your situation",
+    "ctaSubtitle": "The first consultation is free and confidential. We'll contact you within 15 minutes."
+  },
   "services": {
     "jinoiy-ishlar": {
       "title": "Criminal Defense",
