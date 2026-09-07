@@ -4,6 +4,7 @@
  * qo'shilganda shu ro'yxatga ham qo'shiladi.
  */
 import { SERVICES, serviceHref } from "@/lib/services-data";
+import { BLOG_SLUGS } from "@/content/blog";
 
 export const STATIC_ROUTES: { path: string; priority: number }[] = [
   { path: "", priority: 1 },
@@ -14,6 +15,8 @@ export const STATIC_ROUTES: { path: string; priority: number }[] = [
   { path: "/narxlar", priority: 0.7 },
   { path: "/bog-lanish", priority: 0.7 },
   { path: "/savol-javob", priority: 0.6 },
+  { path: "/blog", priority: 0.7 },
+  ...BLOG_SLUGS.map((slug) => ({ path: `/blog/${slug}`, priority: 0.6 })),
   { path: "/maxfiylik-siyosati", priority: 0.3 },
   { path: "/foydalanish-shartlari", priority: 0.3 },
 ];

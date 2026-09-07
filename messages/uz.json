@@ -290,6 +290,18 @@
       }
     ]
   },
+  "blogPage": {
+    "metaTitle": "Blog | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "Huquqiy maslahatlar va foydali maqolalar: tergov, sud jarayoni, huquqlaringiz haqida. Farg'ona, S. Temur 43.",
+    "title": "Blog",
+    "intro": "Huquqiy vaziyatlarda qanday harakat qilish kerakligi haqida amaliy maqolalar."
+  },
+  "blogPost": {
+    "publishedLabel": "Nashr sanasi",
+    "updatedLabel": "Yangilangan",
+    "backToBlog": "Barcha maqolalar",
+    "relatedServiceLabel": "Ushbu mavzu bo'yicha xizmat"
+  },
   "servicesHub": {
     "title": "Xizmatlar",
     "subtitle": "Har bir yo'nalish bo'yicha batafsil ma'lumot va amaliy maslahatlar uchun kerakli bo'limni tanlang.",

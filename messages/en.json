@@ -290,6 +290,18 @@
       }
     ]
   },
+  "blogPage": {
+    "metaTitle": "Blog | MAXLEGAL Law Firm",
+    "metaDescription": "Legal advice and useful articles: investigations, court process, your rights. Fergana, S. Temur St. 43.",
+    "title": "Blog",
+    "intro": "Practical articles on how to act in various legal situations."
+  },
+  "blogPost": {
+    "publishedLabel": "Published",
+    "updatedLabel": "Updated",
+    "backToBlog": "All articles",
+    "relatedServiceLabel": "Related service"
+  },
   "servicesHub": {
     "title": "Services",
     "subtitle": "Choose the section that matches your situation for details and practical guidance.",
