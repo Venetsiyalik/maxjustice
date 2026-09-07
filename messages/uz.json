@@ -159,19 +159,16 @@
   },
   "pricesPage": {
     "metaTitle": "Advokatlik xizmatlari narxlari | MAXLEGAL",
-    "metaDescription": "Advokatlik xizmatlari narxlari haqida shaffof ma'lumot. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "metaDescription": "Xizmat narxi ishning holatiga qarab belgilanadi. Aniq narx uchun bog'laning. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
     "title": "Xizmat narxlari",
-    "intro": "Shaffoflik — ishonchning asosi. Shuning uchun asosiy xizmat turlari bo'yicha narx diapazonini oldindan taqdim etamiz. Har bir ishning yakuniy narxi uning murakkabligiga, hajmiga va zarur vaqtga bog'liq holda birinchi konsultatsiyada aniqlashtiriladi.",
-    "note": "* Ko'rsatilgan narxlar boshlang'ich (\"...dan\") bo'lib, aniq shartnoma summasi ish holatlariga qarab belgilanadi.",
-    "rows": [
-      { "service": "Birinchi konsultatsiya", "price": "Bepul" },
-      { "service": "Yozma huquqiy xulosa / maslahat", "price": "so'ralsin" },
-      { "service": "Hujjat tayyorlash (ariza, shikoyat, da'vo arizasi)", "price": "so'ralsin" },
-      { "service": "Tergovga qadar tekshiruvda vakillik", "price": "so'ralsin" },
-      { "service": "Jinoiy ish bo'yicha tergovda himoya", "price": "shartnoma asosida" },
-      { "service": "Ma'muriy ishlar bo'yicha vakillik", "price": "shartnoma asosida" },
-      { "service": "Fuqarolik ishlari bo'yicha sudda vakillik", "price": "shartnoma asosida" },
-      { "service": "Biznes uchun doimiy huquqiy hamrohlik", "price": "shartnoma asosida (oylik)" }
+    "intro": "Har bir ish o'ziga xos bo'lib, narx uning murakkabligi, hajmi va zarur vaqtga qarab individual tarzda belgilanadi. Shu sababli saytda umumiy narxlar ro'yxatini keltirmaymiz — aniq narxni bilish uchun biz bilan bog'laning, vaziyatingizni tinglab, taxminiy summani aytamiz.",
+    "freeConsultationLabel": "Birinchi konsultatsiya",
+    "freeConsultationValue": "Bepul",
+    "reasonsTitle": "Narx nimalarga bog'liq",
+    "reasons": [
+      "Ishning murakkabligi va huquqiy toifasi",
+      "Zarur bo'ladigan vaqt va tergov/sud bosqichlari soni",
+      "Hujjatlar hajmi va tayyorgarlik darajasi"
     ],
     "ctaTitle": "Aniq narx bo'yicha maslahat oling",
     "ctaSubtitle": "Vaziyatingizni ayting — 15 daqiqa ichida siz bilan bog'lanib, taxminiy narxni aytamiz."

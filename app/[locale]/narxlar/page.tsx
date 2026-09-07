@@ -3,15 +3,14 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { CheckIcon } from "@/components/ui/icons";
 import { buildBreadcrumbSchema } from "@/lib/schema";
 import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
+import { ContactFormSection } from "@/components/sections/ContactFormSection";
 
 const PATH = "/narxlar";
-
-type PriceRow = { service: string; price: string };
 
 export async function generateMetadata({
   params,
@@ -46,7 +45,7 @@ export default async function PricesPage({
     getTranslations({ locale, namespace: "nav" }),
   ]);
 
-  const rows = t.raw("rows") as PriceRow[];
+  const reasons = t.raw("reasons") as string[];
 
   const breadcrumbUrls = [
     { name: nav("home"), url: buildCanonicalUrl(locale, "") },
@@ -67,36 +66,30 @@ export default async function PricesPage({
         </Container>
       </div>
 
-      <Container className="max-w-3xl py-12">
-        <div className="overflow-hidden rounded-xl border border-[var(--color-line)]">
-          <table className="w-full border-collapse text-left">
-            <tbody>
-              {rows.map((row, i) => (
-                <tr
-                  key={i}
-                  className={i % 2 === 0 ? "bg-[var(--color-surface)]" : "bg-[var(--color-surface-alt)]"}
-                >
-                  <td className="p-4 text-[var(--color-ink)]">{row.service}</td>
-                  <td className="p-4 text-right font-bold text-[var(--color-navy-950)] whitespace-nowrap">
-                    {row.price}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <Container className="max-w-2xl py-12">
+        <div className="flex items-center justify-between rounded-xl border-2 border-[var(--color-gold-500)] bg-[var(--color-surface-alt)] p-6">
+          <span className="text-lg font-bold text-[var(--color-navy-950)]">
+            {t("freeConsultationLabel")}
+          </span>
+          <span className="text-xl font-extrabold text-[var(--color-gold-600)]">
+            {t("freeConsultationValue")}
+          </span>
         </div>
-        <p className="mt-4 text-sm text-[var(--color-muted)]">{t("note")}</p>
+
+        <h2 className="mt-10 text-xl font-extrabold text-[var(--color-navy-950)]">
+          {t("reasonsTitle")}
+        </h2>
+        <ul className="mt-4 flex flex-col gap-2.5">
+          {reasons.map((reason, i) => (
+            <li key={i} className="flex items-start gap-2.5 text-lg text-[var(--color-ink)]">
+              <CheckIcon className="mt-1.5 h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+              {reason}
+            </li>
+          ))}
+        </ul>
       </Container>
 
-      <div className="border-t border-[var(--color-line)] bg-[var(--color-navy-950)] py-12 text-center text-white">
-        <Container className="max-w-2xl">
-          <h2 className="text-2xl font-extrabold">{t("ctaTitle")}</h2>
-          <p className="mt-2 text-white/70">{t("ctaSubtitle")}</p>
-          <div className="mt-6 flex justify-center">
-            <Button href="/bog-lanish">{t("ctaTitle")}</Button>
-          </div>
-        </Container>
-      </div>
+      <ContactFormSection source="Narxlar sahifasi" />
     </>
   );
 }

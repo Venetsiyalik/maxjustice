@@ -46,6 +46,11 @@ export function buildLegalServiceSchema() {
       name: siteConfig.founder.fullName,
       jobTitle: siteConfig.founder.jobTitle,
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: siteConfig.rating.value,
+      reviewCount: siteConfig.rating.reviewCount,
+    },
   } as const;
 }
 

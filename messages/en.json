@@ -159,19 +159,16 @@
   },
   "pricesPage": {
     "metaTitle": "Legal Service Pricing | MAXLEGAL",
-    "metaDescription": "Transparent information about legal service pricing. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "metaDescription": "Pricing is determined individually for each case. Contact us for an exact quote. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
     "title": "Pricing",
-    "intro": "Transparency is the foundation of trust. That's why we provide an upfront price range for our core services. The final cost of each case is determined during the first consultation, based on its complexity, scope, and the time required.",
-    "note": "* The prices shown are starting (\"from\") prices; the exact contract amount is determined based on the specifics of the case.",
-    "rows": [
-      { "service": "First consultation", "price": "Free" },
-      { "service": "Written legal opinion / advice", "price": "on request" },
-      { "service": "Document preparation (application, appeal, claim)", "price": "on request" },
-      { "service": "Representation during a pre-investigation review", "price": "on request" },
-      { "service": "Criminal defense during investigation", "price": "by agreement" },
-      { "service": "Representation in administrative cases", "price": "by agreement" },
-      { "service": "Court representation in civil cases", "price": "by agreement" },
-      { "service": "Ongoing legal support for businesses", "price": "by agreement (monthly)" }
+    "intro": "Every case is unique, and the price is determined individually based on its complexity, scope, and the time required. That's why we don't publish a general price list on the site — contact us, tell us about your situation, and we'll give you an estimated cost.",
+    "freeConsultationLabel": "First consultation",
+    "freeConsultationValue": "Free",
+    "reasonsTitle": "What the price depends on",
+    "reasons": [
+      "The complexity and legal category of the case",
+      "The time required and the number of investigation/court stages",
+      "The volume of documents and the level of preparation needed"
     ],
     "ctaTitle": "Get advice on the exact price",
     "ctaSubtitle": "Tell us about your situation — we'll contact you within 15 minutes with an estimated price."

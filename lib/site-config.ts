@@ -22,6 +22,12 @@ export const siteConfig = {
     href: "tel:+998903009406",
   },
   telegram: {
+    // TODO: tasdiqlash — hozircha murojaat formasi xabarlari @Maxjusticebot
+    // orqali advokatga yuboriladi (TELEGRAM_BOT_TOKEN/CHAT_ID, .env.local).
+    // Bu handle esa "Telegramda yozish" tugmasi bosilganda ochiladigan
+    // OMMAVIY kontakt — botga yozilgan xabarga hozircha avtomatik javob
+    // yo'q, shuning uchun bu yerga haqiqiy shaxsiy/ishchi Telegram
+    // profilini qo'yish tavsiya etiladi.
     handle: "maxjustice_uz",
     href: "https://t.me/maxjustice_uz",
   },
@@ -36,19 +42,26 @@ export const siteConfig = {
     region: "Farg'ona viloyati",
     postalCode: "150100",
     country: "UZ",
-    // TODO: haqiqiy koordinatalarga almashtirish (Google Maps'dan olinadi)
+    // Taxminiy — Farg'ona shahar markazi. Aniq (bino darajasidagi)
+    // koordinatalarni Google Business Profile boshqaruv panelidan olib
+    // almashtirish tavsiya etiladi (schema.org geo uchun mos kelishi kerak).
     latitude: "40.3894",
     longitude: "71.7864",
   },
   maps: {
-    // TODO: byuroning haqiqiy Google/Yandex Maps havolalari bilan almashtirish
-    google: "https://maps.google.com/?q=Farg'ona+S.+Temur+ko'chasi+43",
-    yandex: "https://yandex.uz/maps/?text=Farg'ona+S.+Temur+ko'chasi+43",
+    // Mavjud Google Business profili ("Адвокатура", 5.0 ★, 7 sharh) manzil
+    // va nom bo'yicha qidiriladi — shu orqali to'g'ri joyga ochiladi.
+    google:
+      "https://www.google.com/maps/search/?api=1&query=Advokatura+S.+Temur+ko%27chasi+43+Farg%27ona",
+    yandex:
+      "https://yandex.uz/maps/?text=Advokatura+S.+Temur+ko%27chasi+43+Farg%27ona",
     googleEmbed:
-      "https://www.google.com/maps?q=Farg'ona+S.+Temur+ko'chasi+43&output=embed",
+      "https://www.google.com/maps?q=Advokatura+S.+Temur+ko%27chasi+43+Farg%27ona&output=embed",
   },
   rating: {
     value: "5.0",
+    // Google Business profilidagi joriy sharhlar soni (2026-09 holatiga)
+    reviewCount: "7",
   },
   experience: {
     // TODO: haqiqiy raqamlar bilan almashtirish — noaniq/oshirib ko'rsatilgan
