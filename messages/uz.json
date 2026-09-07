@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "siteName": "MAXLEGAL AND JUSTICE",
+    "defaultTitle": "MAXLEGAL AND JUSTICE — advokatlik byurosi, Farg'ona",
+    "defaultDescription": "Farg'ona viloyatida jinoiy, ma'muriy va fuqarolik ishlari bo'yicha advokat. Tergov va sudda professional himoya. Tel: +998 90 300 94 06"
+  },
+  "common": {
+    "jobTitle": "Advokat"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Advokat haqida",
+    "services": "Xizmatlar",
+    "practice": "Amaliyot",
+    "prices": "Narxlar",
+    "blog": "Blog",
+    "faq": "Savol-javob",
+    "contact": "Bog'lanish",
+    "menuOpen": "Menyuni ochish",
+    "menuClose": "Menyuni yopish"
+  },
+  "cta": {
+    "call": "Qo'ng'iroq qilish",
+    "callNow": "Hoziroq qo'ng'iroq qiling",
+    "telegram": "Telegramda yozish",
+    "submitRequest": "Murojaat yuborish",
+    "readMore": "Batafsil",
+    "allServices": "Barcha xizmatlar",
+    "allArticles": "Barcha maqolalar"
+  },
+  "langSwitcher": {
+    "label": "Til"
+  },
+  "footer": {
+    "disclaimer": "Saytdagi ma'lumotlar huquqiy maslahat o'rnini bosmaydi.",
+    "licenseLabel": "Advokatlik litsenziyasi",
+    "chamberLabel": "O'zbekiston Respublikasi Advokatlar palatasi a'zosi",
+    "rightsReserved": "Barcha huquqlar himoyalangan.",
+    "privacyPolicy": "Maxfiylik siyosati",
+    "termsOfUse": "Foydalanish shartlari",
+    "workingHours": "Ish vaqti: har kuni, 24/7 qabul",
+    "quickServices": {
+      "criminal": "Jinoiy ishlar bo'yicha himoya",
+      "preInvestigation": "Tergovga qadar tekshiruv",
+      "business": "Tadbirkorlar himoyasi",
+      "civil": "Fuqarolik ishlari"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Advokat Nasrdinov To'lanboy",
+      "title": "Farg'ona viloyatida jinoiy va ma'muriy ishlar bo'yicha advokat",
+      "subtitle": "Tergov va sudda professional himoya. IIB tergov organlarida ishlagan tajriba — ayblov tomonining ish uslubini ichkaridan bilaman.",
+      "callButton": "+998 90 300 94 06"
+    },
+    "helpBlock": {
+      "title": "Sizga qanday holatda yordam bera olaman",
+      "subtitle": "O'z vaziyatingizga mos bo'limni tanlang"
+    },
+    "trustBlock": {
+      "title": "Nima uchun menga ishonishingiz mumkin",
+      "license": "Advokatlik litsenziyasi",
+      "chamber": "Advokatlar palatasi a'zosi",
+      "investigatorExperience": "IIB tergov organlarida ish staji",
+      "advocateExperience": "Advokatlik faoliyati",
+      "rating": "Google reytingi",
+      "yearsSuffix": "yil"
+    },
+    "stepsBlock": {
+      "title": "Keyin nima bo'ladi",
+      "step1Title": "Qo'ng'iroq qiling yoki formani to'ldiring",
+      "step1Text": "Vaziyatingizni qisqacha ayting — bepul va maxfiy.",
+      "step2Title": "Vaziyatni muhokama qilamiz",
+      "step2Text": "Birinchi konsultatsiya davomida holatni birga tahlil qilamiz.",
+      "step3Title": "Himoya strategiyasini tuzamiz",
+      "step3Text": "Aniq harakat rejasi bilan ishni darhol boshlaymiz."
+    },
+    "aboutBlock": {
+      "title": "Advokat haqida qisqacha",
+      "text": "IIV Akademiyasi magistraturasini tamomlagan, keyinchalik IIB tergov organlarida tergovchi sifatida ishlagan. Ushbu tajriba ayblov tomonining ish uslubini ichkaridan bilish imkonini beradi. Hozirda \"MAXLEGAL AND JUSTICE\" advokatlik byurosida jinoiy, ma'muriy va fuqarolik ishlari bo'yicha himoyachi sifatida faoliyat yuritadi."
+    },
+    "articlesBlock": {
+      "title": "So'nggi maqolalar"
+    },
+    "contactBlock": {
+      "title": "Manzil va bog'lanish",
+      "googleMaps": "Google Xaritada ochish",
+      "yandexMaps": "Yandex Xaritada ochish"
+    },
+    "formBlock": {
+      "title": "Murojaat yuboring",
+      "subtitle": "15 daqiqa ichida siz bilan bog'lanamiz"
+    }
+  },
+  "services": {
+    "jinoiy-ishlar": {
+      "title": "Jinoiy ishlar bo'yicha himoya",
+      "cardText": "Sizga yoki yaqiningizga jinoiy ish qo'zg'atilgan, hibsga olingan bo'lsa"
+    },
+    "tergovga-qadar": {
+      "title": "Tergovga qadar tekshiruv",
+      "cardText": "Tergovga chaqirilgan, tintuv yoki so'roq oldida turgan bo'lsangiz"
+    },
+    "mamuriy-ishlar": {
+      "title": "Ma'muriy ishlar",
+      "cardText": "Ma'muriy javobgarlikka tortilgan yoki jarima solingan bo'lsa"
+    },
+    "tadbirkor-himoyasi": {
+      "title": "Tadbirkorlar huquqini himoya qilish",
+      "cardText": "Biznesingizga nisbatan tekshiruv yoki ish qo'zg'atilgan bo'lsa"
+    },
+    "iqtisodiy-jinoyatlar": {
+      "title": "Iqtisodiy jinoyatlar",
+      "cardText": "Soliq yoki iqtisodiy jinoyat bo'yicha tekshiruvga duch kelgan bo'lsangiz"
+    },
+    "fuqarolik-ishlari": {
+      "title": "Fuqarolik ishlari",
+      "cardText": "Mulk, shartnoma yoki boshqa fuqarolik nizosida bo'lsangiz"
+    },
+    "oila-va-meros": {
+      "title": "Oila va meros nizolari",
+      "cardText": "Ajrashish, farzand taqdiri yoki meros nizosida yordam kerak bo'lsa"
+    },
+    "mehnat-nizolari": {
+      "title": "Mehnat nizolari",
+      "cardText": "Ishdan noqonuniy bo'shatilgan yoki mehnat huquqingiz buzilgan bo'lsa"
+    },
+    "shartnomalar": {
+      "title": "Shartnoma va biznes konsalting",
+      "cardText": "Shartnoma tuzish yoki biznesingiz uchun huquqiy audit kerak bo'lsa"
+    },
+    "sudda-vakillik": {
+      "title": "Sudda vakillik",
+      "cardText": "Sudda o'z manfaatingizni himoya qiladigan vakil izlasangiz"
+    }
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "text": "Siz izlagan sahifa mavjud emas yoki ko'chirilgan. Quyidagi havolalar sizga yordam berishi mumkin.",
+    "homeLink": "Bosh sahifaga qaytish"
+  },
+  "form": {
+    "nameLabel": "Ismingiz",
+    "namePlaceholder": "Ismingizni kiriting",
+    "phoneLabel": "Telefon raqamingiz",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "messageLabel": "Muammoning qisqacha bayoni (ixtiyoriy)",
+    "messagePlaceholder": "Vaziyatingizni qisqacha yozing",
+    "consentLabel": "Men maxfiylik siyosatiga roziman",
+    "submit": "Yuborish",
+    "submitting": "Yuborilmoqda...",
+    "successTitle": "Rahmat!",
+    "successText": "Murojaatingiz qabul qilindi. Tez orada siz bilan bog'lanamiz.",
+    "errorText": "Xatolik yuz berdi. Iltimos, telefon orqali bog'laning yoki qayta urinib ko'ring.",
+    "errorRequired": "Bu maydonni to'ldirish shart",
+    "errorConsent": "Davom etish uchun roziligingizni tasdiqlang"
+  }
+}

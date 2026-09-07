@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "siteName": "MAXLEGAL AND JUSTICE",
+    "defaultTitle": "MAXLEGAL AND JUSTICE — Law Firm, Fergana",
+    "defaultDescription": "Criminal, administrative and civil defense attorney in the Fergana region. Professional defense during investigation and in court. Tel: +998 90 300 94 06"
+  },
+  "common": {
+    "jobTitle": "Attorney"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About the Lawyer",
+    "services": "Services",
+    "practice": "Case Studies",
+    "prices": "Pricing",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "cta": {
+    "call": "Call",
+    "callNow": "Call now",
+    "telegram": "Message on Telegram",
+    "submitRequest": "Send request",
+    "readMore": "Read more",
+    "allServices": "All services",
+    "allArticles": "All articles"
+  },
+  "langSwitcher": {
+    "label": "Language"
+  },
+  "footer": {
+    "disclaimer": "Information on this site does not replace individual legal advice.",
+    "licenseLabel": "Attorney license",
+    "chamberLabel": "Member of the Chamber of Advocates of the Republic of Uzbekistan",
+    "rightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "workingHours": "Working hours: every day, available 24/7",
+    "quickServices": {
+      "criminal": "Criminal Defense",
+      "preInvestigation": "Pre-Investigation Review",
+      "business": "Business Owner Defense",
+      "civil": "Civil Cases"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Attorney Nasrdinov To'lanboy",
+      "title": "Criminal and administrative defense attorney in the Fergana region",
+      "subtitle": "Professional defense during investigation and in court. Former investigator with the Ministry of Internal Affairs — I know the prosecution's methods from the inside.",
+      "callButton": "+998 90 300 94 06"
+    },
+    "helpBlock": {
+      "title": "How I can help you",
+      "subtitle": "Choose the section that matches your situation"
+    },
+    "trustBlock": {
+      "title": "Why you can trust me",
+      "license": "Attorney license",
+      "chamber": "Chamber of Advocates member",
+      "investigatorExperience": "Years at the Ministry of Internal Affairs investigative bodies",
+      "advocateExperience": "Years practicing law",
+      "rating": "Google rating",
+      "yearsSuffix": "years"
+    },
+    "stepsBlock": {
+      "title": "What happens next",
+      "step1Title": "Call or fill out the form",
+      "step1Text": "Briefly describe your situation — free and confidential.",
+      "step2Title": "We discuss your situation",
+      "step2Text": "During the first consultation we analyze the case together.",
+      "step3Title": "We build a defense strategy",
+      "step3Text": "We start work with a clear action plan right away."
+    },
+    "aboutBlock": {
+      "title": "About the lawyer",
+      "text": "A graduate of the Master's program at the Academy of the Ministry of Internal Affairs, he later worked as an investigator within the MIA's investigative bodies. This experience gives him first-hand insight into how the prosecution builds its case. Today he practices as a defense attorney handling criminal, administrative, and civil matters at the MAXLEGAL AND JUSTICE law firm."
+    },
+    "articlesBlock": {
+      "title": "Latest articles"
+    },
+    "contactBlock": {
+      "title": "Address and contact",
+      "googleMaps": "Open in Google Maps",
+      "yandexMaps": "Open in Yandex Maps"
+    },
+    "formBlock": {
+      "title": "Send a request",
+      "subtitle": "We will contact you within 15 minutes"
+    }
+  },
+  "services": {
+    "jinoiy-ishlar": {
+      "title": "Criminal Defense",
+      "cardText": "You or a loved one faces criminal charges or arrest"
+    },
+    "tergovga-qadar": {
+      "title": "Pre-Investigation Review",
+      "cardText": "You're summoned for questioning or facing a search or review"
+    },
+    "mamuriy-ishlar": {
+      "title": "Administrative Cases",
+      "cardText": "You're facing administrative liability or a fine"
+    },
+    "tadbirkor-himoyasi": {
+      "title": "Business Owner Defense",
+      "cardText": "Your business is under investigation or facing a criminal case"
+    },
+    "iqtisodiy-jinoyatlar": {
+      "title": "Economic Crimes",
+      "cardText": "You're facing a tax audit or economic crime investigation"
+    },
+    "fuqarolik-ishlari": {
+      "title": "Civil Cases",
+      "cardText": "A property, contract, or other civil dispute needs resolving"
+    },
+    "oila-va-meros": {
+      "title": "Family & Inheritance Disputes",
+      "cardText": "Divorce, child custody, or inheritance disputes need legal help"
+    },
+    "mehnat-nizolari": {
+      "title": "Labor Disputes",
+      "cardText": "Unlawful dismissal or violation of your labor rights"
+    },
+    "shartnomalar": {
+      "title": "Contracts & Business Consulting",
+      "cardText": "You need contract drafting or a legal audit for your business"
+    },
+    "sudda-vakillik": {
+      "title": "Court Representation",
+      "cardText": "You need a representative to defend your interests in court"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved. The links below may help.",
+    "homeLink": "Back to homepage"
+  },
+  "form": {
+    "nameLabel": "Your name",
+    "namePlaceholder": "Enter your name",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "messageLabel": "Brief description of the issue (optional)",
+    "messagePlaceholder": "Briefly describe your situation",
+    "consentLabel": "I agree to the privacy policy",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "successTitle": "Thank you!",
+    "successText": "Your request has been received. We will contact you shortly.",
+    "errorText": "Something went wrong. Please call us or try again.",
+    "errorRequired": "This field is required",
+    "errorConsent": "Please confirm your consent to continue"
+  }
+}
