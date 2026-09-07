@@ -33,6 +33,9 @@ const SINGLE_CHAR_PAIRS: [string, string][] = [
   ["h", "ҳ"], ["i", "и"], ["j", "ж"], ["k", "к"], ["l", "л"], ["m", "м"],
   ["n", "н"], ["o", "о"], ["p", "п"], ["q", "қ"], ["r", "р"], ["s", "с"],
   ["t", "т"], ["u", "у"], ["v", "в"], ["x", "х"], ["y", "й"], ["z", "з"],
+  // Tutuq belgisi (masalan, "ma'no", "san'at") — o'/g' digraflaridan
+  // FARQLI holda qolgan yakka apostrof "ъ" ga o'giriladi
+  ["'", "ъ"],
 ];
 
 const ALL_PAIRS = [...MULTI_CHAR_PAIRS, ...SINGLE_CHAR_PAIRS].sort(

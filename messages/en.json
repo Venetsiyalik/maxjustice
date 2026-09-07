@@ -92,6 +92,204 @@
       "subtitle": "We will contact you within 15 minutes"
     }
   },
+  "aboutPage": {
+    "metaTitle": "About Attorney Nasrdinov To'lanboy | MAXLEGAL",
+    "metaDescription": "Attorney with experience in the MIA investigative bodies. Education, experience, specialization and practice. Fergana, S. Temur St. 43.",
+    "title": "About the Lawyer",
+    "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    "heroSubtitle": "Attorney, founder of \"MAXLEGAL AND JUSTICE\" law firm",
+    "educationTitle": "Education",
+    "educationText": "Graduate of the Master's program at the Academy of the Ministry of Internal Affairs. This education provided deep insight into the internal mechanisms of the law-enforcement system, investigative and procedural processes.",
+    "experienceTitle": "Experience in investigative bodies",
+    "experienceText": "Worked as an investigator within the investigative units of the internal affairs bodies. During this period, he gained practical experience investigating criminal cases, gathering evidence, and preparing procedural documents — experience now applied in the interest of the defense.",
+    "advocacyTitle": "Legal practice",
+    "advocacyText": "Currently a member of the Chamber of Advocates of the Republic of Uzbekistan, practicing law officially. Holds an attorney's license and all required permits, defending clients' interests in criminal, administrative, and civil matters.",
+    "specializationsTitle": "Areas of specialization",
+    "firmsTitle": "About \"MAXLEGAL AND JUSTICE\" and \"IMPERIUM LEGAL SOLUTIONS\"",
+    "firmsText": "\"MAXLEGAL AND JUSTICE\" is a law firm operating in the Fergana region, providing individuals and legal entities with professional assistance in criminal, administrative, civil, and business law. \"IMPERIUM LEGAL SOLUTIONS\" is a partner organization focused on entrepreneurs and legal entities, offering legal consulting and business-law solutions.",
+    "academicTitle": "Academic activity",
+    "academicText": "Engaged in legal research (working toward a PhD). This academic work enriches practical legal work with theoretical knowledge and allows for a deeper analysis of complex legal issues.",
+    "positionTitle": "Why I practice defense law",
+    "positionText": "Working within investigative bodies gave me the chance to see both sides of the legal system from the inside — the perspective of the prosecution and of the defense. That experience made me deeply understand that every person, even in the most difficult situation, deserves qualified and honest legal defense. That conviction is what led me to legal practice — to ensure my clients' rights are fully and fairly protected.",
+    "ctaTitle": "Ready to discuss your situation",
+    "ctaSubtitle": "The first consultation is free and confidential."
+  },
+  "practicePage": {
+    "metaTitle": "Case Studies | MAXLEGAL Law Firm",
+    "metaDescription": "The most common situations in legal practice and how they're approached. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "title": "Case Studies",
+    "intro": "Attorney-client privilege and my clients' privacy are principles I strictly uphold. That's why this page does not disclose any names or case numbers. Instead, it presents — in generalized form — the situations I encounter most often in practice and how I approach them, so you can get a sense of how your own situation might be handled.",
+    "disclaimer": "The examples below are generalized and do not refer to any specific client or case. Every real case has its own particulars and requires individual analysis.",
+    "situationLabel": "Situation",
+    "approachLabel": "Approach",
+    "cases": [
+      {
+        "category": "Criminal cases",
+        "situation": "A client was summoned for questioning as a suspect in a criminal case and didn't know how to handle the situation.",
+        "approach": "I joined the case immediately, accompanied the client to questioning, made sure their rights were respected during the investigative actions, and built a defense position based on the available evidence."
+      },
+      {
+        "category": "Pre-investigation review",
+        "situation": "A business owner faced a pre-investigation review, with documents requested from the company.",
+        "approach": "I reviewed the legality of the inquiry, helped the client submit documents correctly and lawfully, and personally took part in the process."
+      },
+      {
+        "category": "Administrative cases",
+        "situation": "A client was fined administratively based on an incorrectly drafted protocol.",
+        "approach": "I analyzed the protocol from a procedural standpoint, identified the violations, and prepared a well-grounded appeal within the legal deadline."
+      },
+      {
+        "category": "Civil cases",
+        "situation": "A property dispute arose between two parties who couldn't reach an out-of-court agreement.",
+        "approach": "I analyzed the legal basis of the dispute, first proposed negotiation, and when that didn't succeed, represented the client's interests in court."
+      },
+      {
+        "category": "Family and inheritance disputes",
+        "situation": "A disagreement arose among family members over the division of an inheritance.",
+        "approach": "I explained each party's legal position and helped reach a fair resolution while preserving family relationships as much as possible."
+      },
+      {
+        "category": "Contracts and business consulting",
+        "situation": "A small business owner ran into a dispute over a contract signed with a partner.",
+        "approach": "I reviewed the contract, identified its weak points, and helped develop standard contract templates to prevent similar issues in the future."
+      }
+    ],
+    "ctaTitle": "Let's discuss how your situation could be resolved",
+    "ctaSubtitle": "The first consultation is free and confidential."
+  },
+  "pricesPage": {
+    "metaTitle": "Legal Service Pricing | MAXLEGAL",
+    "metaDescription": "Transparent information about legal service pricing. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "title": "Pricing",
+    "intro": "Transparency is the foundation of trust. That's why we provide an upfront price range for our core services. The final cost of each case is determined during the first consultation, based on its complexity, scope, and the time required.",
+    "note": "* The prices shown are starting (\"from\") prices; the exact contract amount is determined based on the specifics of the case.",
+    "rows": [
+      { "service": "First consultation", "price": "Free" },
+      { "service": "Written legal opinion / advice", "price": "on request" },
+      { "service": "Document preparation (application, appeal, claim)", "price": "on request" },
+      { "service": "Representation during a pre-investigation review", "price": "on request" },
+      { "service": "Criminal defense during investigation", "price": "by agreement" },
+      { "service": "Representation in administrative cases", "price": "by agreement" },
+      { "service": "Court representation in civil cases", "price": "by agreement" },
+      { "service": "Ongoing legal support for businesses", "price": "by agreement (monthly)" }
+    ],
+    "ctaTitle": "Get advice on the exact price",
+    "ctaSubtitle": "Tell us about your situation — we'll contact you within 15 minutes with an estimated price."
+  },
+  "contactPage": {
+    "metaTitle": "Contact | MAXLEGAL Law Firm",
+    "metaDescription": "Get in touch: phone, Telegram, address, and a contact form. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "title": "Contact"
+  },
+  "faqPage": {
+    "metaTitle": "FAQ | MAXLEGAL Law Firm",
+    "metaDescription": "Answers to frequently asked questions about legal services, pricing, and consultations. Tel: +998 90 300 94 06",
+    "title": "Frequently Asked Questions",
+    "intro": "Answers to the questions that most often come up before reaching out to a lawyer. If you don't find your answer here, contact us directly.",
+    "items": [
+      {
+        "question": "Is the first consultation really free?",
+        "answer": "Yes, the first consultation is free and confidential. During it, I'll listen to your situation, give a preliminary legal assessment, and provide clear direction for next steps."
+      },
+      {
+        "question": "Do you only work in Fergana city?",
+        "answer": "My primary service area is the Fergana region, including the cities of Fergana and Kuva. Cases in other regions can also be discussed — we'll clarify this during the first consultation."
+      },
+      {
+        "question": "How confidential is my inquiry?",
+        "answer": "Attorney-client privilege is strictly protected by law. Any information you provide is used solely for handling your case and is never disclosed to third parties."
+      },
+      {
+        "question": "In which cases should I call immediately?",
+        "answer": "Call immediately if you've been arrested, summoned for questioning, are facing a search, or need urgent legal help in any situation — in such cases, time is critical."
+      },
+      {
+        "question": "How is the price of services determined?",
+        "answer": "The price depends on the complexity of the case, its scope, and the time required. The exact cost is discussed at the first consultation and formalized in writing in the agreement."
+      },
+      {
+        "question": "How can I get in touch with you?",
+        "answer": "You can call, message on Telegram, or fill out the contact form on the site — we'll get back to you within 15 minutes."
+      },
+      {
+        "question": "Can you decline to take a case?",
+        "answer": "Yes, in certain situations (such as a conflict of interest) I reserve the right not to take a case. If that happens, I'll say so openly and, where possible, refer you to another specialist."
+      },
+      {
+        "question": "What languages do you offer services in?",
+        "answer": "Full communication is available in Uzbek and Russian. The website is also available in English."
+      }
+    ]
+  },
+  "privacyPage": {
+    "metaTitle": "Privacy Policy | MAXLEGAL Law Firm",
+    "metaDescription": "Full information on how your personal data is collected, used, and protected.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: September 2026",
+    "sections": [
+      {
+        "heading": "1. General provisions",
+        "text": "This Privacy Policy sets out how personal data of users of the maxjustice.uz website (the \"Site\") is collected, used, and protected. By using the Site, you agree to the terms of this Policy."
+      },
+      {
+        "heading": "2. What data is collected",
+        "text": "When you fill out the contact form, you provide the following data: name, phone number, and a brief description of your issue (optional). In addition, anonymous technical data (device type, browser, visit time) may be collected automatically for site statistics."
+      },
+      {
+        "heading": "3. How the data is used",
+        "text": "The data provided is used solely to contact you and provide legal consultation. Your data is never sold or shared with third parties for marketing or other purposes."
+      },
+      {
+        "heading": "4. How data is stored and transmitted",
+        "text": "Data submitted through the contact form is transmitted over an encrypted channel (HTTPS) to the Telegram messaging system and delivered directly to the attorney. Data is retained solely for case-handling purposes."
+      },
+      {
+        "heading": "5. Cookies and analytics",
+        "text": "Analytics tools such as Google Analytics and Yandex Metrica, along with cookies, are used to improve the site experience and gather statistics. You can disable cookies at any time in your browser settings."
+      },
+      {
+        "heading": "6. Your rights",
+        "text": "You have the right to request access to your data, its correction, or its deletion. To do so, contact us using the details below."
+      },
+      {
+        "heading": "7. Contact",
+        "text": "For questions about this Privacy Policy, contact us at info@maxjustice.uz or by the phone number listed on the site."
+      }
+    ],
+    "legalReviewNote": "This document was prepared as a template. Before launch, its compliance with the applicable Law of the Republic of Uzbekistan \"On Personal Data\" must be reviewed by the attorney personally (item 7.2 of the brief)."
+  },
+  "termsPage": {
+    "metaTitle": "Terms of Use | MAXLEGAL Law Firm",
+    "metaDescription": "Rules and terms governing the use of maxjustice.uz.",
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: September 2026",
+    "sections": [
+      {
+        "heading": "1. General provisions",
+        "text": "These terms govern the use of the maxjustice.uz website (the \"Site\"). By accessing and using the Site, you agree to these terms."
+      },
+      {
+        "heading": "2. Nature of the information on the site",
+        "text": "All information on the Site is provided for general informational purposes only and does not replace individual legal advice. Every situation is unique, and a personal consultation with the attorney is recommended before taking any specific action."
+      },
+      {
+        "heading": "3. Intellectual property",
+        "text": "All text, design, and other materials on the Site are protected by copyright. Copying or distributing them without the written consent of the law firm is prohibited."
+      },
+      {
+        "heading": "4. Limitation of liability",
+        "text": "The law firm is not liable for any direct or indirect damages arising from the use of information on the Site. Contacting us through the Site does not automatically create an attorney-client relationship — such a relationship only begins once a formal engagement agreement is signed."
+      },
+      {
+        "heading": "5. Changes",
+        "text": "These terms may be updated from time to time. Changes take effect from the date they are published on the Site."
+      },
+      {
+        "heading": "6. Contact",
+        "text": "For questions about these Terms of Use, contact us at info@maxjustice.uz."
+      }
+    ]
+  },
   "servicesHub": {
     "title": "Services",
     "subtitle": "Choose the section that matches your situation for details and practical guidance.",
@@ -160,7 +358,9 @@
     "phonePlaceholder": "+998 90 123 45 67",
     "messageLabel": "Brief description of the issue (optional)",
     "messagePlaceholder": "Briefly describe your situation",
-    "consentLabel": "I agree to the privacy policy",
+    "consentPrefix": "I agree to the ",
+    "consentLinkText": "privacy policy",
+    "consentSuffix": "",
     "submit": "Send",
     "submitting": "Sending...",
     "successTitle": "Thank you!",

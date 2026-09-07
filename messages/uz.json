@@ -92,6 +92,204 @@
       "subtitle": "15 daqiqa ichida siz bilan bog'lanamiz"
     }
   },
+  "aboutPage": {
+    "metaTitle": "Advokat Nasrdinov To'lanboy haqida | MAXLEGAL",
+    "metaDescription": "IIB tergov organlarida ishlagan advokat. Ta'lim, tajriba, ixtisoslashuv va faoliyat haqida to'liq ma'lumot. Farg'ona, S. Temur 43.",
+    "title": "Advokat haqida",
+    "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    "heroSubtitle": "Advokat, \"MAXLEGAL AND JUSTICE\" advokatlik byurosi asoschisi",
+    "educationTitle": "Ta'lim",
+    "educationText": "Ichki Ishlar Vazirligi Akademiyasi magistraturasini tamomlagan. Ushbu ta'lim huquq-tartibot tizimining ichki mexanizmlarini, tergov va protsessual jarayonlarni chuqur o'rganish imkonini bergan.",
+    "experienceTitle": "Tergov organlaridagi tajriba",
+    "experienceText": "Ichki ishlar organlari tergov bo'linmalarida tergovchi sifatida faoliyat yuritgan. Bu davrda jinoiy ishlarni tergov qilish, dalillar to'plash va protsessual hujjatlarni rasmiylashtirish bo'yicha amaliy tajriba orttirgan — bu tajriba endilikda advokatlik faoliyatida himoya tomoni manfaatlarini ko'zlab ishlatiladi.",
+    "advocacyTitle": "Advokatlik faoliyati",
+    "advocacyText": "Hozirda O'zbekiston Respublikasi Advokatlar palatasi a'zosi sifatida rasmiy advokatlik faoliyatini olib boradi. Advokatlik litsenziyasi va barcha zarur ruxsatnomalarga ega bo'lib, jinoiy, ma'muriy va fuqarolik ishlari bo'yicha mijozlar manfaatini himoya qiladi.",
+    "specializationsTitle": "Ixtisoslashuv yo'nalishlari",
+    "firmsTitle": "\"MAXLEGAL AND JUSTICE\" va \"IMPERIUM LEGAL SOLUTIONS\" haqida",
+    "firmsText": "\"MAXLEGAL AND JUSTICE\" — Farg'ona viloyatida faoliyat yurituvchi advokatlik byurosi bo'lib, jismoniy va yuridik shaxslarga jinoiy, ma'muriy, fuqarolik va biznes huquqi sohalarida professional yordam ko'rsatadi. \"IMPERIUM LEGAL SOLUTIONS\" esa tadbirkorlar va yuridik shaxslarga yo'naltirilgan huquqiy konsalting va biznes-huquqiy yechimlar taqdim etuvchi hamkor tashkilot sifatida faoliyat yuritadi.",
+    "academicTitle": "Ilmiy faoliyat",
+    "academicText": "Huquq sohasida ilmiy izlanishlar (PhD darajasiga tayyorgarlik) bilan shug'ullanadi. Bu ilmiy faoliyat amaliy advokatlik ishini nazariy bilim bilan boyitib, murakkab huquqiy masalalarni chuqurroq tahlil qilish imkonini beradi.",
+    "positionTitle": "Nega men himoya bilan shug'ullanaman",
+    "positionText": "Tergov organlarida ishlagan davrimda huquqiy tizimning ikki tomonini ham — ayblov va himoya nuqtai nazarlarini — ichkaridan ko'rish imkoniga ega bo'ldim. Bu tajriba menga har bir odam, hatto eng og'ir vaziyatda ham, malakali va halol huquqiy himoyaga haqli ekanini chuqur his qildirdi. Aynan shu ishonch meni advokatlik faoliyatiga yetakladi — mijozlarimning huquqlari to'liq va adolatli tarzda himoya qilinishini ta'minlash uchun.",
+    "ctaTitle": "Vaziyatingizni muhokama qilishga tayyorman",
+    "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy."
+  },
+  "practicePage": {
+    "metaTitle": "Amaliyot | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "Advokatlik amaliyotida eng ko'p uchraydigan holatlar va ularga yondashuv. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "title": "Amaliyot",
+    "intro": "Advokatlik siri va mijozlarimning shaxsiy hayoti daxlsizligi — bu men uchun qat'iy tamoyil. Shu sababli bu sahifada aniq ism, familiya yoki ish raqamlari ko'rsatilmaydi. Buning o'rniga amaliyotimda eng ko'p uchraydigan holat turlarini va ularga qanday yondashishimni umumlashtirilgan tarzda taqdim etaman — bu sizga o'z vaziyatingizga qanday yordam berilishi mumkinligini tasavvur qilishga yordam beradi.",
+    "disclaimer": "Quyidagi misollar umumlashtirilgan bo'lib, muayyan mijoz yoki ishga ishora qilmaydi. Har bir real ish o'ziga xos xususiyatlarga ega va alohida tahlil talab qiladi.",
+    "situationLabel": "Vaziyat",
+    "approachLabel": "Yondashuv",
+    "cases": [
+      {
+        "category": "Jinoiy ishlar",
+        "situation": "Mijoz jinoiy ish bo'yicha gumon qilinuvchi sifatida so'roqqa chaqirilgan, vaziyatni qanday hal qilishni bilmagan.",
+        "approach": "Darhol ishga kirishib, mijoz bilan birga so'roqqa bordim, tergov harakatlarida uning huquqlari to'liq ta'minlanishini nazorat qildim va dalillar asosida himoya pozitsiyasini shakllantirdim."
+      },
+      {
+        "category": "Tergovga qadar tekshiruv",
+        "situation": "Tadbirkorga nisbatan tergovga qadar tekshiruv boshlangan, tegishli hujjatlar talab qilingan.",
+        "approach": "Tekshiruv qonuniyligini tahlil qilib, mijozga hujjatlarni to'g'ri va qonuniy tartibda taqdim etishda yordam berdim, jarayonda shaxsan ishtirok etdim."
+      },
+      {
+        "category": "Ma'muriy ishlar",
+        "situation": "Mijozga noto'g'ri tuzilgan protokol asosida ma'muriy jarima solingan.",
+        "approach": "Protokolni protsessual jihatdan tahlil qilib, huquqbuzarliklarni aniqladim va tegishli muddatda asoslangan shikoyat tayyorladim."
+      },
+      {
+        "category": "Fuqarolik ishlari",
+        "situation": "Ikki tomon o'rtasida mulkka oid nizo yuzaga kelgan, tomonlar sudgacha kelisha olmagan.",
+        "approach": "Nizoning huquqiy asoslarini tahlil qilib, avvalo muzokara yo'lini taklif qildim, natija bo'lmagach, sudda mijoz manfaatini himoya qildim."
+      },
+      {
+        "category": "Oila va meros nizolari",
+        "situation": "Meros taqsimoti bo'yicha oila a'zolari o'rtasida kelishmovchilik yuzaga kelgan.",
+        "approach": "Har bir tomonning huquqiy pozitsiyasini tushuntirib, oiladagi munosabatlarni imkon qadar saqlagan holda adolatli yechimga erishishga yordam berdim."
+      },
+      {
+        "category": "Shartnoma va biznes konsalting",
+        "situation": "Kichik biznes egasi hamkori bilan tuzilgan shartnoma yuzasidan nizoga duch kelgan.",
+        "approach": "Shartnomani huquqiy tahlil qilib, zaif tomonlarini aniqladim va kelajakda shunga o'xshash muammolarning oldini olish uchun standart shartnoma shablonlarini ishlab chiqishda yordam berdim."
+      }
+    ],
+    "ctaTitle": "Sizning vaziyatingiz qanday hal qilinishi mumkinligini muhokama qilaylik",
+    "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy."
+  },
+  "pricesPage": {
+    "metaTitle": "Advokatlik xizmatlari narxlari | MAXLEGAL",
+    "metaDescription": "Advokatlik xizmatlari narxlari haqida shaffof ma'lumot. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "title": "Xizmat narxlari",
+    "intro": "Shaffoflik — ishonchning asosi. Shuning uchun asosiy xizmat turlari bo'yicha narx diapazonini oldindan taqdim etamiz. Har bir ishning yakuniy narxi uning murakkabligiga, hajmiga va zarur vaqtga bog'liq holda birinchi konsultatsiyada aniqlashtiriladi.",
+    "note": "* Ko'rsatilgan narxlar boshlang'ich (\"...dan\") bo'lib, aniq shartnoma summasi ish holatlariga qarab belgilanadi.",
+    "rows": [
+      { "service": "Birinchi konsultatsiya", "price": "Bepul" },
+      { "service": "Yozma huquqiy xulosa / maslahat", "price": "so'ralsin" },
+      { "service": "Hujjat tayyorlash (ariza, shikoyat, da'vo arizasi)", "price": "so'ralsin" },
+      { "service": "Tergovga qadar tekshiruvda vakillik", "price": "so'ralsin" },
+      { "service": "Jinoiy ish bo'yicha tergovda himoya", "price": "shartnoma asosida" },
+      { "service": "Ma'muriy ishlar bo'yicha vakillik", "price": "shartnoma asosida" },
+      { "service": "Fuqarolik ishlari bo'yicha sudda vakillik", "price": "shartnoma asosida" },
+      { "service": "Biznes uchun doimiy huquqiy hamrohlik", "price": "shartnoma asosida (oylik)" }
+    ],
+    "ctaTitle": "Aniq narx bo'yicha maslahat oling",
+    "ctaSubtitle": "Vaziyatingizni ayting — 15 daqiqa ichida siz bilan bog'lanib, taxminiy narxni aytamiz."
+  },
+  "contactPage": {
+    "metaTitle": "Bog'lanish | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "Advokat bilan bog'laning: telefon, Telegram, manzil va murojaat formasi. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "title": "Bog'lanish"
+  },
+  "faqPage": {
+    "metaTitle": "Savol-javob | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "Advokat xizmatlari, narxlar va konsultatsiya haqida eng ko'p beriladigan savollarga javoblar. Tel: +998 90 300 94 06",
+    "title": "Savol-javob",
+    "intro": "Advokatga murojaat qilishdan oldin ko'pincha tug'iladigan savollarga javoblar. Agar savolingizga bu yerda javob topmasangiz, to'g'ridan-to'g'ri bog'laning.",
+    "items": [
+      {
+        "question": "Birinchi konsultatsiya haqiqatan ham bepulmi?",
+        "answer": "Ha, birinchi konsultatsiya bepul va maxfiy. Uning davomida vaziyatingizni tinglab, dastlabki huquqiy baho beraman va keyingi qadamlar bo'yicha aniq yo'nalish beraman."
+      },
+      {
+        "question": "Faqat Farg'ona shahrida ishlaysizmi?",
+        "answer": "Asosiy faoliyat hududim Farg'ona viloyati, jumladan Farg'ona va Quva shaharlari. Kerak bo'lsa, boshqa hududlardagi ishlar bo'yicha ham murojaat qilishingiz mumkin — birinchi konsultatsiyada aniqlashtiramiz."
+      },
+      {
+        "question": "Murojaatim qanchalik maxfiy saqlanadi?",
+        "answer": "Advokatlik siri qonun bilan qat'iy himoyalangan. Siz taqdim etgan har qanday ma'lumot faqat ish yuritish maqsadida ishlatiladi va uchinchi shaxslarga oshkor qilinmaydi."
+      },
+      {
+        "question": "Qanday hollarda darhol qo'ng'iroq qilishim kerak?",
+        "answer": "Hibsga olingan, tergovga chaqirilgan, tintuv o'tkazilayotgan yoki tezkor huquqiy yordam talab qiladigan har qanday vaziyatda darhol qo'ng'iroq qiling — bunday hollarda vaqt hal qiluvchi ahamiyatga ega."
+      },
+      {
+        "question": "Xizmat narxi qanday belgilanadi?",
+        "answer": "Narx ishning murakkabligi, hajmi va zarur vaqtga bog'liq holda belgilanadi. Aniq narx birinchi konsultatsiyada muhokama qilinadi va shartnomada yozma tarzda mustahkamlanadi."
+      },
+      {
+        "question": "Sizga qanday murojaat qilish mumkin?",
+        "answer": "Telefon orqali qo'ng'iroq qilishingiz, Telegram orqali yozishingiz yoki saytdagi murojaat formasini to'ldirishingiz mumkin — 15 daqiqa ichida siz bilan bog'lanamiz."
+      },
+      {
+        "question": "Ishni qabul qilishdan bosh tortishingiz mumkinmi?",
+        "answer": "Ha, muayyan holatlarda (masalan, manfaatlar to'qnashuvi mavjud bo'lsa) ishni olib bormaslik huquqiga egaman. Bunday holatda buni ochiq aytaman va imkon bo'lsa, boshqa mutaxassisga yo'naltiraman."
+      },
+      {
+        "question": "Qaysi tillarda xizmat ko'rsatasiz?",
+        "answer": "O'zbek va rus tillarida to'liq muloqot qilish mumkin. Sayt shuningdek ingliz tilida ham mavjud."
+      }
+    ]
+  },
+  "privacyPage": {
+    "metaTitle": "Maxfiylik siyosati | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "Shaxsiy ma'lumotlaringiz qanday yig'ilishi, ishlatilishi va himoyalanishi haqida to'liq ma'lumot.",
+    "title": "Maxfiylik siyosati",
+    "lastUpdated": "Oxirgi yangilanish: 2026-yil sentyabr",
+    "sections": [
+      {
+        "heading": "1. Umumiy qoidalar",
+        "text": "Ushbu Maxfiylik siyosati maxjustice.uz saytidan (\"Sayt\") foydalanuvchilarning shaxsiy ma'lumotlari qanday yig'ilishi, ishlatilishi va himoyalanishini belgilaydi. Saytdan foydalanish orqali siz ushbu siyosat shartlariga rozilik bildirasiz."
+      },
+      {
+        "heading": "2. Qanday ma'lumotlar yig'iladi",
+        "text": "Murojaat formasini to'ldirganingizda quyidagi ma'lumotlarni taqdim etasiz: ism, telefon raqami va muammoning qisqacha bayoni (ixtiyoriy). Bundan tashqari, sayt statistikasi uchun anonim texnik ma'lumotlar (qurilma turi, brauzer, tashrif vaqti) avtomatik yig'ilishi mumkin."
+      },
+      {
+        "heading": "3. Ma'lumotlardan qanday foydalaniladi",
+        "text": "Taqdim etilgan ma'lumotlar faqat siz bilan bog'lanish va huquqiy konsultatsiya berish maqsadida ishlatiladi. Ma'lumotlaringiz marketing yoki boshqa maqsadlarda uchinchi shaxslarga sotilmaydi yoki uzatilmaydi."
+      },
+      {
+        "heading": "4. Ma'lumotlar qanday saqlanadi va uzatiladi",
+        "text": "Murojaat formasi orqali yuborilgan ma'lumotlar shifrlangan kanal (HTTPS) orqali Telegram xabar tizimiga uzatiladi va advokatga to'g'ridan-to'g'ri yetkaziladi. Ma'lumotlar faqat ish yuritish maqsadida saqlanadi."
+      },
+      {
+        "heading": "5. Cookie va analitika",
+        "text": "Sayt tajribasini yaxshilash va statistika yig'ish uchun Google Analytics va Yandex Metrika kabi analitik vositalar hamda cookie fayllaridan foydalaniladi. Brauzeringiz sozlamalarida cookie fayllarini istalgan vaqtda o'chirib qo'yishingiz mumkin."
+      },
+      {
+        "heading": "6. Sizning huquqlaringiz",
+        "text": "Siz o'zingiz haqingizdagi ma'lumotlarga kirish, ularni tuzatish yoki o'chirishni so'rash huquqiga egasiz. Bunday so'rov bilan pastda ko'rsatilgan aloqa ma'lumotlari orqali murojaat qilishingiz mumkin."
+      },
+      {
+        "heading": "7. Bog'lanish",
+        "text": "Maxfiylik siyosati bo'yicha savollaringiz bo'lsa, info@maxjustice.uz elektron pochtasi yoki saytda ko'rsatilgan telefon raqami orqali murojaat qiling."
+      }
+    ],
+    "legalReviewNote": "Ushbu hujjat andoza sifatida tayyorlangan. Ishga tushirishdan oldin O'zbekiston Respublikasining amaldagi \"Shaxsiy ma'lumotlar to'g'risida\"gi qonuniga muvofiqligini advokatning o'zi tomonidan tekshirilishi shart (7.2-band)."
+  },
+  "termsPage": {
+    "metaTitle": "Foydalanish shartlari | MAXLEGAL advokatlik byurosi",
+    "metaDescription": "maxjustice.uz saytidan foydalanish qoidalari va shartlari.",
+    "title": "Foydalanish shartlari",
+    "lastUpdated": "Oxirgi yangilanish: 2026-yil sentyabr",
+    "sections": [
+      {
+        "heading": "1. Umumiy qoidalar",
+        "text": "Ushbu shartlar maxjustice.uz saytidan (\"Sayt\") foydalanish tartibini belgilaydi. Saytga kirish va undan foydalanish orqali siz ushbu shartlarga rozilik bildirasiz."
+      },
+      {
+        "heading": "2. Saytdagi ma'lumotlarning xarakteri",
+        "text": "Saytdagi barcha ma'lumotlar faqat umumiy tanishtirish maqsadida taqdim etilgan bo'lib, individual huquqiy maslahat o'rnini bosmaydi. Har bir vaziyat o'ziga xos bo'lib, aniq harakat qilishdan oldin advokat bilan shaxsiy konsultatsiya olish tavsiya etiladi."
+      },
+      {
+        "heading": "3. Intellektual mulk",
+        "text": "Saytdagi barcha matn, dizayn va boshqa materiallar mualliflik huquqi bilan himoyalangan. Ularni advokatlik byurosining yozma roziligisiz nusxalash yoki tarqatish taqiqlanadi."
+      },
+      {
+        "heading": "4. Javobgarlikni cheklash",
+        "text": "Advokatlik byurosi saytdagi ma'lumotlardan foydalanish natijasida yuzaga kelishi mumkin bo'lgan har qanday to'g'ridan-to'g'ri yoki bilvosita zarar uchun javobgar emas. Sayt orqali murojaat qilish advokat-mijoz munosabatlarini avtomatik ravishda yuzaga keltirmaydi — bunday munosabat faqat rasmiy shartnoma tuzilgandan so'ng boshlanadi."
+      },
+      {
+        "heading": "5. O'zgartirishlar",
+        "text": "Ushbu shartlar vaqti-vaqti bilan yangilanishi mumkin. O'zgarishlar saytda e'lon qilingan kundan boshlab kuchga kiradi."
+      },
+      {
+        "heading": "6. Bog'lanish",
+        "text": "Foydalanish shartlari bo'yicha savollaringiz bo'lsa, info@maxjustice.uz elektron pochtasi orqali murojaat qiling."
+      }
+    ]
+  },
   "servicesHub": {
     "title": "Xizmatlar",
     "subtitle": "Har bir yo'nalish bo'yicha batafsil ma'lumot va amaliy maslahatlar uchun kerakli bo'limni tanlang.",
@@ -160,7 +358,9 @@
     "phonePlaceholder": "+998 90 123 45 67",
     "messageLabel": "Muammoning qisqacha bayoni (ixtiyoriy)",
     "messagePlaceholder": "Vaziyatingizni qisqacha yozing",
-    "consentLabel": "Men maxfiylik siyosatiga roziman",
+    "consentPrefix": "Men ",
+    "consentLinkText": "maxfiylik siyosati",
+    "consentSuffix": "ga roziman",
     "submit": "Yuborish",
     "submitting": "Yuborilmoqda...",
     "successTitle": "Rahmat!",

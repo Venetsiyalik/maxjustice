@@ -5,6 +5,7 @@ import { useFormStatus } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
 import { submitContactForm, type ContactFormState } from "@/app/actions/contact";
 import { CheckIcon } from "@/components/ui/icons";
+import { Link } from "@/i18n/navigation";
 
 const INITIAL_STATE: ContactFormState = { status: "idle" };
 
@@ -104,7 +105,18 @@ export function ContactForm({ source }: { source?: string }) {
             aria-invalid={state.fieldErrors?.consent ? "true" : undefined}
             className="mt-0.5 h-5 w-5 shrink-0 rounded border-[var(--color-line)] accent-[var(--color-navy-800)]"
           />
-          <span>{t("consentLabel")}</span>
+          <span>
+            {t("consentPrefix")}
+            <Link
+              href="/maxfiylik-siyosati"
+              target="_blank"
+              className="underline hover:text-[var(--color-navy-900)]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {t("consentLinkText")}
+            </Link>
+            {t("consentSuffix")}
+          </span>
         </label>
         {state.fieldErrors?.consent && (
           <p className="mt-1 text-sm text-red-600">{t("errorConsent")}</p>
