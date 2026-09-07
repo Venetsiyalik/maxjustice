@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# maxjustice.uz
 
-## Getting Started
+"MAXLEGAL AND JUSTICE" advokatlik byurosi veb-sayti — Next.js 16 (App Router), TypeScript, Tailwind CSS 4, `next-intl`.
 
-First, run the development server:
+## Ishga tushirish
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sayt http://localhost:3000 da ochiladi.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm run lint    # ESLint tekshiruvi
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Muhit o'zgaruvchilari
 
-## Learn More
+`.env.example` faylini `.env.local` nomi bilan nusxalab, quyidagilarni to'ldiring:
 
-To learn more about Next.js, take a look at the following resources:
+| O'zgaruvchi | Nima uchun |
+|---|---|
+| `TELEGRAM_BOT_TOKEN` | Murojaat formasi xabarlarini Telegramga yuborish uchun (@BotFather orqali olinadi) |
+| `TELEGRAM_CHAT_ID` | Xabarlar keladigan chat/kanal ID |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 o'lchov ID (masalan, `G-XXXXXXX`) |
+| `NEXT_PUBLIC_YANDEX_METRIKA_ID` | Yandex Metrika hisob raqami |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Bu o'zgaruvchilar sozlanmagan bo'lsa, tegishli funksiya (forma yuborish, analitika) jim o'tkaziladi — sayt buzilmaydi.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Arxitektura
 
-## Deploy on Vercel
+- **Ko'p tillilik** (`i18n/`, `messages/*.json`): `next-intl`. `uz` — asosiy til, prefikssiz (`/`); `kr`, `ru`, `en` — `/kr`, `/ru`, `/en` prefiksi bilan.
+- **Kirill versiyasi qo'lda tarjima qilinmaydi** — `lib/transliterate.ts` orqali `uz` matnidan avtomatik hosil qilinadi (brend nomlari kabi maxsus atamalar `PROTECTED_TERMS` da lotin holida saqlanadi).
+- **Kontent** (`content/services/`, `content/blog/`): sahifa matnlari MDX yoki CMS o'rniga oddiy TypeScript obyektlari sifatida saqlanadi — bu transliteratsiya va tip xavfsizligini soddalashtiradi. Har bir xizmat/maqola papkada tilga qarab (`uz/`, `ru/`, `en/`) alohida fayl.
+- **SEO** (`lib/schema.ts`, `lib/seo.ts`, `app/sitemap.ts`, `app/robots.ts`): schema.org (LegalService, FAQPage, BreadcrumbList, Article), hreflang alternates, sitemap.
+- **Forma** (`app/actions/contact.ts`): server action orqali Telegram Bot API ga yuboriladi.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Hozircha PLACEHOLDER holatida bo'lgan narsalar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ishga tushirishdan oldin quyidagilarni haqiqiy ma'lumot bilan almashtirish kerak (kodda `TODO` deb belgilangan):
+
+- [ ] **Advokatlik litsenziyasi raqami** — `lib/site-config.ts`
+- [ ] **Ish staji raqamlari** (IIB, advokatlik yillari) — `lib/site-config.ts`
+- [ ] **Google Maps koordinatalari va havolalari** — `lib/site-config.ts`
+- [ ] **Professional fotosuratlar** — hozircha barcha rasm o'rnida CSS bilan yasalgan placeholder (initsiallar) bor: `components/sections/Hero.tsx`, `components/sections/AboutPreview.tsx`, `app/[locale]/advokat-haqida/page.tsx`
+- [ ] **Telegram bot token va chat ID** — `.env.local`
+- [ ] **Google Analytics / Yandex Metrika ID** — `.env.local`
+- [ ] **Aniq xizmat narxlari** — `messages/*.json` dagi `pricesPage.rows`
+- [ ] **10 tadan 9 ta xizmat sahifasining rus/ingliz tarjimasi** — hozircha `content/services/ru|en/*.ts` fayllarining aksariyati vaqtincha `uz` kontentini qayta eksport qiladi (fayl ichidagi `TODO` izohiga qarang); faqat "jinoiy-ishlar" to'liq tarjima qilingan
+- [ ] **Barcha matnlarning advokat tomonidan etika kodeksiga muvofiqligini tekshirish** (texnik topshiriq 7.1-band) — bu andoza kontent, yakuniy tasdiq advokatning o'zida
+
+## Deploy
+
+Vercel yoki Cloudflare Pages tavsiya etiladi (texnik topshiriq 2.1-band). Deploy paytida yuqoridagi muhit o'zgaruvchilarini hosting platformasining "Environment Variables" bo'limida sozlang.

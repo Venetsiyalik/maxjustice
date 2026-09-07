@@ -8,6 +8,7 @@ import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { PhoneIcon, TelegramIcon, MenuIcon, CloseIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
+import { trackEvent } from "@/lib/analytics";
 
 const NAV_ITEMS: { key: string; href: string }[] = [
   { key: "about", href: "/advokat-haqida" },
@@ -64,12 +65,14 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={cta("telegram")}
+            onClick={() => trackEvent("telegram_click")}
             className="flex h-11 w-11 items-center justify-center rounded-lg border-2 border-[var(--color-navy-900)] text-[var(--color-navy-900)] transition-colors hover:bg-[var(--color-navy-900)] hover:text-white"
           >
             <TelegramIcon className="h-5 w-5" />
           </a>
           <a
             href={siteConfig.phone.href}
+            onClick={() => trackEvent("phone_click")}
             className="flex min-h-[44px] items-center gap-2 rounded-lg bg-[var(--color-gold-500)] px-4 py-2.5 text-sm font-bold text-[var(--color-navy-950)] transition-colors hover:bg-[var(--color-gold-400)]"
           >
             <PhoneIcon className="h-4 w-4" />
@@ -81,6 +84,7 @@ export function Header() {
           <a
             href={siteConfig.phone.href}
             aria-label={cta("call")}
+            onClick={() => trackEvent("phone_click")}
             className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--color-gold-500)] text-[var(--color-navy-950)]"
           >
             <PhoneIcon className="h-5 w-5" />

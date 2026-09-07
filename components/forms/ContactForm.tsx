@@ -1,11 +1,12 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { useLocale, useTranslations } from "next-intl";
 import { submitContactForm, type ContactFormState } from "@/app/actions/contact";
 import { CheckIcon } from "@/components/ui/icons";
 import { Link } from "@/i18n/navigation";
+import { trackEvent } from "@/lib/analytics";
 
 const INITIAL_STATE: ContactFormState = { status: "idle" };
 
@@ -28,6 +29,12 @@ export function ContactForm({ source }: { source?: string }) {
   const t = useTranslations("form");
   const locale = useLocale();
   const [state, formAction] = useActionState(submitContactForm, INITIAL_STATE);
+
+  useEffect(() => {
+    if (state.status === "success") {
+      trackEvent("form_submit");
+    }
+  }, [state.status]);
 
   if (state.status === "success") {
     return (

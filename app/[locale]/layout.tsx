@@ -12,6 +12,7 @@ import { Footer } from "@/components/layout/Footer";
 import { StickyCallButton } from "@/components/layout/StickyCallButton";
 import { LanguageSuggestionBanner } from "@/components/layout/LanguageSuggestionBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Analytics } from "@/components/seo/Analytics";
 import { buildLegalServiceSchema } from "@/lib/schema";
 import "../globals.css";
 
@@ -74,6 +75,7 @@ export default async function LocaleLayout({
   return (
     <html lang={LOCALE_HREFLANG[locale]} className={bodyFont.variable}>
       <body className="flex min-h-screen flex-col antialiased">
+        <Analytics />
         <JsonLd data={buildLegalServiceSchema()} />
         <NextIntlClientProvider>
           <LanguageSuggestionBanner />

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { PhoneIcon, TelegramIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Mobil versiyada ekran pastiga yopishtirilgan doimiy qo'ng'iroq tugmasi
@@ -17,6 +18,7 @@ export function StickyCallButton() {
         href={siteConfig.telegram.href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackEvent("telegram_click")}
         className="flex min-h-[56px] flex-1 items-center justify-center gap-2 bg-[var(--color-navy-900)] text-sm font-bold text-white"
       >
         <TelegramIcon className="h-5 w-5" />
@@ -24,6 +26,7 @@ export function StickyCallButton() {
       </a>
       <a
         href={siteConfig.phone.href}
+        onClick={() => trackEvent("phone_click")}
         className="flex min-h-[56px] flex-[1.4] items-center justify-center gap-2 bg-[var(--color-gold-500)] text-sm font-bold text-[var(--color-navy-950)]"
       >
         <PhoneIcon className="h-5 w-5" />
