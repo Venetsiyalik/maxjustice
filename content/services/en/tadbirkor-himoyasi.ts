@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Business Owner Defense Attorney — Fergana",
   metaTitle: "Business Owner Defense Attorney in Fergana | MAXLEGAL",
   metaDescription:
-    "Professional defense when your business faces an inspection or a criminal case. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "Professional defense when your business faces an inspection or a criminal case. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "If your business is under investigation or facing a criminal case, this threatens not just your personal freedom but the entire company. A fast, professional legal response can help save the business.",
   problemParagraphs: [

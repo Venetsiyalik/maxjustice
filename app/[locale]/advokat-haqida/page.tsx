@@ -91,11 +91,11 @@ export default async function AboutPage({
                 </span>
                 <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 sm:justify-start">
                   <a
-                    href={siteConfig.founder.phone.href}
+                    href={siteConfig.phone.href}
                     className="flex items-center gap-1.5 font-semibold text-[var(--color-navy-800)] hover:text-[var(--color-navy-950)]"
                   >
                     <PhoneIcon className="h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
-                    {siteConfig.founder.phone.display}
+                    {siteConfig.phone.display}
                   </a>
                   <a
                     href={`mailto:${siteConfig.email.founder}`}

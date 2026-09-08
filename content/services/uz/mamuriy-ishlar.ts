@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Ma'muriy ishlar bo'yicha advokat — Farg'ona",
   metaTitle: "Ma'muriy ishlar bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Ma'muriy javobgarlik, jarima yoki protokolga qarshi huquqiy himoya. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Ma'muriy javobgarlik, jarima yoki protokolga qarshi huquqiy himoya. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Ma'muriy javobgarlikka tortilgan yoki jarima solingan bo'lsangiz — qarorga qarshi qonunda belgilangan muddatda shikoyat qilish huquqingiz bor. Muddatni o'tkazib yubormaslik uchun imkon qadar tezroq murojaat qiling.",
   problemParagraphs: [

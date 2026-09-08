@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Oila va meros nizolari bo'yicha advokat — Farg'ona",
   metaTitle: "Oila va meros nizolari bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Ajrashish, farzand taqdiri va meros nizolari bo'yicha huquqiy yordam. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Ajrashish, farzand taqdiri va meros nizolari bo'yicha huquqiy yordam. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Ajrashish, farzand taqdiri yoki meros nizosida bo'lsangiz — bu masalalar nafaqat huquqiy, balki chuqur shaxsiy jihatlarga ham ega. Xotirjam va professional yondashuv sizga eng maqbul va oqilona yechimga erishishga yordam beradi.",
   problemParagraphs: [

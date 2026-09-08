@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Mehnat nizolari bo'yicha advokat — Farg'ona",
   metaTitle: "Mehnat nizolari bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Noqonuniy ishdan bo'shatish va boshqa mehnat huquqi buzilishlari bo'yicha himoya. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Noqonuniy ishdan bo'shatish va boshqa mehnat huquqi buzilishlari bo'yicha himoya. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Ishdan noqonuniy bo'shatilgan yoki mehnat huquqingiz boshqa tarzda buzilgan bo'lsa — qonun sizga ishga tiklanish, to'lanmagan haq va zararni undirish huquqini beradi. Muddatni o'tkazib yubormaslik uchun tezroq murojaat qiling.",
   problemParagraphs: [

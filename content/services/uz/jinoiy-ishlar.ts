@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Jinoiy ishlar bo'yicha advokat — Farg'ona",
   metaTitle: "Jinoiy ishlar bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Tergov va sudda professional himoya. IIB tergovchisi tajribasiga ega advokat. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Tergov va sudda professional himoya. IIB tergovchisi tajribasiga ega advokat. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Agar sizga yoki yaqiningizga jinoiy ish qo'zg'atilgan yoki hibsga olingan bo'lsa — birinchi navbatda advokat huquqidan foydalaning va advokat kelmaguncha hech qanday hujjatga imzo chekmang, hech narsani izohlab bermang. Har bir daqiqa muhim: advokat qanchalik erta ishga kirishsa, himoya strategiyasi shunchalik samarali bo'ladi.",
   problemParagraphs: [

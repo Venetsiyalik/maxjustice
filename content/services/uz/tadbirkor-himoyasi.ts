@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Tadbirkorlar huquqini himoya qilish bo'yicha advokat — Farg'ona",
   metaTitle: "Tadbirkorlar himoyasi bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Biznesga nisbatan tekshiruv yoki jinoiy ish qo'zg'atilganda professional himoya. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Biznesga nisbatan tekshiruv yoki jinoiy ish qo'zg'atilganda professional himoya. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Biznesingizga nisbatan tekshiruv boshlangan yoki jinoiy ish qo'zg'atilgan bo'lsa — bu nafaqat sizning shaxsiy erkinligingizga, balki butun korxona faoliyatiga tahdid soladi. Bunday holatlarda tez va professional huquqiy javob berish korxonani saqlab qolish imkonini beradi.",
   problemParagraphs: [

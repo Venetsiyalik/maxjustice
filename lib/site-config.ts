@@ -12,22 +12,19 @@ export const siteConfig = {
   founder: {
     fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
     jobTitle: "Advokat",
-    // To'lanboyning bevosita (shaxsiy) telefon raqami — asosiy ofis
-    // raqamidan (yuqoridagi `phone`, Google Business profiliga bog'liq)
-    // ATAYLAB alohida saqlanadi, faqat "Advokat haqida" sahifasida
-    // qo'shimcha aloqa varianti sifatida ko'rsatiladi.
-    phone: {
-      display: "+998 77 018 14 02",
-      href: "tel:+998770181402",
-    },
   },
   license: {
     // TODO: haqiqiy litsenziya raqami bilan almashtirish (7.3-band, majburiy)
     number: "№ ______ (litsenziya raqami kiritilishi kerak)",
   },
+  // Butun sayt bo'ylab ishlatiladigan yagona telefon raqami — To'lanboyning
+  // shaxsiy raqami (buyurtmachi tasdiqlagan). Diqqat: bu raqam mavjud Google
+  // Business profilidagi ("Адвокатура", 5.0 ★, 7 sharh) "90 300 94 06"dan
+  // FARQ QILADI — NAP izchilligi uchun Google Business profilini ham shu
+  // yangi raqamga yangilash tavsiya etiladi (10.4-band).
   phone: {
-    display: "+998 90 300 94 06",
-    href: "tel:+998903009406",
+    display: "+998 77 018 14 02",
+    href: "tel:+998770181402",
   },
   telegram: {
     // @Maxjusticebot — hozircha murojaat formasi xabarlarini advokatga

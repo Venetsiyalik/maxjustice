@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Court Representation — Fergana",
   metaTitle: "Court Representation in Fergana | MAXLEGAL Law Firm",
   metaDescription:
-    "Professional court representation for criminal, civil, administrative, and economic cases. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "Professional court representation for criminal, civil, administrative, and economic cases. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "If you need a representative to defend your interests in court, professional representation requires both legal knowledge and practical courtroom experience. I provide full legal representation for cases of any category.",
   problemParagraphs: [

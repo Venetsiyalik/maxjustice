@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Administrative Cases Attorney — Fergana",
   metaTitle: "Administrative Cases Attorney in Fergana | MAXLEGAL",
   metaDescription:
-    "Legal defense against administrative liability, a fine, or a protocol. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "Legal defense against administrative liability, a fine, or a protocol. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "If you're facing administrative liability or have been fined, you have the right to appeal the decision within the legal deadline. Reach out as soon as possible so you don't miss it.",
   problemParagraphs: [

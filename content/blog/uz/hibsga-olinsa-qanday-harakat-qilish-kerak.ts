@@ -5,7 +5,7 @@ const article: BlogArticle = {
   title: "Hibsga olinsa qanday harakat qilish kerak?",
   metaTitle: "Hibsga olinsa qanday harakat qilish kerak? | MAXLEGAL",
   metaDescription:
-    "O'zingiz yoki yaqiningiz hibsga olinganda qanday harakat qilish kerak? Amaliy qadamlar va huquqlar haqida. Tel: +998 90 300 94 06",
+    "O'zingiz yoki yaqiningiz hibsga olinganda qanday harakat qilish kerak? Amaliy qadamlar va huquqlar haqida. Tel: +998 77 018 14 02",
   excerpt:
     "Hibsga olinish — kutilmagan va vahimali vaziyat. Ushbu maqolada shunday holatda qanday xotirjam va to'g'ri harakat qilish haqida gapiramiz.",
   quickAnswer:

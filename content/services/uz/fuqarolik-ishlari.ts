@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Fuqarolik ishlari bo'yicha advokat — Farg'ona",
   metaTitle: "Fuqarolik ishlari bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Mulk, shartnoma va boshqa fuqarolik nizolari bo'yicha huquqiy yordam va sudda vakillik. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Mulk, shartnoma va boshqa fuqarolik nizolari bo'yicha huquqiy yordam va sudda vakillik. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Mulk, shartnoma yoki boshqa fuqarolik nizosida bo'lsangiz — ko'p hollarda masalani sudgacha, muzokara yo'li bilan hal qilish mumkin. Agar bu imkonsiz bo'lsa, sudda manfaatingizni asoslangan dalillar bilan himoya qilaman.",
   problemParagraphs: [

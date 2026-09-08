@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Iqtisodiy jinoyatlar bo'yicha advokat — Farg'ona",
   metaTitle: "Iqtisodiy jinoyatlar bo'yicha advokat Farg'onada | MAXLEGAL",
   metaDescription:
-    "Soliq va iqtisodiy jinoyatlar bo'yicha tekshiruv yoki ish qo'zg'atilganda professional himoya. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
+    "Soliq va iqtisodiy jinoyatlar bo'yicha tekshiruv yoki ish qo'zg'atilganda professional himoya. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "Soliq yoki iqtisodiy jinoyat bo'yicha tekshiruvga duch kelgan bo'lsangiz — bu ishlar odatda murakkab moliyaviy-huquqiy tahlilni talab qiladi. Bunday holatlarda ham iqtisodiy hujjatlarni, ham jinoiy-huquqiy jarayonni tushunadigan advokat yordami hal qiluvchi ahamiyatga ega.",
   problemParagraphs: [

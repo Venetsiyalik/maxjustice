@@ -4,7 +4,7 @@ const content: ServiceContent = {
   h1: "Economic Crimes Attorney — Fergana",
   metaTitle: "Economic Crimes Attorney in Fergana | MAXLEGAL",
   metaDescription:
-    "Professional defense in a tax audit or economic crime case. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
+    "Professional defense in a tax audit or economic crime case. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
   quickAnswer:
     "If you're facing a tax audit or an economic crime investigation, these cases usually require complex financial and legal analysis. An attorney who understands both financial documents and criminal procedure is critical here.",
   problemParagraphs: [

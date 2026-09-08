@@ -5,7 +5,7 @@ const article: BlogArticle = {
   title: "Gumon qilinuvchining huquqlari qanday?",
   metaTitle: "Gumon qilinuvchining huquqlari | MAXLEGAL advokatlik byurosi",
   metaDescription:
-    "Jinoiy ishda gumon qilinuvchi sifatida qanday huquqlarga egasiz? To'liq ma'lumot. Tel: +998 90 300 94 06",
+    "Jinoiy ishda gumon qilinuvchi sifatida qanday huquqlarga egasiz? To'liq ma'lumot. Tel: +998 77 018 14 02",
   excerpt:
     "Gumon qilinuvchi maqomiga ega bo'lish — ayblanuvchi degani emas. Bu bosqichda ham sizning muayyan va muhim huquqlaringiz mavjud.",
   quickAnswer:

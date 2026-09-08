@@ -5,7 +5,7 @@ const article: BlogArticle = {
   title: "Tintuv paytida qanday huquqlaringiz bor?",
   metaTitle: "Tintuv paytida huquqlar | MAXLEGAL advokatlik byurosi",
   metaDescription:
-    "Uyingiz yoki ofisingizda tintuv o'tkazilayotganda qanday huquqlarga egasiz? Amaliy tavsiyalar. Tel: +998 90 300 94 06",
+    "Uyingiz yoki ofisingizda tintuv o'tkazilayotganda qanday huquqlarga egasiz? Amaliy tavsiyalar. Tel: +998 77 018 14 02",
   excerpt:
     "Tintuv — qonunda qat'iy tartibga solingan protsessual harakat. Bu jarayonda sizning ham muayyan huquqlaringiz mavjud.",
   quickAnswer:

@@ -46,7 +46,7 @@ export function buildLegalServiceSchema() {
       "@type": "Person",
       name: siteConfig.founder.fullName,
       jobTitle: siteConfig.founder.jobTitle,
-      telephone: siteConfig.founder.phone.href.replace("tel:", ""),
+      telephone: siteConfig.phone.href.replace("tel:", ""),
       email: siteConfig.email.founder,
     },
     aggregateRating: {

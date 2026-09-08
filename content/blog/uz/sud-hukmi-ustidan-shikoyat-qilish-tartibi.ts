@@ -5,7 +5,7 @@ const article: BlogArticle = {
   title: "Sud hukmi ustidan shikoyat qilish tartibi",
   metaTitle: "Sud hukmi ustidan shikoyat qilish tartibi | MAXLEGAL",
   metaDescription:
-    "Sud qarori yoki hukmiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Muddatlar va bosqichlar haqida. Tel: +998 90 300 94 06",
+    "Sud qarori yoki hukmiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Muddatlar va bosqichlar haqida. Tel: +998 77 018 14 02",
   excerpt:
     "Sud qarori yakuniy tuyulishi mumkin, biroq unga qonuniy tartibda shikoyat qilish huquqingiz bor. Muhimi — muddatni o'tkazib yubormaslik.",
   quickAnswer:

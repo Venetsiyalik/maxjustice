@@ -5,7 +5,7 @@ const article: BlogArticle = {
   title: "Tergovga chaqirilsa nima qilish kerak?",
   metaTitle: "Tergovga chaqirilsa nima qilish kerak? | MAXLEGAL",
   metaDescription:
-    "Tergov organlaridan chaqiruv qog'ozi kelsa, qanday harakat qilish kerak? Advokatning amaliy tavsiyalari. Tel: +998 90 300 94 06",
+    "Tergov organlaridan chaqiruv qog'ozi kelsa, qanday harakat qilish kerak? Advokatning amaliy tavsiyalari. Tel: +998 77 018 14 02",
   excerpt:
     "Tergov organlaridan chaqiruv kelsa, birinchi navbatda vahima qilmang. Chaqiruv sababini aniqlang, advokat bilan maslahatlashing va faqat shundan keyin boring.",
   quickAnswer:
