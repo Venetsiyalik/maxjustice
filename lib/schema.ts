@@ -6,7 +6,8 @@ export function buildLegalServiceSchema() {
     "@context": "https://schema.org",
     "@type": "LegalService",
     name: siteConfig.legalName,
-    image: `${siteConfig.url}/img/office.jpg`,
+    // TODO: ofis/advokat fotosi tayyor bo'lgach shu bilan almashtirish (8.3-band)
+    image: `${siteConfig.url}/og-image.png`,
     url: siteConfig.url,
     telephone: siteConfig.phone.href.replace("tel:", ""),
     email: siteConfig.email.info,

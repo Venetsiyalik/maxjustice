@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
@@ -32,14 +33,24 @@ export function Header() {
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link
           href="/"
-          className="flex flex-col leading-tight"
+          className="flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          <span className="text-base font-extrabold tracking-tight text-[var(--color-navy-950)] lg:text-lg">
-            MAXLEGAL <span className="text-[var(--color-gold-500)]">&</span> JUSTICE
-          </span>
-          <span className="text-[11px] font-medium text-[var(--color-muted)]">
-            {common("jobTitle")} {localizeText(locale, siteConfig.founder.fullName)}
+          <Image
+            src="/brand/icon-mark.png"
+            alt=""
+            width={40}
+            height={40}
+            className="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
+            priority
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="text-base font-extrabold tracking-tight text-[var(--color-navy-950)] lg:text-lg">
+              MAXLEGAL <span className="text-[var(--color-gold-500)]">&</span> JUSTICE
+            </span>
+            <span className="text-[11px] font-medium text-[var(--color-muted)]">
+              {common("jobTitle")} {localizeText(locale, siteConfig.founder.fullName)}
+            </span>
           </span>
         </Link>
 
