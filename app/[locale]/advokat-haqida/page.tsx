@@ -10,7 +10,8 @@ import { buildBreadcrumbSchema } from "@/lib/schema";
 import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
 import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
-import { CheckIcon } from "@/components/ui/icons";
+import { CheckIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
+import { siteConfig } from "@/lib/site-config";
 
 const PATH = "/advokat-haqida";
 
@@ -83,6 +84,28 @@ export default async function AboutPage({
                 {t("heroName")}
               </h1>
               <p className="mt-2 text-lg text-[var(--color-muted)]">{t("heroSubtitle")}</p>
+
+              <div className="mt-4 flex flex-col items-center gap-1 sm:items-start">
+                <span className="text-xs font-bold uppercase tracking-wide text-[var(--color-muted)]">
+                  {t("directContactLabel")}
+                </span>
+                <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 sm:justify-start">
+                  <a
+                    href={siteConfig.founder.phone.href}
+                    className="flex items-center gap-1.5 font-semibold text-[var(--color-navy-800)] hover:text-[var(--color-navy-950)]"
+                  >
+                    <PhoneIcon className="h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+                    {siteConfig.founder.phone.display}
+                  </a>
+                  <a
+                    href={`mailto:${siteConfig.email.founder}`}
+                    className="flex items-center gap-1.5 font-semibold text-[var(--color-navy-800)] hover:text-[var(--color-navy-950)]"
+                  >
+                    <MailIcon className="h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+                    {siteConfig.email.founder}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </Container>

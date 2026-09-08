@@ -12,6 +12,14 @@ export const siteConfig = {
   founder: {
     fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
     jobTitle: "Advokat",
+    // To'lanboyning bevosita (shaxsiy) telefon raqami — asosiy ofis
+    // raqamidan (yuqoridagi `phone`, Google Business profiliga bog'liq)
+    // ATAYLAB alohida saqlanadi, faqat "Advokat haqida" sahifasida
+    // qo'shimcha aloqa varianti sifatida ko'rsatiladi.
+    phone: {
+      display: "+998 77 018 14 02",
+      href: "tel:+998770181402",
+    },
   },
   license: {
     // TODO: haqiqiy litsenziya raqami bilan almashtirish (7.3-band, majburiy)
@@ -31,8 +39,13 @@ export const siteConfig = {
     href: "https://t.me/Maxjusticebot",
   },
   email: {
+    // Ommaviy/asosiy kontakt — Bog'lanish sahifasi, footer, schema.org
     info: "info@maxjustice.uz",
+    // To'lanboyning shaxsiy pochtasi ("Advokat haqida" sahifasida)
     founder: "tolanboy@maxjustice.uz",
+    // Huquqiy so'rovlar uchun alohida manzil (hozircha alohida joyda
+    // ko'rsatilmaydi, kerak bo'lganda ishlatish uchun tayyor)
+    advokat: "advokat@maxjustice.uz",
   },
   address: {
     display: "Farg'ona shahri, S. Temur ko'chasi, 43-uy",

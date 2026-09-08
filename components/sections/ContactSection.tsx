@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { MapPinIcon, PhoneIcon } from "@/components/ui/icons";
+import { MapPinIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
 
@@ -29,6 +29,14 @@ export function ContactSection() {
           >
             <PhoneIcon className="h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
             {siteConfig.phone.display}
+          </a>
+
+          <a
+            href={`mailto:${siteConfig.email.info}`}
+            className="mt-3 flex items-center gap-3 text-lg text-[var(--color-navy-900)]"
+          >
+            <MailIcon className="h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
+            {siteConfig.email.info}
           </a>
 
           <p className="mt-3 text-sm text-[var(--color-muted)]">

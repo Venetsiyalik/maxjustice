@@ -98,6 +98,7 @@
     "title": "About the Lawyer",
     "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
     "heroSubtitle": "Attorney, founder of \"MAXLEGAL AND JUSTICE\" law firm",
+    "directContactLabel": "Direct contact",
     "educationTitle": "Education",
     "educationText": "Graduate of the Master's program at the Academy of the Ministry of Internal Affairs. This education provided deep insight into the internal mechanisms of the law-enforcement system, investigative and procedural processes.",
     "experienceTitle": "Experience in investigative bodies",
@@ -176,7 +177,11 @@
   "contactPage": {
     "metaTitle": "Contact | MAXLEGAL Law Firm",
     "metaDescription": "Get in touch: phone, Telegram, address, and a contact form. Fergana, S. Temur St. 43. Tel: +998 90 300 94 06",
-    "title": "Contact"
+    "title": "Contact",
+    "emailsTitle": "By email",
+    "emailGeneral": "General inquiries",
+    "emailLegal": "Legal advice",
+    "emailFounder": "Directly to To'lanboy"
   },
   "faqPage": {
     "metaTitle": "FAQ | MAXLEGAL Law Firm",

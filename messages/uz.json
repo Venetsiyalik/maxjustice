@@ -98,6 +98,7 @@
     "title": "Advokat haqida",
     "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
     "heroSubtitle": "Advokat, \"MAXLEGAL AND JUSTICE\" advokatlik byurosi asoschisi",
+    "directContactLabel": "Bevosita bog'lanish",
     "educationTitle": "Ta'lim",
     "educationText": "Ichki Ishlar Vazirligi Akademiyasi magistraturasini tamomlagan. Ushbu ta'lim huquq-tartibot tizimining ichki mexanizmlarini, tergov va protsessual jarayonlarni chuqur o'rganish imkonini bergan.",
     "experienceTitle": "Tergov organlaridagi tajriba",
@@ -176,7 +177,11 @@
   "contactPage": {
     "metaTitle": "Bog'lanish | MAXLEGAL advokatlik byurosi",
     "metaDescription": "Advokat bilan bog'laning: telefon, Telegram, manzil va murojaat formasi. Farg'ona, S. Temur 43. Tel: +998 90 300 94 06",
-    "title": "Bog'lanish"
+    "title": "Bog'lanish",
+    "emailsTitle": "Elektron pochta orqali",
+    "emailGeneral": "Umumiy so'rovlar",
+    "emailLegal": "Huquqiy maslahat",
+    "emailFounder": "To'lanboyga shaxsan"
   },
   "faqPage": {
     "metaTitle": "Savol-javob | MAXLEGAL advokatlik byurosi",

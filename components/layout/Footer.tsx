@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
-import { PhoneIcon, TelegramIcon, MapPinIcon } from "@/components/ui/icons";
+import { PhoneIcon, TelegramIcon, MapPinIcon, MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
 
@@ -70,6 +70,13 @@ export function Footer() {
           >
             <TelegramIcon className="h-4 w-4 shrink-0" />
             @{siteConfig.telegram.handle}
+          </a>
+          <a
+            href={`mailto:${siteConfig.email.info}`}
+            className="flex items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
+          >
+            <MailIcon className="h-4 w-4 shrink-0" />
+            {siteConfig.email.info}
           </a>
           <p className="flex items-start gap-2 text-sm text-white/80">
             <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0" />

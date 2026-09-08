@@ -9,6 +9,7 @@ export function buildLegalServiceSchema() {
     image: `${siteConfig.url}/img/office.jpg`,
     url: siteConfig.url,
     telephone: siteConfig.phone.href.replace("tel:", ""),
+    email: siteConfig.email.info,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -45,6 +46,8 @@ export function buildLegalServiceSchema() {
       "@type": "Person",
       name: siteConfig.founder.fullName,
       jobTitle: siteConfig.founder.jobTitle,
+      telephone: siteConfig.founder.phone.href.replace("tel:", ""),
+      email: siteConfig.email.founder,
     },
     aggregateRating: {
       "@type": "AggregateRating",
