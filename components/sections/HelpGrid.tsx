@@ -34,7 +34,7 @@ export function HelpGrid() {
               <span className="text-sm text-[var(--color-muted)]">
                 {s(`${slug}.cardText`)}
               </span>
-              <span className="mt-auto flex items-center gap-1 text-sm font-semibold text-[var(--color-navy-700)] opacity-0 transition-opacity group-hover:opacity-100">
+              <span className="mt-auto flex items-center gap-1 text-sm font-semibold text-[var(--color-navy-700)] md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                 <ChevronRightIcon className="h-4 w-4" />
               </span>
             </Link>

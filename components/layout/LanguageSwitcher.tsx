@@ -39,7 +39,7 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
             type="button"
             onClick={() => switchTo(code)}
             aria-current={code === locale ? "true" : undefined}
-            className={`rounded px-1.5 py-1 transition-colors ${
+            className={`flex min-h-11 min-w-11 items-center justify-center rounded px-1.5 transition-colors ${
               code === locale
                 ? "text-[var(--color-navy-900)]"
                 : "text-[var(--color-muted)] hover:text-[var(--color-navy-900)]"

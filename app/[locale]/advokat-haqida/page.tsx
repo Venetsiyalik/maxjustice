@@ -159,7 +159,7 @@ export default async function AboutPage({
           <h2 className="text-2xl font-extrabold">{t("ctaTitle")}</h2>
           <p className="mt-2 text-white/70">{t("ctaSubtitle")}</p>
           <div className="mt-6 flex justify-center">
-            <Button href="/bog-lanish">{t("ctaTitle")}</Button>
+            <Button href="/bog-lanish">{nav("contact")}</Button>
           </div>
         </Container>
       </div>

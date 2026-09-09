@@ -16,6 +16,9 @@ export const siteConfig = {
   license: {
     // TODO: haqiqiy litsenziya raqami bilan almashtirish (7.3-band, majburiy)
     number: "№ ______ (litsenziya raqami kiritilishi kerak)",
+    // Haqiqiy raqam qo'yilgach shu qiymatni "false" ga o'zgartiring —
+    // shunda bosh sahifadagi katta statistik ko'rsatkichda ham chiqadi.
+    isPlaceholder: true,
   },
   // Butun sayt bo'ylab ishlatiladigan yagona telefon raqami — To'lanboyning
   // shaxsiy raqami (buyurtmachi tasdiqlagan). Diqqat: bu raqam mavjud Google

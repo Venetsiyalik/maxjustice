@@ -13,7 +13,12 @@ export function TrustSignals() {
     {
       icon: FileCheckIcon,
       label: t("license"),
-      value: localizeText(locale, siteConfig.license.number),
+      // Haqiqiy raqam qo'yilmaguncha katta statistik son sifatida
+      // ko'rsatilmaydi (bo'sh placeholder ishonchni pasaytiradi) —
+      // to'liq matn baribir footer'da ko'rinadi.
+      value: siteConfig.license.isPlaceholder
+        ? null
+        : localizeText(locale, siteConfig.license.number),
     },
     {
       icon: ShieldIcon,
@@ -28,7 +33,12 @@ export function TrustSignals() {
     {
       icon: BriefcaseIcon,
       label: t("advocateExperience"),
-      value: `${siteConfig.experience.advocateYears} ${t("yearsSuffix")}`,
+      // Haqiqiy raqam kelguncha "TODO" placeholder'ni ko'rsatmaymiz —
+      // faqat belgi+yorliq (chamber elementi kabi) ko'rinadi.
+      value:
+        siteConfig.experience.advocateYears === "TODO"
+          ? null
+          : `${siteConfig.experience.advocateYears} ${t("yearsSuffix")}`,
     },
   ];
 
@@ -45,7 +55,7 @@ export function TrustSignals() {
             >
               <item.icon className="h-7 w-7 text-[var(--color-gold-400)]" />
               {item.value && (
-                <p className="text-xl font-extrabold">{item.value}</p>
+                <p className="text-base font-extrabold sm:text-lg">{item.value}</p>
               )}
               <p className="text-sm text-white/70">{item.label}</p>
             </div>

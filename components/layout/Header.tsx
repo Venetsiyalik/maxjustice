@@ -30,10 +30,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-surface)]/95 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
+      <Container wide className="flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link
           href="/"
-          className="flex items-center gap-2.5"
+          className="flex shrink-0 items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
           <Image
@@ -56,20 +56,22 @@ export function Header() {
 
         <nav
           aria-label={t("home")}
-          className="hidden items-center gap-6 xl:flex"
+          className="hidden items-center gap-4 2xl:flex 2xl:gap-6"
         >
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.key}
               href={item.href}
-              className="text-sm font-semibold text-[var(--color-ink)] transition-colors hover:text-[var(--color-navy-700)]"
+              className="whitespace-nowrap text-sm font-semibold text-[var(--color-ink)] transition-colors hover:text-[var(--color-navy-700)]"
             >
               {t(item.key)}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        {/* xl+: to'liq kontakt guruhi (til, Telegram, telefon) — nav hali yashirin
+            bo'lsa ham (2xl gacha), bu guruh uchun joy yetarli */}
+        <div className="hidden items-center gap-2 xl:flex 2xl:gap-3">
           <LanguageSwitcher />
           <a
             href={siteConfig.telegram.href}
@@ -77,44 +79,45 @@ export function Header() {
             rel="noopener noreferrer"
             aria-label={cta("telegram")}
             onClick={() => trackEvent("telegram_click")}
-            className="flex h-11 w-11 items-center justify-center rounded-lg border-2 border-[var(--color-navy-900)] text-[var(--color-navy-900)] transition-colors hover:bg-[var(--color-navy-900)] hover:text-white"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border-2 border-[var(--color-navy-900)] text-[var(--color-navy-900)] transition-colors hover:bg-[var(--color-navy-900)] hover:text-white"
           >
             <TelegramIcon className="h-5 w-5" />
           </a>
           <a
             href={siteConfig.phone.href}
             onClick={() => trackEvent("phone_click")}
-            className="flex min-h-[44px] items-center gap-2 rounded-lg bg-[var(--color-gold-500)] px-4 py-2.5 text-sm font-bold text-[var(--color-navy-950)] transition-colors hover:bg-[var(--color-gold-400)]"
+            className="flex min-h-[44px] shrink-0 items-center gap-2 whitespace-nowrap rounded-lg bg-[var(--color-gold-500)] px-3 py-2.5 text-sm font-bold text-[var(--color-navy-950)] transition-colors hover:bg-[var(--color-gold-400)] 2xl:px-4"
           >
-            <PhoneIcon className="h-4 w-4" />
+            <PhoneIcon className="h-4 w-4 shrink-0" />
             {siteConfig.phone.display}
           </a>
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
-          <a
-            href={siteConfig.phone.href}
-            aria-label={cta("call")}
-            onClick={() => trackEvent("phone_click")}
-            className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--color-gold-500)] text-[var(--color-navy-950)]"
-          >
-            <PhoneIcon className="h-5 w-5" />
-          </a>
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-label={open ? t("menuClose") : t("menuOpen")}
-            className="flex h-11 w-11 items-center justify-center rounded-lg border border-[var(--color-line)] text-[var(--color-navy-900)]"
-          >
-            {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
-          </button>
-        </div>
+        {/* xl gacha: faqat telefon belgisi (matnsiz, joy tejash uchun) */}
+        <a
+          href={siteConfig.phone.href}
+          aria-label={cta("call")}
+          onClick={() => trackEvent("phone_click")}
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-gold-500)] text-[var(--color-navy-950)] xl:hidden"
+        >
+          <PhoneIcon className="h-5 w-5" />
+        </a>
+
+        {/* Nav 2xl dan pastda yashirin bo'lsa, uni menyu orqali ochish tugmasi */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-label={open ? t("menuClose") : t("menuOpen")}
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--color-line)] text-[var(--color-navy-900)] 2xl:hidden"
+        >
+          {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+        </button>
       </Container>
 
       {open && (
-        <div className="border-t border-[var(--color-line)] bg-[var(--color-surface)] lg:hidden">
-          <Container className="flex flex-col gap-1 py-4">
+        <div className="border-t border-[var(--color-line)] bg-[var(--color-surface)] 2xl:hidden">
+          <Container wide className="flex flex-col gap-1 py-4">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.key}
@@ -125,7 +128,9 @@ export function Header() {
                 {t(item.key)}
               </Link>
             ))}
-            <div className="mt-2 flex items-center justify-between border-t border-[var(--color-line)] px-3 pt-4">
+            {/* xl+ da til/Telegram allaqachon header'da ko'rinadi — faqat shu
+                blokni xl dan pastda ko'rsatamiz, takrorlanmasin */}
+            <div className="mt-2 flex items-center justify-between border-t border-[var(--color-line)] px-3 pt-4 xl:hidden">
               <LanguageSwitcher />
               <a
                 href={siteConfig.telegram.href}
