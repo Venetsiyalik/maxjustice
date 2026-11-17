@@ -6,7 +6,8 @@
     "homeTitle": "Fergana Attorney Nasrdinov To'lanboy"
   },
   "common": {
-    "jobTitle": "Attorney"
+    "jobTitle": "Attorney",
+    "legalDisclaimer": "This is general information and does not replace legal advice. For your specific situation, contact an attorney."
   },
   "nav": {
     "home": "Home",
@@ -322,7 +323,12 @@
     "processTitle": "How the process works",
     "faqTitle": "Frequently asked questions",
     "ctaTitle": "Let's discuss your situation",
-    "ctaSubtitle": "The first consultation is free and confidential. We'll contact you within 15 minutes."
+    "ctaSubtitle": "The first consultation is free and confidential. We'll contact you within 15 minutes.",
+    "documentsTitle": "Documents you will need",
+    "investigatorTitle": "Why investigator experience helps",
+    "investigatorText": "Before practicing as an attorney, To'lanboy Nasrdinov worked as an investigator in the Ministry of Internal Affairs. He therefore knows from practice how investigations are organized, how evidence is gathered and documented, and at which stages procedural errors occur most often. This helps build the right defense strategy from the very start. The outcome of every case depends on its circumstances and evidence.",
+    "relatedServicesTitle": "Related services",
+    "relatedArticlesTitle": "Related articles"
   },
   "services": {
     "jinoiy-ishlar": {
@@ -349,9 +355,13 @@
       "title": "Civil Cases",
       "cardText": "A property, contract, or other civil dispute needs resolving"
     },
-    "oila-va-meros": {
-      "title": "Family & Inheritance Disputes",
-      "cardText": "Divorce, child custody, or inheritance disputes need legal help"
+    "oilaviy-nizolar": {
+      "title": "Family Disputes",
+      "cardText": "Divorce, child support, or a dispute over where a child lives"
+    },
+    "meros-ishlari": {
+      "title": "Inheritance Matters",
+      "cardText": "Registering an inheritance or a dispute between heirs"
     },
     "mehnat-nizolari": {
       "title": "Labor Disputes",

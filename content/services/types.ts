@@ -9,4 +9,15 @@ export type ServiceContent = {
   howIHelp: string[];
   processSteps: { title: string; text: string }[];
   faq: { question: string; answer: string }[];
+  /**
+   * «Kerakli hujjatlar» bo'limi (4-bosqich). Bo'sh yoki yo'q bo'lsa,
+   * bo'lim ko'rsatilmaydi.
+   */
+  documents?: string[];
+  /**
+   * «Tergovchilik tajribasi afzalligi» blokining shu sahifaga xos matni.
+   * Blok faqat services-data.ts da `investigatorAdvantage: true` bo'lgan
+   * xizmatlarda chiqadi; matn berilmasa — umumiy matn (messages).
+   */
+  investigatorNote?: string;
 };

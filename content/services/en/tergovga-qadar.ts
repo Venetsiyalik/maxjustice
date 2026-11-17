@@ -59,7 +59,7 @@ const content: ServiceContent = {
     {
       question: "Do I need an attorney if I'm summoned as a witness?",
       answer:
-        "Yes. Witness status can change over time. Having an attorney present protects you from ambiguous situations and ensures your rights are fully respected.",
+        "Yes. Witness status can change over time. Having an attorney present helps in ambiguous situations and lets you keep track of whether your rights are respected.",
     },
     {
       question: "What happens if I don't show up for the summons?",

@@ -59,7 +59,7 @@ const content: ServiceContent = {
     {
       question: "Guvoh sifatida chaqirilsam ham advokat kerakmi?",
       answer:
-        "Ha. Guvoh maqomi vaqt o'tishi bilan o'zgarishi mumkin. Advokat bilan borish sizni noaniq vaziyatlardan himoya qiladi va huquqlaringiz to'liq ta'minlanishini kafolatlaydi.",
+        "Ha. Guvoh maqomi vaqt o'tishi bilan o'zgarishi mumkin. Advokat bilan borish noaniq vaziyatlarda tayanch bo'ladi va huquqlaringizga rioya qilinishini nazorat qilishga yordam beradi.",
     },
     {
       question: "Chaqiruvga bormasam nima bo'ladi?",

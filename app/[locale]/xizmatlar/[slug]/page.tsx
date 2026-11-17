@@ -3,8 +3,15 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
-import { SERVICES, serviceHref, type ServiceSlug } from "@/lib/services-data";
+import {
+  SERVICES,
+  serviceHref,
+  getServiceMeta,
+  isServiceTranslated,
+  type ServiceSlug,
+} from "@/lib/services-data";
 import { getServiceContent } from "@/content/services";
+import { getAllBlogArticles, isBlogLocale } from "@/content/blog";
 import { ServicePageContent } from "@/components/services/ServicePageContent";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildFaqSchema, buildBreadcrumbSchema, buildServiceSchema } from "@/lib/schema";
@@ -45,6 +52,9 @@ export async function generateMetadata({
     path,
     title: content.metaTitle,
     description: content.metaDescription,
+    locales: getServiceMeta(slug).locales,
+    // matni bu tilda hali yozilmagan (uz matni ko'rsatiladi) — indekslanmaydi
+    noindex: !isServiceTranslated(slug, locale),
   });
 }
 
@@ -62,11 +72,22 @@ export default async function ServiceSlugPage({
 
   setRequestLocale(locale);
 
-  const [content, nav, servicesT] = await Promise.all([
+  const [content, nav, servicesT, articles] = await Promise.all([
     getServiceContent(locale, slug),
     getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "services" }),
+    getAllBlogArticles(locale),
   ]);
+
+  const meta = getServiceMeta(slug);
+  const relatedServices = meta.related.map((related) => ({
+    href: serviceHref(related),
+    title: servicesT(`${related}.title`),
+  }));
+  const relatedArticles = articles
+    .filter((article) => article.relatedService === slug)
+    .slice(0, 3)
+    .map((article) => ({ slug: article.slug, title: article.title }));
 
   const breadcrumbs = [
     { label: nav("home"), href: "/" },
@@ -91,7 +112,14 @@ export default async function ServiceSlugPage({
       />
       <JsonLd data={buildFaqSchema(content.faq)} />
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
-      <ServicePageContent content={content} breadcrumbs={breadcrumbs} />
+      <ServicePageContent
+        content={content}
+        breadcrumbs={breadcrumbs}
+        showInvestigator={meta.investigatorAdvantage === true}
+        relatedServices={relatedServices}
+        relatedArticles={relatedArticles}
+        articlesUzOnly={!isBlogLocale(locale)}
+      />
     </>
   );
 }

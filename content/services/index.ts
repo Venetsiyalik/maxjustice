@@ -12,7 +12,8 @@ const uzLoaders: Record<ServiceSlug, Loader> = {
   "tadbirkor-himoyasi": () => import("./uz/tadbirkor-himoyasi"),
   "iqtisodiy-jinoyatlar": () => import("./uz/iqtisodiy-jinoyatlar"),
   "fuqarolik-ishlari": () => import("./uz/fuqarolik-ishlari"),
-  "oila-va-meros": () => import("./uz/oila-va-meros"),
+  "oilaviy-nizolar": () => import("./uz/oilaviy-nizolar"),
+  "meros-ishlari": () => import("./uz/meros-ishlari"),
   "mehnat-nizolari": () => import("./uz/mehnat-nizolari"),
   shartnomalar: () => import("./uz/shartnomalar"),
   "sudda-vakillik": () => import("./uz/sudda-vakillik"),
@@ -20,27 +21,29 @@ const uzLoaders: Record<ServiceSlug, Loader> = {
 
 // ru/en: haqiqiy tarjima tayyor bo'lmagan xizmatlar vaqtincha uz kontentini
 // qayta eksport qiladi (content/services/ru|en/*.ts dagi TODO izohiga qarang)
-const ruLoaders: Record<ServiceSlug, Loader> = {
+// Partial: yangi xizmat avval faqat uz (+ ru) da yozilishi mumkin — yo'q
+// tarjima o'rniga uz matni ko'rsatiladi (sahifa noindex, services-data `locales`)
+const ruLoaders: Partial<Record<ServiceSlug, Loader>> = {
   "jinoiy-ishlar": () => import("./ru/jinoiy-ishlar"),
   "tergovga-qadar": () => import("./ru/tergovga-qadar"),
   "mamuriy-ishlar": () => import("./ru/mamuriy-ishlar"),
   "tadbirkor-himoyasi": () => import("./ru/tadbirkor-himoyasi"),
   "iqtisodiy-jinoyatlar": () => import("./ru/iqtisodiy-jinoyatlar"),
   "fuqarolik-ishlari": () => import("./ru/fuqarolik-ishlari"),
-  "oila-va-meros": () => import("./ru/oila-va-meros"),
+  "oilaviy-nizolar": () => import("./ru/oilaviy-nizolar"),
+  "meros-ishlari": () => import("./ru/meros-ishlari"),
   "mehnat-nizolari": () => import("./ru/mehnat-nizolari"),
   shartnomalar: () => import("./ru/shartnomalar"),
   "sudda-vakillik": () => import("./ru/sudda-vakillik"),
 };
 
-const enLoaders: Record<ServiceSlug, Loader> = {
+const enLoaders: Partial<Record<ServiceSlug, Loader>> = {
   "jinoiy-ishlar": () => import("./en/jinoiy-ishlar"),
   "tergovga-qadar": () => import("./en/tergovga-qadar"),
   "mamuriy-ishlar": () => import("./en/mamuriy-ishlar"),
   "tadbirkor-himoyasi": () => import("./en/tadbirkor-himoyasi"),
   "iqtisodiy-jinoyatlar": () => import("./en/iqtisodiy-jinoyatlar"),
   "fuqarolik-ishlari": () => import("./en/fuqarolik-ishlari"),
-  "oila-va-meros": () => import("./en/oila-va-meros"),
   "mehnat-nizolari": () => import("./en/mehnat-nizolari"),
   shartnomalar: () => import("./en/shartnomalar"),
   "sudda-vakillik": () => import("./en/sudda-vakillik"),
@@ -62,6 +65,8 @@ export async function getServiceContent(
     return transliterateDeep(fillNapDeep(uz, "uz"));
   }
 
-  const loaders = locale === "ru" ? ruLoaders : locale === "en" ? enLoaders : uzLoaders;
-  return fillNapDeep((await loaders[slug]()).default, locale);
+  const translated = locale === "ru" ? ruLoaders[slug] : locale === "en" ? enLoaders[slug] : undefined;
+  if (translated) return fillNapDeep((await translated()).default, locale);
+  // uz, yoki tarjimasi hali yo'q xizmat — uz matni
+  return fillNapDeep((await uzLoaders[slug]()).default, "uz");
 }

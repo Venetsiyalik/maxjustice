@@ -25,7 +25,7 @@ export type StaticRoute = {
 export const STATIC_ROUTES: StaticRoute[] = [
   { path: "", priority: 1 },
   { path: "/xizmatlar", priority: 0.9 },
-  ...SERVICES.map((s) => ({ path: serviceHref(s.slug), priority: 0.8 })),
+  ...SERVICES.map((s) => ({ path: serviceHref(s.slug), priority: 0.8, locales: s.locales })),
   { path: "/advokat-haqida", priority: 0.7 },
   { path: "/amaliyot", priority: 0.6 },
   { path: "/narxlar", priority: 0.7 },

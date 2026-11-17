@@ -1,100 +1,121 @@
 import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
-  h1: "Jinoiy ishlar bo'yicha advokat — Farg'ona",
-  metaTitle: "Jinoiy ishlar bo'yicha advokat Farg'onada",
+  h1: "Jinoiy ishlar boʻyicha advokat Fargʻonada",
+  metaTitle: "Jinoiy ishlar boʻyicha advokat Fargʻonada",
   metaDescription:
-    "Tergov va sudda professional himoya. IIB tergovchisi tajribasiga ega advokat. {address}. Tel: {phone}",
+    "Tergov va sudda himoya. IIB tergovchisi boʻlib ishlagan advokat. {address}. Tel: {phone}",
   quickAnswer:
-    "Agar sizga yoki yaqiningizga jinoiy ish qo'zg'atilgan yoki hibsga olingan bo'lsa — birinchi navbatda advokat huquqidan foydalaning va advokat kelmaguncha hech qanday hujjatga imzo chekmang, hech narsani izohlab bermang. Har bir daqiqa muhim: advokat qanchalik erta ishga kirishsa, himoya strategiyasi shunchalik samarali bo'ladi.",
+    "Sizga yoki yaqiningizga nisbatan jinoyat ishi qoʻzgʻatilgan, sizni soʻroqqa chaqirishgan yoki ushlashgan boʻlsa, avvalo himoyachi huquqidan foydalaning. Advokat kelmaguncha ishning mohiyati boʻyicha tushuntirish bermang va oʻqimagan hujjatingizga imzo chekmang. Advokat qanchalik erta jalb qilinsa, himoyani shunchalik puxta qurish mumkin.",
   problemParagraphs: [
-    "Jinoiy ish qo'zg'atilishi yoki hibsga olish — bu odam hayotidagi eng og'ir va vahimali daqiqalardan biri. Ko'pincha bu kutilmaganda, kechqurun yoki tunda sodir bo'ladi, odam nima qilishni bilmay qoladi, huquq-tartibot idoralari xodimlari bilan yolg'iz qoladi. Aynan shu daqiqalarda qabul qilingan qarorlar — nima deyish, nimaga imzo qo'yish, kim bilan gaplashish — keyingi butun ish taqdiriga ta'sir qilishi mumkin.",
-    "Ko'pchilik odamlar \"menda yashiradigan narsa yo'q, hammasini tushuntirib beraman\" deb o'ylab, advokatsiz so'roqqa boradi. Bu — eng ko'p uchraydigan va eng qimmatga tushadigan xatolardan biri. Tergov jarayoni o'ziga xos qoidalar, muddatlar va protsessual nozikliklarga ega bo'lib, ularni bilmaslik hatto aybsiz odamning ham holatini murakkablashtirishi mumkin.",
-    "IIB tergov organlarida ishlagan tajribam shuni ko'rsatadiki, ayblov tomoni ishni qanday tuzishini, qanday dalillarga tayanishini va qaysi bosqichlarda himoya tomoni eng ko'p ta'sir ko'rsatishi mumkinligini ichkaridan bilish — bu oddiy nazariy bilimdan farq qiladi. Men aynan shu tajribani mijozlarim manfaati uchun ishlataman.",
+    "Jinoyat ishi qoʻzgʻatilishi yoki ushlab turilish odam hayotidagi eng ogʻir vaziyatlardan biri. Koʻpincha bu kutilmaganda yuz beradi, odam nima qilishni bilmay qoladi va huquqni muhofaza qiluvchi organ xodimlari bilan yolgʻiz qoladi. Aynan shu daqiqalarda qabul qilingan qarorlar — nima deyish, nimaga imzo qoʻyish — keyingi butun ish jarayoniga taʼsir qilishi mumkin.",
+    "Koʻpchilik «menda yashiradigan narsa yoʻq, hammasini tushuntirib beraman» deb, advokatsiz soʻroqqa boradi. Bu eng koʻp uchraydigan xatolardan biri. Tergov oʻz qoidalari, muddatlari va protsessual talablariga ega. Ularni bilmaslik hatto aybsiz odamning ham holatini murakkablashtirishi mumkin.",
+    "Jinoyat ishi bir necha bosqichdan oʻtadi: tergovga qadar tekshiruv, ish qoʻzgʻatilishi, dastlabki tergov, sudda koʻrib chiqish va zarur boʻlsa, yuqori instansiyalarga shikoyat. Har bir bosqichda himoyachining imkoniyatlari boshqacha. Tergov bosqichida dalillar shakllanadi, ehtiyot chorasi hal qilinadi. Sudda esa dalillar baholanadi. Shuning uchun himoyani ish sudga yetib borishini kutmasdan, birinchi tergov harakatlaridan boshlash muhim.",
+    "Har bir ish oʻziga xos: uning natijasi holatlarga, dalillarga va jarayonning qanday oʻtganiga bogʻliq. Advokatning vazifasi — mijoz huquqlari buzilmasligini taʼminlash, ayblovning zaif tomonlarini aniqlash va qonun bergan barcha imkoniyatlardan foydalanish.",
   ],
   practicalTips: [
     {
-      title: "Advokat huquqingizdan darhol foydalaning",
-      text: "Qonun sizga advokat tanlash va u kelguncha so'roqda ishtirok etmaslik huquqini beradi. Bu huquqdan voz kechishga shoshilmang.",
+      title: "Himoyachi huquqidan darhol foydalaning",
+      text: "Ushlab turilgan yoki gumon qilinuvchi sifatida soʻroqqa chaqirilgan shaxs himoyachiga ega boʻlish huquqiga ega. Bu huquqdan voz kechishga shoshilmang.",
     },
     {
-      title: "Hech narsaga imzo qo'ymang, avval o'qing",
-      text: "Har qanday hujjatni imzolashdan oldin uni to'liq o'qib chiqing va tushunmagan joylaringizni so'rang. Shoshilinch imzo talab qilinishi — signal.",
+      title: "Oʻqimagan hujjatga imzo qoʻymang",
+      text: "Bayonnoma va boshqa hujjatlarni oxirigacha oʻqing. Notoʻgʻri yozilgan joy boʻlsa, eʼtirozingizni bayonnomaning oʻziga yozib qoldiring.",
     },
     {
       title: "Ortiqcha gapirmang",
-      text: "\"Yaxshi taassurot qoldirish\" uchun ortiqcha izoh berish ko'pincha zarar keltiradi. Advokat kelguncha faktlarni qisqa va aniq bayon qilish yetarli.",
+      text: "«Yaxshi taassurot qoldirish» uchun berilgan ortiqcha izohlar koʻpincha keyin ayblovda ishlatiladi. Advokat bilan maslahatlashmasdan tushuntirish bermaslik huquqingiz bor.",
     },
     {
       title: "Yaqinlaringizga xabar bering",
-      text: "Imkoniyat bo'lishi bilan oila a'zolaringizga yoki ishonchli odamga xabar bering — ular advokat bilan bog'lanishga yordam berishi mumkin.",
+      text: "Imkon boʻlishi bilan oila aʼzolaringizga yoki ishonchli odamga qayerdaligingizni ayting — ular advokat bilan bogʻlanishga yordam beradi.",
     },
     {
-      title: "Barcha hujjatlarning nusxasini so'rang",
-      text: "Sizga taqdim etilgan yoki siz imzolagan har bir hujjatning nusxasini olishga harakat qiling — bu keyinchalik himoya uchun muhim bo'ladi.",
+      title: "Hujjatlar nusxasini saqlang",
+      text: "Sizga topshirilgan chaqiruv qogʻozi, qarorlar va bayonnomalarning nusxalarini saqlang. Ular himoyani tayyorlashda kerak boʻladi.",
+    },
+    {
+      title: "Ehtiyot chorasiga oldindan tayyorlaning",
+      text: "Qamoqqa olish masalasi koʻrilganda shaxsingizni tavsiflovchi hujjatlar — ish joyidan tavsifnoma, qaramogʻingizdagilar haqida maʼlumot — muqobil ehtiyot chorasini asoslashga yordam beradi.",
     },
   ],
   howIHelp: [
-    "Ishga eng qisqa muddatda kirishaman va tergov harakatlarida (so'roq, ochiqlash, yuzlashtirish) shaxsan ishtirok etaman",
-    "Ish materiallari bilan tanishib, dalillar bazasini va ayblov asosini tahlil qilaman",
-    "Protsessual huquqbuzarliklarni aniqlab, ularga qonuniy e'tiroz bildiraman",
-    "Himoya pozitsiyasini va dalillar strategiyasini ishlab chiqaman",
-    "Ehtiyot chorasi (qamoqqa olish, tilxat va h.k.) masalasida sudda faol himoyani ta'minlayman",
-    "Sud jarayonining barcha bosqichlarida mijoz manfaatini himoya qilaman",
+    "Ishga qisqa muddatda kirishaman va tergov harakatlarida — soʻroq, yuzlashtirish, tintuv va boshqalarda — shaxsan ishtirok etaman",
+    "Ish materiallari bilan tanishib, dalillar va ayblov asosini tahlil qilaman",
+    "Protsessual qoidabuzarliklarni aniqlayman va ularga qonuniy eʼtiroz bildiraman",
+    "Himoya pozitsiyasi va dalillar strategiyasini ishlab chiqaman",
+    "Ehtiyot chorasi koʻrilganda sudda muqobil chora qoʻllanishini asoslayman",
+    "Sud majlislarida mijoz manfaatini himoya qilaman",
+    "Hukm yoki qaror ustidan apellyatsiya va kassatsiya shikoyatlarini tayyorlayman",
+  ],
+  investigatorNote:
+    "Advokatlikdan oldin IIB tergov organlarida tergovchi boʻlib ishlaganim sababli, tergov rejasi qanday tuziladi, qaysi dalillarga tayaniladi va ular qanday rasmiylashtirilishi kerakligini amalda bilaman. Bu ish materiallaridagi kamchiliklarni — masalan, tergov harakatining tartibi buzilgani yoki dalil notoʻgʻri rasmiylashtirilganini — tezroq koʻrishga yordam beradi. Shuningdek, ishni tezroq «yopish» uchun boʻladigan bosimni taniyman va mijozni unga tayyorlayman. Biroq har bir ishning natijasi uning holatlari va dalillariga bogʻliq.",
+  documents: [
+    "Chaqiruv qogʻozi (agar berilgan boʻlsa)",
+    "Sizga topshirilgan qarorlar va bayonnomalar nusxalari — ish qoʻzgʻatish, ehtiyot chorasi, tintuv haqidagi",
+    "Shaxsni tasdiqlovchi hujjat (pasport yoki ID-karta)",
+    "Ish yoki oʻqish joyidan tavsifnoma",
+    "Sogʻligʻingiz haqidagi tibbiy maʼlumotnomalar (agar boʻlsa)",
+    "Qaramogʻingizdagi bolalar yoki keksa qarindoshlar haqidagi hujjatlar",
+    "Ishga aloqador yozishmalar, cheklar, shartnomalar, foto va videolar",
   ],
   processSteps: [
     {
       title: "Birinchi konsultatsiya",
-      text: "Vaziyatni tinglayman, mavjud hujjatlarni ko'rib chiqaman va dastlabki huquqiy baho beraman.",
+      text: "Vaziyatni tinglayman, mavjud hujjatlarni koʻrib chiqaman va dastlabki huquqiy baho beraman.",
     },
     {
       title: "Ishga kirishish",
-      text: "Advokatlik shartnomasi tuziladi, men rasman himoyachi sifatida ishga kirishaman va tergov organlariga bildiraman.",
+      text: "Advokatlik shartnomasi tuziladi, men himoyachi sifatida ishga kirishaman va bu haqda tergov organiga maʼlum qilaman.",
     },
     {
       title: "Tergov bosqichida himoya",
-      text: "So'roqlar, tergov harakatlarida ishtirok etaman, kerakli hujjat va so'rovlarni tayyorlayman.",
+      text: "Soʻroq va boshqa tergov harakatlarida qatnashaman, iltimosnoma va shikoyatlarni tayyorlayman.",
     },
     {
-      title: "Sudda vakillik",
-      text: "Ish sudga yuborilgach, sud majlislarida mijoz manfaatini to'liq himoya qilaman, zarur bo'lsa shikoyat beraman.",
+      title: "Sudda himoya",
+      text: "Ish sudga yuborilgach, sud majlislarida dalillarni tahlil qilaman va mijoz pozitsiyasini himoya qilaman.",
+    },
+    {
+      title: "Shikoyat va keyingi bosqichlar",
+      text: "Hukm yoki qaror bilan rozi boʻlmasak, qonunda belgilangan muddatda yuqori instansiyaga shikoyat beraman.",
     },
   ],
   faq: [
     {
-      question: "Hibsga olingan zahoti nima qilishim kerak?",
+      question: "Ushlab turilganda nima qilishim kerak?",
       answer:
-        "Avvalo xotirjam bo'lishga harakat qiling. Sizga hibsga olinganingiz sababi va huquqlaringiz e'lon qilinishi shart. Advokat huquqingizni darhol talab qiling va advokat kelmaguncha ishning mohiyati bo'yicha izoh berishdan tiyilib turing.",
+        "Xotirjam boʻlishga harakat qiling. Sizga ushlab turilish sababi va huquqlaringiz tushuntirilishi kerak. Himoyachi huquqingizni darhol talab qiling, yaqinlaringizga xabar berishni soʻrang va advokat kelmaguncha ishning mohiyati boʻyicha tushuntirish berishdan tiyiling.",
     },
     {
-      question: "Advokatni qachon jalb qilish kerak — darhol yoki tergov davomida?",
+      question: "Advokatni qachon jalb qilish kerak?",
       answer:
-        "Iloji boricha erta. Advokat qanchalik erta ishga kirishsa, dastlabki tergov harakatlarida yo'l qo'yiladigan xatolarning oldini olish va himoya strategiyasini to'g'ri qurish imkoniyati shunchalik yuqori bo'ladi.",
+        "Imkon qadar erta — ideal holda birinchi soʻroqdan oldin. Dastlabki tergov harakatlarida yoʻl qoʻyilgan xatolarni keyin tuzatish ancha qiyin.",
     },
     {
-      question: "Agar men aybsiz bo'lsam ham advokat kerakmi?",
+      question: "Aybsiz boʻlsam ham advokat kerakmi?",
       answer:
-        "Ha. Aybsizlik — bu avtomatik himoya emas. Protsessual qoidalarni bilish, dalillarni to'g'ri taqdim etish va tergov organlari bilan to'g'ri muloqot qilish aybsiz odamning ham holatini yengillashtiradi.",
+        "Ha. Aybsizlik avtomatik himoya emas. Protsessual qoidalarni bilish, dalillarni oʻz vaqtida taqdim etish va tergov organlari bilan toʻgʻri muloqot qilish aybsiz odamning ham holatini yengillashtiradi.",
     },
     {
       question: "Ish qancha davom etadi?",
       answer:
-        "Muddat ishning murakkabligiga, moddasiga va boshqa omillarga bog'liq — bir necha oydan bir necha oygacha cho'zilishi mumkin. Birinchi konsultatsiyada vaziyatingizga qarab taxminiy muddat haqida gaplashamiz.",
+        "Muddat ishning murakkabligiga, ayblov mazmuniga va ishtirokchilar soniga bogʻliq: bir necha haftadan bir necha oygacha, murakkab ishlarda undan ham uzoqroq. Birinchi konsultatsiyada vaziyatingizga qarab taxminiy muddat haqida gaplashamiz.",
     },
     {
-      question: "Ehtiyot chorasi sifatida qamoqqa olishga qarshi kurashish mumkinmi?",
+      question: "Qamoqqa olish oʻrniga boshqa ehtiyot chorasi qoʻllanishi mumkinmi?",
       answer:
-        "Ha, muayyan holatlarda qamoq o'rniga muqobil ehtiyot chorasi (masalan, tilxat) qo'llanishini sudda asoslab berish mumkin. Bu ko'p jihatdan ishning holatlariga bog'liq.",
+        "Qonunda qamoqqa olishdan yengilroq ehtiyot choralari ham nazarda tutilgan. Muayyan holatlarda ularni qoʻllashni sudda asoslab berish mumkin. Bu shaxsingizga, ish holatlariga va taqdim etilgan hujjatlarga bogʻliq.",
     },
     {
-      question: "Sizning tergov organlaridagi tajribangiz qanday yordam beradi?",
+      question: "Tergov organlaridagi tajribangiz qanday yordam beradi?",
       answer:
-        "IIB tergov organlarida ishlagan tajribam ayblov tomonining ish yuritish uslubini, dalillarni qanday shakllantirishini va qaysi protsessual bosqichlarda himoya eng samarali bo'lishini ichkaridan bilishimni ta'minlaydi.",
+        "Tergovchi boʻlib ishlaganim ayblov tomoni ishni qanday yuritishini va dalillarni qanday shakllantirishini ichkaridan bilishimni taʼminlaydi. Bu himoyaning zaif va kuchli tomonlarini erta baholashga yordam beradi.",
     },
     {
-      question: "Birinchi konsultatsiya qanday o'tadi?",
+      question: "Advokat xizmati narxi qanday belgilanadi?",
       answer:
-        "Vaziyatingizni tinglayman, mavjud hujjatlarni ko'rib chiqaman va dastlabki huquqiy bahoni beraman. Shundan so'ng qanday harakat qilish kerakligi bo'yicha aniq yo'l xaritasini taqdim etaman.",
+        "Narx ishning murakkabligi, bosqichi va talab qilinadigan vaqtga qarab belgilanadi va shartnomada yozma qayd etiladi. Batafsil maʼlumot «Narxlar» sahifasida.",
     },
   ],
 };

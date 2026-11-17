@@ -3,19 +3,42 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/seo/Breadcrumbs";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { CheckIcon, PhoneIcon, TelegramIcon } from "@/components/ui/icons";
+import {
+  CheckIcon,
+  PhoneIcon,
+  TelegramIcon,
+  ChevronRightIcon,
+  DocumentSearchIcon,
+} from "@/components/ui/icons";
+import { Link } from "@/i18n/navigation";
+import { ArticleLink } from "@/components/blog/ArticleLink";
 import { siteConfig } from "@/lib/site-config";
 import type { ServiceContent } from "@/content/services/types";
+
+export type RelatedLink = { href: string; title: string };
+export type RelatedArticle = { slug: string; title: string };
 
 export function ServicePageContent({
   content,
   breadcrumbs,
+  showInvestigator,
+  relatedServices,
+  relatedArticles,
+  articlesUzOnly,
 }: {
   content: ServiceContent;
   breadcrumbs: BreadcrumbItem[];
+  /** services-data.ts → investigatorAdvantage */
+  showInvestigator: boolean;
+  relatedServices: RelatedLink[];
+  relatedArticles: RelatedArticle[];
+  /** ru/en: maqolalar hali faqat o'zbekcha */
+  articlesUzOnly: boolean;
 }) {
   const cta = useTranslations("cta");
   const labels = useTranslations("servicePage");
+  const common = useTranslations("common");
+  const blog = useTranslations("blogPage");
 
   return (
     <>
@@ -88,6 +111,34 @@ export function ServicePageContent({
             </li>
           ))}
         </ul>
+
+        {showInvestigator && (
+          <div className="mt-10 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface-alt)] p-6">
+            <h2 className="flex items-center gap-2.5 text-xl font-extrabold text-[var(--color-navy-950)]">
+              <DocumentSearchIcon className="h-6 w-6 shrink-0 text-[var(--color-gold-600)]" />
+              {labels("investigatorTitle")}
+            </h2>
+            <p className="mt-3 text-lg leading-relaxed text-[var(--color-ink)]">
+              {content.investigatorNote ?? labels("investigatorText")}
+            </p>
+          </div>
+        )}
+
+        {content.documents && content.documents.length > 0 && (
+          <div className="mt-10">
+            <h2 className="text-2xl font-extrabold text-[var(--color-navy-950)]">
+              {labels("documentsTitle")}
+            </h2>
+            <ul className="mt-5 flex flex-col gap-2.5">
+              {content.documents.map((doc, i) => (
+                <li key={i} className="flex items-start gap-2.5 text-lg text-[var(--color-ink)]">
+                  <CheckIcon className="mt-1.5 h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+                  {doc}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </Container>
 
       <div className="bg-[var(--color-navy-950)] py-12 text-white">
@@ -131,6 +182,63 @@ export function ServicePageContent({
             </details>
           ))}
         </div>
+
+        {(relatedServices.length > 0 || relatedArticles.length > 0) && (
+          <div className="mt-12 grid gap-8 sm:grid-cols-2">
+            {relatedServices.length > 0 && (
+              <nav aria-label={labels("relatedServicesTitle")}>
+                <h2 className="text-lg font-extrabold text-[var(--color-navy-950)]">
+                  {labels("relatedServicesTitle")}
+                </h2>
+                <ul className="mt-3 flex flex-col">
+                  {relatedServices.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="flex min-h-[44px] items-center gap-1.5 font-semibold text-[var(--color-navy-800)] hover:text-[var(--color-navy-950)]"
+                      >
+                        <ChevronRightIcon className="h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+            {relatedArticles.length > 0 && (
+              <nav aria-label={labels("relatedArticlesTitle")}>
+                <h2 className="text-lg font-extrabold text-[var(--color-navy-950)]">
+                  {labels("relatedArticlesTitle")}
+                </h2>
+                <ul className="mt-3 flex flex-col">
+                  {relatedArticles.map((article) => (
+                    <li key={article.slug}>
+                      <ArticleLink
+                        slug={article.slug}
+                        uzOnly={articlesUzOnly}
+                        className="flex min-h-[44px] items-center gap-1.5 font-semibold text-[var(--color-navy-800)] hover:text-[var(--color-navy-950)]"
+                      >
+                        <ChevronRightIcon className="h-4 w-4 shrink-0 text-[var(--color-gold-600)]" />
+                        <span>
+                          {article.title}
+                          {articlesUzOnly && (
+                            <span className="ml-2 text-xs font-medium text-[var(--color-muted)]">
+                              ({blog("uzOnlyBadge")})
+                            </span>
+                          )}
+                        </span>
+                      </ArticleLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+          </div>
+        )}
+
+        <p className="mt-12 border-t border-[var(--color-line)] pt-6 text-sm italic text-[var(--color-muted)]">
+          {common("legalDisclaimer")}
+        </p>
       </Container>
 
       <div className="border-t border-[var(--color-line)] bg-[var(--color-surface-alt)] py-12">

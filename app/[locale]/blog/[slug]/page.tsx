@@ -67,12 +67,13 @@ export default async function BlogArticlePage({
   const locale = rawLocale;
   setRequestLocale(locale);
 
-  const [article, nav, t, s, blogPage] = await Promise.all([
+  const [article, nav, t, s, blogPage, common] = await Promise.all([
     getBlogArticle(locale, slug),
     getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "blogPost" }),
     getTranslations({ locale, namespace: "services" }),
     getTranslations({ locale, namespace: "blogPage" }),
+    getTranslations({ locale, namespace: "common" }),
   ]);
 
   const path = `/blog/${slug}`;
@@ -147,6 +148,9 @@ export default async function BlogArticlePage({
 
         <div className="mt-8">
           <BlogBody blocks={article.body} />
+          <p className="mt-10 border-t border-[var(--color-line)] pt-6 text-sm italic text-[var(--color-muted)]">
+            {common("legalDisclaimer")}
+          </p>
         </div>
 
         {article.relatedService && (

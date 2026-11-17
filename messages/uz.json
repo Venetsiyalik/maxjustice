@@ -6,7 +6,8 @@
     "homeTitle": "Advokat Farg'ona: Nasrdinov To'lanboy"
   },
   "common": {
-    "jobTitle": "Advokat"
+    "jobTitle": "Advokat",
+    "legalDisclaimer": "Bu umumiy maʼlumot, yuridik maslahat oʻrnini bosmaydi. Aniq vaziyatingiz uchun advokat bilan bogʻlaning."
   },
   "nav": {
     "home": "Bosh sahifa",
@@ -322,7 +323,12 @@
     "processTitle": "Jarayon bosqichlari",
     "faqTitle": "Ushbu yo'nalish bo'yicha savol-javob",
     "ctaTitle": "Vaziyatingizni muhokama qilaylik",
-    "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy. 15 daqiqa ichida siz bilan bog'lanamiz."
+    "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy. 15 daqiqa ichida siz bilan bog'lanamiz.",
+    "documentsTitle": "Qanday hujjatlar kerak boʻladi",
+    "investigatorTitle": "Tergovchilik tajribasi nimasi bilan foydali",
+    "investigatorText": "Advokat Nasrdinov Toʻlanboy advokatlikdan oldin IIB tergov organlarida tergovchi boʻlib ishlagan. Shu sababli tergov qanday tashkil etilishini, dalillar qanday yigʻilishi va rasmiylashtirilishini, qaysi bosqichlarda protsessual xatolar koʻproq uchrashini amalda biladi. Bu himoya strategiyasini dastlabki bosqichdanoq toʻgʻri qurishga yordam beradi. Har bir ishning natijasi uning holatlari va dalillariga bogʻliq.",
+    "relatedServicesTitle": "Bogʻliq xizmatlar",
+    "relatedArticlesTitle": "Mavzuga oid maqolalar"
   },
   "services": {
     "jinoiy-ishlar": {
@@ -349,9 +355,13 @@
       "title": "Fuqarolik ishlari",
       "cardText": "Mulk, shartnoma yoki boshqa fuqarolik nizosida bo'lsangiz"
     },
-    "oila-va-meros": {
-      "title": "Oila va meros nizolari",
-      "cardText": "Ajrashish, farzand taqdiri yoki meros nizosida yordam kerak bo'lsa"
+    "oilaviy-nizolar": {
+      "title": "Oilaviy nizolar",
+      "cardText": "Ajrashish, aliment yoki bolaning yashash joyi boʻyicha nizo boʻlsa"
+    },
+    "meros-ishlari": {
+      "title": "Meros ishlari",
+      "cardText": "Merosni rasmiylashtirish yoki merosxoʻrlar oʻrtasidagi nizo boʻlsa"
     },
     "mehnat-nizolari": {
       "title": "Mehnat nizolari",
