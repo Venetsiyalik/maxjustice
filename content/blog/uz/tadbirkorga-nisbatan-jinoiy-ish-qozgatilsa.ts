@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "tadbirkorga-nisbatan-jinoiy-ish-qozgatilsa",
   title: "Tadbirkorga nisbatan jinoiy ish qo'zg'atilsa, nima qilish kerak?",
-  metaTitle: "Tadbirkorga nisbatan jinoiy ish qo'zg'atilsa | MAXLEGAL",
+  metaTitle: "Tadbirkorga nisbatan jinoiy ish qo'zg'atilsa",
   metaDescription:
-    "Biznes egasiga nisbatan jinoiy ish qo'zg'atilganda qanday harakat qilish kerak? Amaliy tavsiyalar. Tel: +998 77 018 14 02",
+    "Biznes egasiga nisbatan jinoiy ish qo'zg'atilganda qanday harakat qilish kerak? Amaliy tavsiyalar. Tel: {phone}",
   excerpt:
     "Tadbirkorga nisbatan jinoiy ish qo'zg'atilishi nafaqat shaxsiy erkinlikka, balki butun biznesga tahdid soladi. Bunday holatda tez va tizimli harakat qilish zarur.",
   quickAnswer:

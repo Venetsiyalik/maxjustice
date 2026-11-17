@@ -1,5 +1,6 @@
+import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/sections/Hero";
 import { HelpGrid } from "@/components/sections/HelpGrid";
 import { TrustSignals } from "@/components/sections/TrustSignals";
@@ -10,6 +11,24 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ContactFormSection } from "@/components/sections/ContactFormSection";
 import { getAllBlogArticles } from "@/content/blog";
 import { routing, LOCALE_HREFLANG } from "@/i18n/routing";
+import { buildPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+
+  return buildPageMetadata({
+    locale,
+    path: "",
+    title: t("homeTitle"),
+    description: t("defaultDescription"),
+  });
+}
 
 export default async function HomePage({
   params,

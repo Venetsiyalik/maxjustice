@@ -105,7 +105,7 @@ export function ContactForm({ source }: { source?: string }) {
       </div>
 
       <div>
-        <label className="flex cursor-pointer items-start gap-2.5 text-sm text-[var(--color-muted)]">
+        <label className="flex min-h-[44px] cursor-pointer items-start gap-2.5 py-1 text-sm text-[var(--color-muted)]">
           <input
             type="checkbox"
             name="consent"

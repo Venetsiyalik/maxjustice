@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Tergovga qadar tekshiruv bo'yicha advokat — Farg'ona",
-  metaTitle: "Tergovga qadar tekshiruv bo'yicha advokat Farg'onada | MAXLEGAL",
+  metaTitle: "Tergovga qadar tekshiruvda advokat Farg'onada",
   metaDescription:
-    "So'roqqa yoki tintuvga chaqirilgansizmi? Tergovga qadar bosqichda professional huquqiy yordam. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
+    "So'roqqa yoki tintuvga chaqirilgansizmi? Tergovga qadar bosqichda professional huquqiy yordam. {address}. Tel: {phone}",
   quickAnswer:
     "Agar sizni so'roqqa chaqirishayotgan, tintuv o'tkazish rejalashtirilgan yoki tekshiruv boshlangan bo'lsa — bu jinoiy ish qo'zg'atilishidan OLDINGI hal qiluvchi bosqich. Aynan shu bosqichda advokat jalb qilinishi keyingi voqealarning yo'nalishini butunlay o'zgartirishi mumkin.",
   problemParagraphs: [

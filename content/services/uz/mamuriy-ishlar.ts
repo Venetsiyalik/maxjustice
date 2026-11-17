@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Ma'muriy ishlar bo'yicha advokat — Farg'ona",
-  metaTitle: "Ma'muriy ishlar bo'yicha advokat Farg'onada | MAXLEGAL",
+  metaTitle: "Ma'muriy ishlar bo'yicha advokat Farg'onada",
   metaDescription:
-    "Ma'muriy javobgarlik, jarima yoki protokolga qarshi huquqiy himoya. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
+    "Ma'muriy javobgarlik, jarima yoki protokolga qarshi huquqiy himoya. {address}. Tel: {phone}",
   quickAnswer:
     "Ma'muriy javobgarlikka tortilgan yoki jarima solingan bo'lsangiz — qarorga qarshi qonunda belgilangan muddatda shikoyat qilish huquqingiz bor. Muddatni o'tkazib yubormaslik uchun imkon qadar tezroq murojaat qiling.",
   problemParagraphs: [

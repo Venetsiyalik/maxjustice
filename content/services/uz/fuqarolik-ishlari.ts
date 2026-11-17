@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Fuqarolik ishlari bo'yicha advokat — Farg'ona",
-  metaTitle: "Fuqarolik ishlari bo'yicha advokat Farg'onada | MAXLEGAL",
+  metaTitle: "Fuqarolik ishlari bo'yicha advokat Farg'onada",
   metaDescription:
-    "Mulk, shartnoma va boshqa fuqarolik nizolari bo'yicha huquqiy yordam va sudda vakillik. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
+    "Mulk, shartnoma va boshqa fuqarolik nizolari bo'yicha huquqiy yordam va sudda vakillik. {address}. Tel: {phone}",
   quickAnswer:
     "Mulk, shartnoma yoki boshqa fuqarolik nizosida bo'lsangiz — ko'p hollarda masalani sudgacha, muzokara yo'li bilan hal qilish mumkin. Agar bu imkonsiz bo'lsa, sudda manfaatingizni asoslangan dalillar bilan himoya qilaman.",
   problemParagraphs: [

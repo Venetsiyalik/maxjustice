@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Pre-Investigation Review Attorney — Fergana",
-  metaTitle: "Pre-Investigation Review Attorney in Fergana | MAXLEGAL",
+  metaTitle: "Pre-Investigation Review Attorney in Fergana",
   metaDescription:
-    "Summoned for questioning or facing a search? Professional legal help at the pre-investigation stage. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Summoned for questioning or facing a search? Professional legal help at the pre-investigation stage. {address}. Tel: {phone}",
   quickAnswer:
     "If you're summoned for questioning, facing a search, or a review has started — this is a decisive stage BEFORE any criminal case is opened. Bringing in an attorney at this point can completely change the course of events.",
   problemParagraphs: [

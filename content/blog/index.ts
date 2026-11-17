@@ -1,5 +1,6 @@
 import type { BlogArticle, BlogBlock } from "./types";
 import { toKirill } from "@/lib/transliterate";
+import { fillNapDeep } from "@/lib/nap";
 
 export const BLOG_SLUGS = [
   "hibsga-olinsa-qanday-harakat-qilish-kerak",
@@ -13,6 +14,18 @@ export const BLOG_SLUGS = [
 ] as const;
 
 export type BlogSlug = (typeof BLOG_SLUGS)[number];
+
+/**
+ * Maqolalari shu tilda haqiqatan mavjud bo'lgan tillar. ru/en sahifalari
+ * hozircha o'zbekcha matnni ko'rsatadi — tarjima tayyor bo'lguncha ular
+ * `noindex`, sitemap va hreflang'dan chiqarilgan. Tarjima qo'shilganda shu
+ * ro'yxatga til qo'shiladi.
+ */
+export const BLOG_LOCALES = ["uz", "kr"] as const;
+
+export function isBlogLocale(locale: string): boolean {
+  return (BLOG_LOCALES as readonly string[]).includes(locale);
+}
 
 type Loader = () => Promise<{ default: BlogArticle }>;
 
@@ -69,7 +82,8 @@ export async function getBlogArticle(
   locale: string,
   slug: BlogSlug
 ): Promise<BlogArticle> {
-  const uz = (await uzLoaders[slug]()).default;
+  // {phone}/{address} — site-config'dan, transliteratsiyadan OLDIN
+  const uz = fillNapDeep((await uzLoaders[slug]()).default, "uz");
   return locale === "kr" ? toKirillArticle(uz) : uz;
 }
 

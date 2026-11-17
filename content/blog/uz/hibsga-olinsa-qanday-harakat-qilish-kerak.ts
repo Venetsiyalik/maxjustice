@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "hibsga-olinsa-qanday-harakat-qilish-kerak",
   title: "Hibsga olinsa qanday harakat qilish kerak?",
-  metaTitle: "Hibsga olinsa qanday harakat qilish kerak? | MAXLEGAL",
+  metaTitle: "Hibsga olinsa qanday harakat qilish kerak?",
   metaDescription:
-    "O'zingiz yoki yaqiningiz hibsga olinganda qanday harakat qilish kerak? Amaliy qadamlar va huquqlar haqida. Tel: +998 77 018 14 02",
+    "O'zingiz yoki yaqiningiz hibsga olinganda qanday harakat qilish kerak? Amaliy qadamlar va huquqlar haqida. Tel: {phone}",
   excerpt:
     "Hibsga olinish — kutilmagan va vahimali vaziyat. Ushbu maqolada shunday holatda qanday xotirjam va to'g'ri harakat qilish haqida gapiramiz.",
   quickAnswer:

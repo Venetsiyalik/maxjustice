@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "tergovga-chaqirilsa-nima-qilish-kerak",
   title: "Tergovga chaqirilsa nima qilish kerak?",
-  metaTitle: "Tergovga chaqirilsa nima qilish kerak? | MAXLEGAL",
+  metaTitle: "Tergovga chaqirilsa nima qilish kerak?",
   metaDescription:
-    "Tergov organlaridan chaqiruv qog'ozi kelsa, qanday harakat qilish kerak? Advokatning amaliy tavsiyalari. Tel: +998 77 018 14 02",
+    "Tergov organlaridan chaqiruv qog'ozi kelsa, qanday harakat qilish kerak? Advokatning amaliy tavsiyalari. Tel: {phone}",
   excerpt:
     "Tergov organlaridan chaqiruv kelsa, birinchi navbatda vahima qilmang. Chaqiruv sababini aniqlang, advokat bilan maslahatlashing va faqat shundan keyin boring.",
   quickAnswer:

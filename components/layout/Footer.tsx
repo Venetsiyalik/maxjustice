@@ -35,16 +35,16 @@ export function Footer() {
           <h3 className="text-sm font-bold uppercase tracking-wide text-white/60">
             {nav("services")}
           </h3>
-          <ul className="flex flex-col gap-2 text-sm text-white/80">
+          <ul className="flex flex-col text-sm text-white/80">
             {SERVICE_LINKS.map((s) => (
               <li key={s.key}>
-                <Link href={s.href} className="hover:text-[var(--color-gold-400)]">
+                <Link href={s.href} className="inline-flex min-h-[32px] items-center hover:text-[var(--color-gold-400)]">
                   {t(`quickServices.${s.key}`)}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/xizmatlar" className="font-semibold text-[var(--color-gold-400)]">
+              <Link href="/xizmatlar" className="inline-flex min-h-[32px] items-center font-semibold text-[var(--color-gold-400)]">
                 {nav("services")} →
               </Link>
             </li>
@@ -57,7 +57,7 @@ export function Footer() {
           </h3>
           <a
             href={siteConfig.phone.href}
-            className="flex items-center gap-2 text-sm font-semibold text-white hover:text-[var(--color-gold-400)]"
+            className="flex min-h-[32px] w-fit items-center gap-2 text-sm font-semibold text-white hover:text-[var(--color-gold-400)]"
           >
             <PhoneIcon className="h-4 w-4 shrink-0" />
             {siteConfig.phone.display}
@@ -66,14 +66,14 @@ export function Footer() {
             href={siteConfig.telegram.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
+            className="flex min-h-[32px] w-fit items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
           >
             <TelegramIcon className="h-4 w-4 shrink-0" />
             @{siteConfig.telegram.handle}
           </a>
           <a
             href={`mailto:${siteConfig.email.info}`}
-            className="flex items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
+            className="flex min-h-[32px] w-fit items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
           >
             <MailIcon className="h-4 w-4 shrink-0" />
             {siteConfig.email.info}
@@ -96,14 +96,14 @@ export function Footer() {
               {t("taxIdPrefix")} {siteConfig.taxId}
             </p>
           </div>
-          <ul className="mt-1 flex flex-col gap-1 text-sm text-white/60">
+          <ul className="mt-1 flex flex-col text-sm text-white/70">
             <li>
-              <Link href="/maxfiylik-siyosati" className="hover:text-white">
+              <Link href="/maxfiylik-siyosati" className="inline-flex min-h-[32px] items-center hover:text-white">
                 {t("privacyPolicy")}
               </Link>
             </li>
             <li>
-              <Link href="/foydalanish-shartlari" className="hover:text-white">
+              <Link href="/foydalanish-shartlari" className="inline-flex min-h-[32px] items-center hover:text-white">
                 {t("termsOfUse")}
               </Link>
             </li>

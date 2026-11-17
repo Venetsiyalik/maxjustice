@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "soliq-tekshiruvi-natijasi-ustidan-shikoyat",
   title: "Soliq tekshiruvi natijasi ustidan shikoyat qilish",
-  metaTitle: "Soliq tekshiruvi natijasi ustidan shikoyat | MAXLEGAL",
+  metaTitle: "Soliq tekshiruvi natijasi ustidan shikoyat",
   metaDescription:
-    "Soliq tekshiruvi natijasiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Amaliy tavsiyalar. Tel: +998 77 018 14 02",
+    "Soliq tekshiruvi natijasiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Amaliy tavsiyalar. Tel: {phone}",
   excerpt:
     "Soliq tekshiruvi natijalari har doim ham to'g'ri bo'lavermaydi. Agar aktga rozi bo'lmasangiz, uni qonuniy tartibda shikoyat qilish huquqingiz bor.",
   quickAnswer:

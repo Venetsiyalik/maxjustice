@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
 import { CheckIcon, PhoneIcon, MailIcon, FileCheckIcon } from "@/components/ui/icons";
@@ -24,14 +24,12 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "aboutPage" });
 
-  return {
-    title: { absolute: t("metaTitle") },
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: {
-      canonical: buildCanonicalUrl(locale, PATH),
-      languages: buildLanguageAlternates(PATH),
-    },
-  };
+  });
 }
 
 export default async function AboutPage({

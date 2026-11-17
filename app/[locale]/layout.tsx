@@ -3,9 +3,9 @@ import { Manrope } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, LOCALE_HREFLANG } from "@/i18n/routing";
-import { buildLanguageAlternates } from "@/lib/seo";
+import { brandTitle } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -22,6 +22,15 @@ const bodyFont = Manrope({
   display: "swap",
 });
 
+/** Client komponentlar (`"use client"`) useTranslations bilan o'qiydigan bo'limlar */
+const CLIENT_NAMESPACES = ["nav", "cta", "common", "langSwitcher", "form"] as const;
+
+// Faqat 4 ta til: boshqa birinchi segment (masalan, `/eski.php`) [locale]
+// ga tushmaydi — marshrut darajasida 404 bo'lib, app/global-not-found.tsx
+// ko'rsatiladi. Ichki sahifalar (slug, [...rest]) dynamicParams = true ni
+// o'zi qaytaradi, shuning uchun ular tilga mos 404 ni ko'rsatadi.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -37,22 +46,18 @@ export async function generateMetadata({
     : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "meta" });
 
+  // Sahifaga xos title/description/canonical/OG har sahifada
+  // buildPageMetadata() orqali beriladi. Bu yerda faqat umumiy zaxira
+  // qiymatlar — canonical ataylab yo'q (aks holda 404 sahifalar "/" ga
+  // canonical bo'lib qolardi).
   return {
     metadataBase: new URL(siteConfig.url),
-    title: {
-      default: t("defaultTitle"),
-      template: `%s | ${t("siteName")}`,
-    },
+    title: { default: brandTitle(t("homeTitle")), template: `%s | ${siteConfig.brandName}` },
     description: t("defaultDescription"),
-    alternates: {
-      canonical: locale === "uz" ? "/" : `/${locale}`,
-      languages: buildLanguageAlternates(""),
-    },
     openGraph: {
-      siteName: t("siteName"),
-      locale: LOCALE_HREFLANG[locale],
+      siteName: siteConfig.brandName,
       type: "website",
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: t("siteName") }],
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: siteConfig.brandName }],
     },
     twitter: {
       card: "summary_large_image",
@@ -77,12 +82,20 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  // Client komponentlarga faqat ular ishlatadigan tarjimalar uzatiladi
+  // (Header, til almashtirgich, mobil panel, forma). Aks holda HAR sahifa
+  // HTML'iga barcha sahifalarning matnlari qo'shilib ketadi.
+  const allMessages = await getMessages();
+  const clientMessages = Object.fromEntries(
+    CLIENT_NAMESPACES.filter((ns) => ns in allMessages).map((ns) => [ns, allMessages[ns]])
+  );
+
   return (
     <html lang={LOCALE_HREFLANG[locale]} className={bodyFont.variable}>
       <body className="flex min-h-screen flex-col antialiased">
         <Analytics />
         <JsonLd data={buildLegalServiceSchema()} />
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <LanguageSuggestionBanner />
           <Header />
           <main className="flex-1 pb-14 lg:pb-0">{children}</main>

@@ -1,6 +1,7 @@
 import type { ServiceSlug } from "@/lib/services-data";
 import type { ServiceContent } from "./types";
 import { transliterateDeep } from "@/lib/transliterate";
+import { fillNapDeep } from "@/lib/nap";
 
 type Loader = () => Promise<{ default: ServiceContent }>;
 
@@ -54,18 +55,13 @@ export async function getServiceContent(
   locale: string,
   slug: ServiceSlug
 ): Promise<ServiceContent> {
+  // {phone}/{address} o'rinbosarlari site-config'dan (lib/nap.ts) —
+  // kr uchun transliteratsiyadan OLDIN to'ldiriladi
   if (locale === "kr") {
     const uz = (await uzLoaders[slug]()).default;
-    return transliterateDeep(uz);
+    return transliterateDeep(fillNapDeep(uz, "uz"));
   }
 
-  if (locale === "ru") {
-    return (await ruLoaders[slug]()).default;
-  }
-
-  if (locale === "en") {
-    return (await enLoaders[slug]()).default;
-  }
-
-  return (await uzLoaders[slug]()).default;
+  const loaders = locale === "ru" ? ruLoaders : locale === "en" ? enLoaders : uzLoaders;
+  return fillNapDeep((await loaders[slug]()).default, locale);
 }

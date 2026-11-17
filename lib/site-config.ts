@@ -8,6 +8,8 @@ export const siteConfig = {
   domain: "maxjustice.uz",
   url: "https://maxjustice.uz",
   legalName: "MAXLEGAL AND JUSTICE advokatlik byurosi",
+  // Title, Open Graph va schema'dagi brend nomi
+  brandName: "MAXLEGAL AND JUSTICE",
   secondBrand: "IMPERIUM LEGAL SOLUTIONS",
   founder: {
     fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
@@ -51,6 +53,13 @@ export const siteConfig = {
   },
   address: {
     display: "Farg'ona shahri, S. Temur ko'chasi, 43-uy",
+    // Meta description'lardagi qisqa shakl — matnlarda `{address}` o'rniga
+    // qo'yiladi (lib/nap.ts). kr — uz dan avtomatik transliteratsiya.
+    short: {
+      uz: "Farg'ona, S. Temur 43",
+      ru: "Фергана, С. Темура 43",
+      en: "Fergana, 43 S. Temur St.",
+    },
     street: "S. Temur ko'chasi, 43",
     locality: "Farg'ona",
     region: "Farg'ona viloyati",

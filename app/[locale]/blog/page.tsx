@@ -4,11 +4,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, LOCALE_HREFLANG } from "@/i18n/routing";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
-import { Link } from "@/i18n/navigation";
+import { ArticleLink } from "@/components/blog/ArticleLink";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
-import { getAllBlogArticles } from "@/content/blog";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
+import { getAllBlogArticles, BLOG_LOCALES, isBlogLocale } from "@/content/blog";
 
 const PATH = "/blog";
 
@@ -21,14 +21,15 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "blogPage" });
 
-  return {
-    title: { absolute: t("metaTitle") },
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: {
-      canonical: buildCanonicalUrl(locale, PATH),
-      languages: buildLanguageAlternates(PATH),
-    },
-  };
+    locales: BLOG_LOCALES,
+    // ru/en: maqolalar hali faqat o'zbekcha — ro'yxat indekslanmaydi
+    noindex: !isBlogLocale(locale),
+  });
 }
 
 export default async function BlogHubPage({
@@ -68,15 +69,21 @@ export default async function BlogHubPage({
             {t("title")}
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-[var(--color-muted)]">{t("intro")}</p>
+          {!isBlogLocale(locale) && (
+            <p className="mt-4 inline-block rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2 text-sm text-[var(--color-ink)]">
+              {t("uzOnlyNotice")}
+            </p>
+          )}
         </Container>
       </div>
 
       <Container className="py-12">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
-            <Link
+            <ArticleLink
               key={article.slug}
-              href={`/blog/${article.slug}`}
+              slug={article.slug}
+              uzOnly={!isBlogLocale(locale)}
               className="flex flex-col gap-3 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-shadow hover:shadow-md"
             >
               <time
@@ -85,14 +92,20 @@ export default async function BlogHubPage({
               >
                 {dateFormatter.format(new Date(article.publishedAt))}
               </time>
+              {!isBlogLocale(locale) && (
+                <span className="w-fit rounded bg-[var(--color-surface-alt)] px-2 py-0.5 text-xs font-semibold text-[var(--color-muted)]">
+                  {t("uzOnlyBadge")}
+                </span>
+              )}
               <h2 className="text-lg font-bold text-[var(--color-navy-950)]">
                 {article.title}
               </h2>
               <p className="text-sm text-[var(--color-muted)]">{article.excerpt}</p>
-            </Link>
+            </ArticleLink>
           ))}
         </div>
       </Container>
     </>
   );
 }
+

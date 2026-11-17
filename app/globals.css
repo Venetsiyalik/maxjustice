@@ -9,7 +9,7 @@
   --color-navy-600: #2a5590;
 
   /* Urg'u rangi — CTA tugmalar uchun */
-  --color-gold-600: #a9760f;
+  --color-gold-600: #8f6410; /* matn uchun: #f6f8fb fonida ≥4.5:1 (WCAG AA) */
   --color-gold-500: #c9922a;
   --color-gold-400: #d9a94f;
 

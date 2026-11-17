@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Sudda vakillik — Farg'ona",
-  metaTitle: "Sudda vakillik xizmati Farg'onada | MAXLEGAL advokatlik byurosi",
+  metaTitle: "Sudda vakillik xizmati Farg'onada",
   metaDescription:
-    "Jinoiy, fuqarolik, ma'muriy va iqtisodiy ishlar bo'yicha sudda professional vakillik. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
+    "Jinoiy, fuqarolik, ma'muriy va iqtisodiy ishlar bo'yicha sudda professional vakillik. {address}. Tel: {phone}",
   quickAnswer:
     "Sudda o'z manfaatingizni himoya qiladigan vakil izlasangiz — professional vakillik nafaqat huquqiy bilim, balki sud jarayonining amaliy tajribasini ham talab qiladi. Har qanday toifadagi ishda sudda to'liq huquqiy vakillik xizmatini ko'rsataman.",
   problemParagraphs: [

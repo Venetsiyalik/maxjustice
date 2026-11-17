@@ -9,8 +9,9 @@ import { Link } from "@/i18n/navigation";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema, buildArticleSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
-import { BLOG_SLUGS, getBlogArticle, type BlogSlug } from "@/content/blog";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
+import { buildNotFoundMetadata } from "@/lib/not-found-metadata";
+import { BLOG_SLUGS, BLOG_LOCALES, isBlogLocale, getBlogArticle, type BlogSlug } from "@/content/blog";
 import { BlogBody } from "@/components/blog/BlogBody";
 import { serviceHref } from "@/lib/services-data";
 
@@ -22,6 +23,10 @@ export function generateStaticParams() {
   return BLOG_SLUGS.map((slug) => ({ slug }));
 }
 
+// Noma'lum yo'l/slug ham shu yerga tushib, tilga mos 404 ni ko'rsatsin
+// (layout'dagi dynamicParams = false faqat til segmenti uchun)
+export const dynamicParams = true;
+
 export async function generateMetadata({
   params,
 }: {
@@ -29,19 +34,25 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale: rawLocale, slug } = await params;
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
-  if (!isBlogSlug(slug)) return {};
+  if (!isBlogSlug(slug)) return buildNotFoundMetadata(locale);
 
   const article = await getBlogArticle(locale, slug);
   const path = `/blog/${slug}`;
 
-  return {
-    title: { absolute: article.metaTitle },
+  return buildPageMetadata({
+    locale,
+    path,
+    title: article.metaTitle,
     description: article.metaDescription,
-    alternates: {
-      canonical: buildCanonicalUrl(locale, path),
-      languages: buildLanguageAlternates(path),
+    locales: BLOG_LOCALES,
+    // ru/en: tarjima tayyor emas, o'zbekcha matn — indekslanmaydi
+    noindex: !isBlogLocale(locale),
+    article: {
+      publishedTime: article.publishedAt,
+      modifiedTime: article.updatedAt,
+      authorName: article.author,
     },
-  };
+  });
 }
 
 export default async function BlogArticlePage({
@@ -56,11 +67,12 @@ export default async function BlogArticlePage({
   const locale = rawLocale;
   setRequestLocale(locale);
 
-  const [article, nav, t, s] = await Promise.all([
+  const [article, nav, t, s, blogPage] = await Promise.all([
     getBlogArticle(locale, slug),
     getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "blogPost" }),
     getTranslations({ locale, namespace: "services" }),
+    getTranslations({ locale, namespace: "blogPage" }),
   ]);
 
   const path = `/blog/${slug}`;
@@ -102,6 +114,11 @@ export default async function BlogArticlePage({
           <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {article.title}
           </h1>
+          {!isBlogLocale(locale) && (
+            <p className="mt-4 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2 text-sm text-[var(--color-ink)]">
+              {blogPage("uzOnlyNotice")}
+            </p>
+          )}
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[var(--color-muted)]">
             <span>{article.author}</span>
             <span aria-hidden>·</span>

@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Contracts & Business Consulting — Fergana",
-  metaTitle: "Contracts & Business Consulting | MAXLEGAL Law Firm",
+  metaTitle: "Contracts & Business Consulting",
   metaDescription:
-    "Contract drafting, legal audits, and ongoing legal support for your business. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Contract drafting, legal audits, and ongoing legal support for your business. {address}. Tel: {phone}",
   quickAnswer:
     "If you need contract drafting or a legal audit for your business, preventing problems is always cheaper and faster than resolving them in court later. A well-drafted contract is the most reliable tool for preventing future disputes.",
   problemParagraphs: [

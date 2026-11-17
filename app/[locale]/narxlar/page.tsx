@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CheckIcon } from "@/components/ui/icons";
 import { buildBreadcrumbSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { ContactFormSection } from "@/components/sections/ContactFormSection";
 
 const PATH = "/narxlar";
@@ -21,14 +21,12 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "pricesPage" });
 
-  return {
-    title: { absolute: t("metaTitle") },
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: {
-      canonical: buildCanonicalUrl(locale, PATH),
-      languages: buildLanguageAlternates(PATH),
-    },
-  };
+  });
 }
 
 export default async function PricesPage({

@@ -8,7 +8,8 @@ import { getServiceContent } from "@/content/services";
 import { ServicePageContent } from "@/components/services/ServicePageContent";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildFaqSchema, buildBreadcrumbSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
+import { buildNotFoundMetadata } from "@/lib/not-found-metadata";
 
 const SLUGS = SERVICES.map((s) => s.slug);
 
@@ -20,6 +21,10 @@ export function generateStaticParams() {
   return SLUGS.map((slug) => ({ slug }));
 }
 
+// Noma'lum yo'l/slug ham shu yerga tushib, tilga mos 404 ni ko'rsatsin
+// (layout'dagi dynamicParams = false faqat til segmenti uchun)
+export const dynamicParams = true;
+
 export async function generateMetadata({
   params,
 }: {
@@ -30,19 +35,17 @@ export async function generateMetadata({
     ? rawLocale
     : routing.defaultLocale;
 
-  if (!isServiceSlug(slug)) return {};
+  if (!isServiceSlug(slug)) return buildNotFoundMetadata(locale);
 
   const content = await getServiceContent(locale, slug);
   const path = serviceHref(slug);
 
-  return {
-    title: { absolute: content.metaTitle },
+  return buildPageMetadata({
+    locale,
+    path,
+    title: content.metaTitle,
     description: content.metaDescription,
-    alternates: {
-      canonical: buildCanonicalUrl(locale, path),
-      languages: buildLanguageAlternates(path),
-    },
-  };
+  });
 }
 
 export default async function ServiceSlugPage({

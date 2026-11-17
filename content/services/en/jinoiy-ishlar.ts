@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Criminal Defense Attorney — Fergana",
-  metaTitle: "Criminal Defense Attorney in Fergana | MAXLEGAL",
+  metaTitle: "Criminal Defense Attorney in Fergana",
   metaDescription:
-    "Professional defense during investigation and in court. Attorney with experience as an MIA investigator. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Professional defense during investigation and in court. Attorney with experience as an MIA investigator. {address}. Tel: {phone}",
   quickAnswer:
     "If you or a loved one faces a criminal case or arrest, use your right to an attorney first and avoid signing anything or explaining anything until the attorney arrives. Every minute matters: the earlier a defense attorney gets involved, the more effective the defense strategy will be.",
   problemParagraphs: [

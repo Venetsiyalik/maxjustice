@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "sud-hukmi-ustidan-shikoyat-qilish-tartibi",
   title: "Sud hukmi ustidan shikoyat qilish tartibi",
-  metaTitle: "Sud hukmi ustidan shikoyat qilish tartibi | MAXLEGAL",
+  metaTitle: "Sud hukmi ustidan shikoyat qilish tartibi",
   metaDescription:
-    "Sud qarori yoki hukmiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Muddatlar va bosqichlar haqida. Tel: +998 77 018 14 02",
+    "Sud qarori yoki hukmiga rozi bo'lmasangiz, uni qanday shikoyat qilish mumkin? Muddatlar va bosqichlar haqida. Tel: {phone}",
   excerpt:
     "Sud qarori yakuniy tuyulishi mumkin, biroq unga qonuniy tartibda shikoyat qilish huquqingiz bor. Muhimi — muddatni o'tkazib yubormaslik.",
   quickAnswer:

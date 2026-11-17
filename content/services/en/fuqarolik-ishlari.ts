@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Civil Cases Attorney — Fergana",
-  metaTitle: "Civil Cases Attorney in Fergana | MAXLEGAL",
+  metaTitle: "Civil Cases Attorney in Fergana",
   metaDescription:
-    "Legal help and court representation for property, contract, and other civil disputes. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Legal help and court representation for property, contract, and other civil disputes. {address}. Tel: {phone}",
   quickAnswer:
     "If you have a property, contract, or other civil dispute, many cases can be resolved out of court through negotiation. If that's not possible, I'll defend your interests in court with well-grounded evidence.",
   problemParagraphs: [

@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Shartnoma va biznes konsalting bo'yicha advokat — Farg'ona",
-  metaTitle: "Shartnoma va biznes konsalting | MAXLEGAL advokatlik byurosi",
+  metaTitle: "Shartnoma va biznes konsalting",
   metaDescription:
-    "Shartnoma tuzish, huquqiy audit va biznes uchun doimiy huquqiy hamrohlik. Farg'ona, S. Temur 43. Tel: +998 77 018 14 02",
+    "Shartnoma tuzish, huquqiy audit va biznes uchun doimiy huquqiy hamrohlik. {address}. Tel: {phone}",
   quickAnswer:
     "Shartnoma tuzish yoki biznesingiz uchun huquqiy audit kerak bo'lsa — muammolarning oldini olish ularni keyinchalik sudda hal qilishdan har doim arzonroq va tezroq. To'g'ri tuzilgan shartnoma — bu kelajakdagi nizolarning oldini oluvchi eng ishonchli vosita.",
   problemParagraphs: [

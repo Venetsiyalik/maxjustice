@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Labor Disputes Attorney — Fergana",
-  metaTitle: "Labor Disputes Attorney in Fergana | MAXLEGAL",
+  metaTitle: "Labor Disputes Attorney in Fergana",
   metaDescription:
-    "Defense against unlawful dismissal and other labor rights violations. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Defense against unlawful dismissal and other labor rights violations. {address}. Tel: {phone}",
   quickAnswer:
     "If you were unlawfully dismissed or your labor rights were otherwise violated, the law gives you the right to reinstatement and to recover unpaid wages and damages. Reach out as soon as possible so you don't miss the deadline.",
   problemParagraphs: [

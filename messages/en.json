@@ -2,7 +2,8 @@
   "meta": {
     "siteName": "MAXLEGAL AND JUSTICE",
     "defaultTitle": "MAXLEGAL AND JUSTICE — Law Firm, Fergana",
-    "defaultDescription": "Criminal, administrative and civil defense attorney in the Fergana region. Professional defense during investigation and in court. Tel: +998 77 018 14 02"
+    "defaultDescription": "Criminal, administrative and civil defense attorney in the Fergana region. Professional defense during investigation and in court. Tel: {phone}",
+    "homeTitle": "Fergana Attorney Nasrdinov To'lanboy"
   },
   "common": {
     "jobTitle": "Attorney"
@@ -53,7 +54,7 @@
       "eyebrow": "Attorney Nasrdinov To'lanboy",
       "title": "Criminal and administrative defense attorney in the Fergana region",
       "subtitle": "Professional defense during investigation and in court. Former investigator with the Ministry of Internal Affairs — I know the prosecution's methods from the inside.",
-      "callButton": "+998 77 018 14 02"
+      "callButton": "{phone}"
     },
     "helpBlock": {
       "title": "How I can help you",
@@ -95,8 +96,8 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "About Attorney Nasrdinov To'lanboy | MAXLEGAL",
-    "metaDescription": "Attorney with experience in the MIA investigative bodies. Education, experience, specialization and practice. Fergana, S. Temur St. 43.",
+    "metaTitle": "About Attorney Nasrdinov To'lanboy",
+    "metaDescription": "Attorney with experience in the MIA investigative bodies. Education, experience, specialization and practice. {address}.",
     "title": "About the Lawyer",
     "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
     "heroSubtitle": "Attorney, founder of \"MAXLEGAL AND JUSTICE\" law firm",
@@ -118,8 +119,8 @@
     "ctaSubtitle": "The first consultation is free and confidential."
   },
   "practicePage": {
-    "metaTitle": "Case Studies | MAXLEGAL Law Firm",
-    "metaDescription": "The most common situations in legal practice and how they're approached. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "metaTitle": "Case Studies",
+    "metaDescription": "The most common situations in legal practice and how they're approached. {address}. Tel: {phone}",
     "title": "Case Studies",
     "intro": "Attorney-client privilege and my clients' privacy are principles I strictly uphold. That's why this page does not disclose any names or case numbers. Instead, it presents — in generalized form — the situations I encounter most often in practice and how I approach them, so you can get a sense of how your own situation might be handled.",
     "disclaimer": "The examples below are generalized and do not refer to any specific client or case. Every real case has its own particulars and requires individual analysis.",
@@ -161,8 +162,8 @@
     "ctaSubtitle": "The first consultation is free and confidential."
   },
   "pricesPage": {
-    "metaTitle": "Legal Service Pricing | MAXLEGAL",
-    "metaDescription": "Pricing is determined individually for each case. Contact us for an exact quote. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "metaTitle": "Legal Service Pricing",
+    "metaDescription": "Pricing is determined individually for each case. Contact us for an exact quote. {address}. Tel: {phone}",
     "title": "Pricing",
     "intro": "Every case is unique, and the price is determined individually based on its complexity, scope, and the time required. That's why we don't publish a general price list on the site — contact us, tell us about your situation, and we'll give you an estimated cost.",
     "freeConsultationLabel": "First consultation",
@@ -177,8 +178,8 @@
     "ctaSubtitle": "Tell us about your situation — we'll contact you within 15 minutes with an estimated price."
   },
   "contactPage": {
-    "metaTitle": "Contact | MAXLEGAL Law Firm",
-    "metaDescription": "Get in touch: phone, Telegram, address, and a contact form. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch: phone, Telegram, address, and a contact form. {address}. Tel: {phone}",
     "title": "Contact",
     "emailsTitle": "By email",
     "emailGeneral": "General inquiries",
@@ -186,8 +187,8 @@
     "emailFounder": "Directly to To'lanboy"
   },
   "faqPage": {
-    "metaTitle": "FAQ | MAXLEGAL Law Firm",
-    "metaDescription": "Answers to frequently asked questions about legal services, pricing, and consultations. Tel: +998 77 018 14 02",
+    "metaTitle": "FAQ",
+    "metaDescription": "Answers to frequently asked questions about legal services, pricing, and consultations. Tel: {phone}",
     "title": "Frequently Asked Questions",
     "intro": "Answers to the questions that most often come up before reaching out to a lawyer. If you don't find your answer here, contact us directly.",
     "items": [
@@ -226,7 +227,7 @@
     ]
   },
   "privacyPage": {
-    "metaTitle": "Privacy Policy | MAXLEGAL Law Firm",
+    "metaTitle": "Privacy Policy",
     "metaDescription": "Full information on how your personal data is collected, used, and protected.",
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: September 2026",
@@ -263,8 +264,8 @@
     "legalReviewNote": "This document was prepared as a template. Before launch, its compliance with the applicable Law of the Republic of Uzbekistan \"On Personal Data\" must be reviewed by the attorney personally (item 7.2 of the brief)."
   },
   "termsPage": {
-    "metaTitle": "Terms of Use | MAXLEGAL Law Firm",
-    "metaDescription": "Rules and terms governing the use of maxjustice.uz.",
+    "metaTitle": "Terms of Use",
+    "metaDescription": "Terms of use for the MAXLEGAL AND JUSTICE law office website: status of the information, copyright, and limits of liability.",
     "title": "Terms of Use",
     "lastUpdated": "Last updated: September 2026",
     "sections": [
@@ -295,10 +296,12 @@
     ]
   },
   "blogPage": {
-    "metaTitle": "Blog | MAXLEGAL Law Firm",
-    "metaDescription": "Legal advice and useful articles: investigations, court process, your rights. Fergana, S. Temur St. 43.",
+    "metaTitle": "Blog",
+    "metaDescription": "Legal advice and useful articles: investigations, court process, your rights. {address}.",
     "title": "Blog",
-    "intro": "Practical articles on how to act in various legal situations."
+    "intro": "Practical articles on how to act in various legal situations.",
+    "uzOnlyNotice": "Articles are currently available in Uzbek only — translations are in progress.",
+    "uzOnlyBadge": "In Uzbek"
   },
   "blogPost": {
     "publishedLabel": "Published",
@@ -309,8 +312,8 @@
   "servicesHub": {
     "title": "Services",
     "subtitle": "Choose the section that matches your situation for details and practical guidance.",
-    "metaTitle": "Legal Services | MAXLEGAL AND JUSTICE",
-    "metaDescription": "Legal services for criminal, administrative, civil, and business matters. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02"
+    "metaTitle": "Legal Services in Fergana",
+    "metaDescription": "Legal services for criminal, administrative, civil, and business matters. {address}. Tel: {phone}"
   },
   "servicePage": {
     "tipsTitle": "What to do in this situation",

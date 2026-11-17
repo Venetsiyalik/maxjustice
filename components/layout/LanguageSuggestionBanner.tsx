@@ -66,20 +66,20 @@ export function LanguageSuggestionBanner() {
   }
 
   return (
-    <div className="flex items-center justify-center gap-4 bg-[var(--color-navy-800)] px-4 py-2.5 text-sm text-white">
+    <div className="flex items-center justify-center gap-3 bg-[var(--color-navy-800)] px-4 py-2.5 text-sm text-white">
       <span>{suggestion.label}</span>
       <button
         type="button"
         onClick={accept}
-        className="rounded bg-[var(--color-gold-500)] px-3 py-1 font-semibold text-[var(--color-navy-950)]"
+        className="min-h-[36px] rounded bg-[var(--color-gold-500)] px-3 py-1 font-semibold text-[var(--color-navy-950)]"
       >
         {suggestion.locale === "ru" ? "Да" : "Yes"}
       </button>
       <button
         type="button"
         onClick={dismiss}
-        aria-label="Close"
-        className="text-white/60 hover:text-white"
+        aria-label={suggestion.locale === "ru" ? "Закрыть" : "Close"}
+        className="-my-2 flex h-11 w-11 items-center justify-center text-white/70 hover:text-white"
       >
         <CloseIcon className="h-4 w-4" />
       </button>

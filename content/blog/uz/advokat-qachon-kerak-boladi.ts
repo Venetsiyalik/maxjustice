@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "advokat-qachon-kerak-boladi",
   title: "Advokat qachon kerak bo'ladi?",
-  metaTitle: "Advokat qachon kerak bo'ladi? | MAXLEGAL advokatlik byurosi",
+  metaTitle: "Advokat qachon kerak bo'ladi?",
   metaDescription:
-    "Qanday vaziyatlarda advokatga murojaat qilish zarur? Kechiktirmasdan yordam so'rash kerak bo'lgan holatlar. Tel: +998 77 018 14 02",
+    "Qanday vaziyatlarda advokatga murojaat qilish zarur? Kechiktirmasdan yordam so'rash kerak bo'lgan holatlar. Tel: {phone}",
   excerpt:
     "Ko'p odamlar advokatga faqat sud bosqichida murojaat qilish kerak deb o'ylaydi. Aslida advokatning eng katta foydasi ancha erta bosqichlarda ko'rinadi.",
   quickAnswer:

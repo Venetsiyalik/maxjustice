@@ -2,9 +2,9 @@ import type { ServiceContent } from "../types";
 
 const content: ServiceContent = {
   h1: "Family & Inheritance Disputes Attorney — Fergana",
-  metaTitle: "Family & Inheritance Disputes Attorney in Fergana | MAXLEGAL",
+  metaTitle: "Family & Inheritance Disputes Attorney in Fergana",
   metaDescription:
-    "Legal help with divorce, child custody, and inheritance disputes. Fergana, S. Temur St. 43. Tel: +998 77 018 14 02",
+    "Legal help with divorce, child custody, and inheritance disputes. {address}. Tel: {phone}",
   quickAnswer:
     "If you're facing divorce, a custody dispute, or an inheritance issue, these matters carry deep personal weight alongside their legal complexity. A calm, professional approach helps you reach the most reasonable outcome.",
   problemParagraphs: [

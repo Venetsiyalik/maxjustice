@@ -3,9 +3,9 @@ import type { BlogArticle } from "../types";
 const article: BlogArticle = {
   slug: "tintuv-paytida-huquqlar",
   title: "Tintuv paytida qanday huquqlaringiz bor?",
-  metaTitle: "Tintuv paytida huquqlar | MAXLEGAL advokatlik byurosi",
+  metaTitle: "Tintuv paytida huquqlar",
   metaDescription:
-    "Uyingiz yoki ofisingizda tintuv o'tkazilayotganda qanday huquqlarga egasiz? Amaliy tavsiyalar. Tel: +998 77 018 14 02",
+    "Uyingiz yoki ofisingizda tintuv o'tkazilayotganda qanday huquqlarga egasiz? Amaliy tavsiyalar. Tel: {phone}",
   excerpt:
     "Tintuv — qonunda qat'iy tartibga solingan protsessual harakat. Bu jarayonda sizning ham muayyan huquqlaringiz mavjud.",
   quickAnswer:

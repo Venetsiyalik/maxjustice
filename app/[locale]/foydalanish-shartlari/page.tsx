@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
-import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
+import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { LegalPageContent } from "@/components/legal/LegalPageContent";
 
 const PATH = "/foydalanish-shartlari";
@@ -20,14 +20,12 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: "termsPage" });
 
-  return {
-    title: { absolute: t("metaTitle") },
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: {
-      canonical: buildCanonicalUrl(locale, PATH),
-      languages: buildLanguageAlternates(PATH),
-    },
-  };
+  });
 }
 
 export default async function TermsPage({

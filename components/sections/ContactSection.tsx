@@ -25,7 +25,7 @@ export function ContactSection() {
 
           <a
             href={siteConfig.phone.href}
-            className="mt-3 flex items-center gap-3 text-lg font-bold text-[var(--color-navy-900)]"
+            className="mt-1 flex min-h-[44px] w-fit items-center gap-3 text-lg font-bold text-[var(--color-navy-900)]"
           >
             <PhoneIcon className="h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
             {siteConfig.phone.display}
@@ -33,7 +33,7 @@ export function ContactSection() {
 
           <a
             href={`mailto:${siteConfig.email.info}`}
-            className="mt-3 flex items-center gap-3 text-lg text-[var(--color-navy-900)]"
+            className="flex min-h-[44px] w-fit items-center gap-3 text-lg text-[var(--color-navy-900)]"
           >
             <MailIcon className="h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
             {siteConfig.email.info}
