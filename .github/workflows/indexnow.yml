@@ -1,0 +1,53 @@
+# IndexNow: Vercel Production deploy muvaffaqiyatli tugagach, sitemap'dagi
+# o'zgargan sahifalarni Bing va Yandex'ga yuboradi (scripts/indexnow.mjs).
+# Qo'lda ham ishga tushirish mumkin: GitHub → Actions → IndexNow → Run workflow.
+name: IndexNow
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Shu sanadan keyin o'zgargan sahifalar (YYYY-MM-DD). Bo'sh qoldirilsa — hammasi."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Submit changed URLs
+        env:
+          DISPATCH_SINCE: ${{ github.event.inputs.since }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "$DISPATCH_SINCE" ]; then
+              node scripts/indexnow.mjs --since="$DISPATCH_SINCE"
+            else
+              node scripts/indexnow.mjs --all
+            fi
+          else
+            # Oldingi commit sanasidan keyin o'zgargan sahifalar
+            SINCE=$(git log -1 --format=%cs HEAD~1 2>/dev/null || date -u +%F)
+            node scripts/indexnow.mjs --since="$SINCE"
+          fi
