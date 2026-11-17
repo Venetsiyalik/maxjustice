@@ -1,24 +1,18 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ShieldIcon, FileCheckIcon, DocumentSearchIcon, BriefcaseIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
-import { localizeText } from "@/lib/localize-text";
 
 export function TrustSignals() {
   const t = useTranslations("home.trustBlock");
-  const locale = useLocale();
 
   const items = [
     {
       icon: FileCheckIcon,
       label: t("license"),
-      // Haqiqiy raqam qo'yilmaguncha katta statistik son sifatida
-      // ko'rsatilmaydi (bo'sh placeholder ishonchni pasaytiradi) —
-      // to'liq matn baribir footer'da ko'rinadi.
-      value: siteConfig.license.isPlaceholder
-        ? null
-        : localizeText(locale, siteConfig.license.number),
+      // Raqam lotin harfi bilan (L...) — kirill sahifada ham o'girilmaydi.
+      value: siteConfig.license.isPlaceholder ? null : siteConfig.license.number,
     },
     {
       icon: ShieldIcon,

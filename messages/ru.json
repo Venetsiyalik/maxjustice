@@ -33,8 +33,10 @@
   },
   "footer": {
     "disclaimer": "Информация на сайте не заменяет юридическую консультацию.",
-    "licenseLabel": "Лицензия адвоката",
+    "firmName": "Адвокатское бюро MAXLEGAL AND JUSTICE",
+    "licensePrefix": "Лицензия адвоката:",
     "chamberLabel": "Член Палаты адвокатов Республики Узбекистан",
+    "taxIdPrefix": "ИНН:",
     "rightsReserved": "Все права защищены.",
     "privacyPolicy": "Политика конфиденциальности",
     "termsOfUse": "Условия использования",

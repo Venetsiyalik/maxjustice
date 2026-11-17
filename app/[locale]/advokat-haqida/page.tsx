@@ -10,7 +10,7 @@ import { buildBreadcrumbSchema } from "@/lib/schema";
 import { buildLanguageAlternates, buildCanonicalUrl } from "@/lib/seo";
 import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
-import { CheckIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
+import { CheckIcon, PhoneIcon, MailIcon, FileCheckIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 
 const PATH = "/advokat-haqida";
@@ -43,10 +43,11 @@ export default async function AboutPage({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   setRequestLocale(locale);
 
-  const [t, nav, s] = await Promise.all([
+  const [t, nav, s, f] = await Promise.all([
     getTranslations({ locale, namespace: "aboutPage" }),
     getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "services" }),
+    getTranslations({ locale, namespace: "footer" }),
   ]);
 
   const breadcrumbUrls = [
@@ -113,6 +114,17 @@ export default async function AboutPage({
 
       <Container className="max-w-3xl py-12">
         <div className="flex flex-col gap-10">
+          {/* Litsenziya — ta'lim va tajriba bloklari yonida alohida qator */}
+          <p className="flex items-start gap-2 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface-alt)] px-4 py-3 text-base text-[var(--color-ink)]">
+            <FileCheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
+            <span>
+              <span className="font-bold">
+                {f("licensePrefix")} {siteConfig.license.number}
+              </span>
+              <span className="text-[var(--color-muted)]"> · {f("chamberLabel")}</span>
+            </span>
+          </p>
+
           {sections.map((section, i) => (
             <div key={i}>
               <h2 className="text-xl font-extrabold text-[var(--color-navy-950)]">

@@ -86,13 +86,16 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white/60">
-            {t("licenseLabel")}
-          </h3>
-          <p className="text-sm text-white/80">
-            {localizeText(locale, siteConfig.license.number)}
-          </p>
-          <p className="text-sm text-white/80">{t("chamberLabel")}</p>
+          <div className="flex flex-col gap-1 text-sm text-white/80">
+            <p className="font-bold text-white">{t("firmName")}</p>
+            <p>
+              {t("licensePrefix")} {siteConfig.license.number}
+            </p>
+            <p>{t("chamberLabel")}</p>
+            <p>
+              {t("taxIdPrefix")} {siteConfig.taxId}
+            </p>
+          </div>
           <ul className="mt-1 flex flex-col gap-1 text-sm text-white/60">
             <li>
               <Link href="/maxfiylik-siyosati" className="hover:text-white">

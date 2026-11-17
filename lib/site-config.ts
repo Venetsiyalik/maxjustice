@@ -14,12 +14,14 @@ export const siteConfig = {
     jobTitle: "Advokat",
   },
   license: {
-    // TODO: haqiqiy litsenziya raqami bilan almashtirish (7.3-band, majburiy)
-    number: "№ ______ (litsenziya raqami kiritilishi kerak)",
-    // Haqiqiy raqam qo'yilgach shu qiymatni "false" ga o'zgartiring —
-    // shunda bosh sahifadagi katta statistik ko'rsatkichda ham chiqadi.
-    isPlaceholder: true,
+    // Advokatlik litsenziyasi raqami (buyurtmachi tasdiqlagan, 7.3-band).
+    // Kirill sahifada ham lotin harfi bilan qolishi kerak — shuning uchun
+    // localizeText() orqali o'tkazilmaydi.
+    number: "L70665018",
+    isPlaceholder: false,
   },
+  // STIR (soliq to'lovchining identifikatsiya raqami) — footer va schema.org taxID
+  taxId: "311112344",
   // Butun sayt bo'ylab ishlatiladigan yagona telefon raqami — To'lanboyning
   // shaxsiy raqami (buyurtmachi tasdiqlagan). Diqqat: bu raqam mavjud Google
   // Business profilidagi ("Адвокатура", 5.0 ★, 7 sharh) "90 300 94 06"dan

@@ -11,6 +11,12 @@ export function buildLegalServiceSchema() {
     url: siteConfig.url,
     telephone: siteConfig.phone.href.replace("tel:", ""),
     email: siteConfig.email.info,
+    taxID: siteConfig.taxId,
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Advokatlik litsenziyasi",
+      identifier: siteConfig.license.number,
+    },
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

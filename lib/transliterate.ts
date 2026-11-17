@@ -61,8 +61,21 @@ const PROTECTED_TERMS = [
   "Yandex",
 ];
 
+/**
+ * Qoidaviy konvertor noto'g'ri beradigan o'zlashma so'zlar uchun aniq
+ * kirill shakli (masalan, "litsenziya" → "лицензия", "литсензия" emas).
+ */
+const WORD_OVERRIDES: [string, string][] = [
+  ["Litsenziya", "Лицензия"],
+  ["litsenziya", "лицензия"],
+];
+
 function placeholderFor(index: number) {
   return `@@${index}@@`;
+}
+
+function overridePlaceholderFor(index: number) {
+  return `@@w${index}@@`;
 }
 
 /**
@@ -76,6 +89,9 @@ export function toKirill(text: string): string {
   PROTECTED_TERMS.forEach((term, index) => {
     masked = masked.split(term).join(placeholderFor(index));
   });
+  WORD_OVERRIDES.forEach(([latin], index) => {
+    masked = masked.split(latin).join(overridePlaceholderFor(index));
+  });
 
   const normalized = masked.replace(APOSTROPHE_VARIANTS, NORMALIZED_APOSTROPHE);
   const transliterated = normalized.replace(
@@ -84,6 +100,9 @@ export function toKirill(text: string): string {
   );
 
   let restored = transliterated;
+  WORD_OVERRIDES.forEach(([, kirill], index) => {
+    restored = restored.split(overridePlaceholderFor(index)).join(kirill);
+  });
   PROTECTED_TERMS.forEach((term, index) => {
     restored = restored.split(placeholderFor(index)).join(term);
   });

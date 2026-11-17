@@ -33,8 +33,10 @@
   },
   "footer": {
     "disclaimer": "Saytdagi ma'lumotlar huquqiy maslahat o'rnini bosmaydi.",
-    "licenseLabel": "Advokatlik litsenziyasi",
+    "firmName": "MAXLEGAL AND JUSTICE advokatlik byurosi",
+    "licensePrefix": "Advokatlik litsenziyasi:",
     "chamberLabel": "O'zbekiston Respublikasi Advokatlar palatasi a'zosi",
+    "taxIdPrefix": "STIR:",
     "rightsReserved": "Barcha huquqlar himoyalangan.",
     "privacyPolicy": "Maxfiylik siyosati",
     "termsOfUse": "Foydalanish shartlari",

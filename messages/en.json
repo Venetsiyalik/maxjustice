@@ -33,8 +33,10 @@
   },
   "footer": {
     "disclaimer": "Information on this site does not replace individual legal advice.",
-    "licenseLabel": "Attorney license",
+    "firmName": "MAXLEGAL AND JUSTICE Law Office",
+    "licensePrefix": "Attorney licence No.",
     "chamberLabel": "Member of the Chamber of Advocates of the Republic of Uzbekistan",
+    "taxIdPrefix": "Tax ID:",
     "rightsReserved": "All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
