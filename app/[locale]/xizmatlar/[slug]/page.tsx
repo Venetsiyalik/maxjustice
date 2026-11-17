@@ -7,7 +7,7 @@ import { SERVICES, serviceHref, type ServiceSlug } from "@/lib/services-data";
 import { getServiceContent } from "@/content/services";
 import { ServicePageContent } from "@/components/services/ServicePageContent";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildFaqSchema, buildBreadcrumbSchema } from "@/lib/schema";
+import { buildFaqSchema, buildBreadcrumbSchema, buildServiceSchema } from "@/lib/schema";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { buildNotFoundMetadata } from "@/lib/not-found-metadata";
 
@@ -62,9 +62,10 @@ export default async function ServiceSlugPage({
 
   setRequestLocale(locale);
 
-  const [content, nav] = await Promise.all([
+  const [content, nav, servicesT] = await Promise.all([
     getServiceContent(locale, slug),
     getTranslations({ locale, namespace: "nav" }),
+    getTranslations({ locale, namespace: "services" }),
   ]);
 
   const breadcrumbs = [
@@ -81,6 +82,13 @@ export default async function ServiceSlugPage({
 
   return (
     <>
+      <JsonLd
+        data={buildServiceSchema(locale, {
+          name: servicesT(`${slug}.title`),
+          description: content.metaDescription,
+          path: serviceHref(slug),
+        })}
+      />
       <JsonLd data={buildFaqSchema(content.faq)} />
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
       <ServicePageContent content={content} breadcrumbs={breadcrumbs} />

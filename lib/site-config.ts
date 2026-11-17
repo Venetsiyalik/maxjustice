@@ -24,6 +24,20 @@ export const siteConfig = {
   },
   // STIR (soliq to'lovchining identifikatsiya raqami) — footer va schema.org taxID
   taxId: "311112344",
+  // Ijtimoiy tarmoq va katalog profillari (Instagram, Facebook, Telegram
+  // kanal, Google Business profili...) — schema.org `sameAs`. Bo'sh bo'lsa
+  // schema'ga chiqmaydi. Havolalar kelganda shu ro'yxatga qo'shing.
+  sameAs: [] as string[],
+  // Ish vaqti hali tasdiqlanmagan (sayt matnida "24/7"). Tasdiqlanmaguncha
+  // schema.org openingHoursSpecification CHIQARILMAYDI — noto'g'ri vaqt
+  // Google'da ko'rinib qolgandan ko'ra yo'qligi yaxshi. Tasdiqlangach, masalan:
+  // { days: ["Monday", ..., "Saturday"], opens: "09:00", closes: "18:00" }
+  openingHours: null as null | { days: string[]; opens: string; closes: string },
+  // Xizmat ko'rsatish hududi — schema.org areaServed (kr: uz dan transliteratsiya)
+  serviceArea: {
+    city: { uz: "Farg'ona", ru: "Фергана", en: "Fergana" },
+    region: { uz: "Farg'ona viloyati", ru: "Ферганская область", en: "Fergana Region" },
+  },
   // Butun sayt bo'ylab ishlatiladigan yagona telefon raqami — To'lanboyning
   // shaxsiy raqami (buyurtmachi tasdiqlagan). Diqqat: bu raqam mavjud Google
   // Business profilidagi ("Адвокатура", 5.0 ★, 7 sharh) "90 300 94 06"dan

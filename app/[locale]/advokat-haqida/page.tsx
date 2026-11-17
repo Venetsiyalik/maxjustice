@@ -6,7 +6,8 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildBreadcrumbSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildProfilePageSchema } from "@/lib/schema";
+import { SERVICES } from "@/lib/services-data";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
@@ -41,11 +42,12 @@ export default async function AboutPage({
   const locale = hasLocale(routing.locales, rawLocale) ? rawLocale : routing.defaultLocale;
   setRequestLocale(locale);
 
-  const [t, nav, s, f] = await Promise.all([
+  const [t, nav, s, f, common] = await Promise.all([
     getTranslations({ locale, namespace: "aboutPage" }),
     getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "services" }),
     getTranslations({ locale, namespace: "footer" }),
+    getTranslations({ locale, namespace: "common" }),
   ]);
 
   const breadcrumbUrls = [
@@ -64,6 +66,15 @@ export default async function AboutPage({
   return (
     <>
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
+      <JsonLd
+        data={buildProfilePageSchema(locale, {
+          name: t("heroName"),
+          jobTitle: common("jobTitle"),
+          description: t("heroSubtitle"),
+          alumniName: t("alumniName"),
+          knowsAbout: SERVICES.map(({ slug }) => s(`${slug}.title`)),
+        })}
+      />
 
       <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
         <Container>

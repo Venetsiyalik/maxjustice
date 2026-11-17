@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildBreadcrumbSchema, buildArticleSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildBlogPostingSchema } from "@/lib/schema";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { buildNotFoundMetadata } from "@/lib/not-found-metadata";
 import { BLOG_SLUGS, BLOG_LOCALES, isBlogLocale, getBlogArticle, type BlogSlug } from "@/content/blog";
@@ -92,7 +92,10 @@ export default async function BlogArticlePage({
     <>
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
       <JsonLd
-        data={buildArticleSchema({
+        data={buildBlogPostingSchema({
+          locale,
+          // ru/en sahifalarda matn hozircha o'zbekcha
+          contentLanguage: locale === "kr" ? "uz-Cyrl" : "uz",
           title: article.title,
           description: article.metaDescription,
           url: buildCanonicalUrl(locale, path),

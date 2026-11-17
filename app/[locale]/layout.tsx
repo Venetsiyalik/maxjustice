@@ -13,7 +13,8 @@ import { StickyCallButton } from "@/components/layout/StickyCallButton";
 import { LanguageSuggestionBanner } from "@/components/layout/LanguageSuggestionBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
-import { buildLegalServiceSchema } from "@/lib/schema";
+import { buildSiteGraph } from "@/lib/schema";
+import { SERVICES } from "@/lib/services-data";
 import "../globals.css";
 
 const bodyFont = Manrope({
@@ -86,6 +87,20 @@ export default async function LocaleLayout({
   // (Header, til almashtirgich, mobil panel, forma). Aks holda HAR sahifa
   // HTML'iga barcha sahifalarning matnlari qo'shilib ketadi.
   const allMessages = await getMessages();
+
+  // schema.org: byuro + sayt + advokat — sahifa tilida (lib/schema.ts)
+  const [footerT, aboutT, commonT, servicesT] = await Promise.all([
+    getTranslations({ locale, namespace: "footer" }),
+    getTranslations({ locale, namespace: "aboutPage" }),
+    getTranslations({ locale, namespace: "common" }),
+    getTranslations({ locale, namespace: "services" }),
+  ]);
+  const siteGraph = buildSiteGraph(locale, {
+    firmName: footerT("firmName"),
+    personName: aboutT("heroName"),
+    jobTitle: commonT("jobTitle"),
+    serviceNames: SERVICES.map(({ slug }) => servicesT(`${slug}.title`)),
+  });
   const clientMessages = Object.fromEntries(
     CLIENT_NAMESPACES.filter((ns) => ns in allMessages).map((ns) => [ns, allMessages[ns]])
   );
@@ -94,7 +109,7 @@ export default async function LocaleLayout({
     <html lang={LOCALE_HREFLANG[locale]} className={bodyFont.variable}>
       <body className="flex min-h-screen flex-col antialiased">
         <Analytics />
-        <JsonLd data={buildLegalServiceSchema()} />
+        <JsonLd data={siteGraph} />
         <NextIntlClientProvider messages={clientMessages}>
           <LanguageSuggestionBanner />
           <Header />

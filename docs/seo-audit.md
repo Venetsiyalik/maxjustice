@@ -410,3 +410,96 @@ Toʻrt sahifaning bir martalik toʻliq oʻlchovi (keyin): Accessibility **100** 
 5. Google Search Console → URL Inspection: `/ru/blog/tintuv-paytida-huquqlar` «Excluded by noindex» boʻlishi kerak (bu kutilgan holat).
 6. Telegram yoki Facebook'da sahifa havolasini ulashib, OG preview'ni koʻrish.
 7. Favicon va logo siqilgandan keyin ham toza koʻrinishini tekshirish.
+
+---
+
+# 3-bosqich natijalari — Strukturali maʼlumot (JSON-LD)
+
+**Sana:** 2026-11-17 · **Holat:** bajarildi, commit qilinmagan
+
+## Nima oʻzgardi
+
+Barcha schema'lar endi bitta bogʻlangan tizim. Har sahifada (layout'dan) `@graph` chiqadi, uchta doimiy tugun bilan:
+
+| Tugun | `@id` | Asosiy maydonlar |
+|---|---|---|
+| `LegalService` (byuro) | `https://maxjustice.uz/#organization` | name, legalName (sahifa tilida), url, logo, image, telephone, email, taxID, hasCredential (L70665018, Advokatlar palatasi), address, geo, areaServed (**shahar + viloyat**, sahifa tilida), knowsAbout (10 ta xizmat), founder → `#person`, priceRange |
+| `WebSite` | `#website` | name, url, inLanguage, publisher → `#organization` |
+| `Person` (advokat, qisqa) | `#person` | name, jobTitle, url («Advokat haqida»), worksFor → `#organization` |
+
+Sahifaga xos schema'lar:
+
+| Sahifa | Schema |
+|---|---|
+| «Advokat haqida» | `ProfilePage` → toʻliq `Person` (`#person`): description, telephone, email, alumniOf (IIV Akademiyasi), knowsAbout, hasCredential, address |
+| Xizmat sahifalari (10 × 4 til) | **`Service`** (name, serviceType, description, provider → `#organization`, areaServed, inLanguage) + `FAQPage` + `BreadcrumbList` |
+| Blog maqolalari | **`BlogPosting`** (`Article` oʻrniga): headline, description, datePublished/Modified, image, inLanguage (matnning haqiqiy tili), author → `#person`, publisher → `#organization`, mainEntityOfPage |
+| Savol-javob | `FAQPage` + `BreadcrumbList` (oʻzgarmadi) |
+| Boshqa ichki sahifalar | `BreadcrumbList` (oʻzgarmadi) |
+
+**Olib tashlandi:**
+- ❌ `aggregateRating` (Kritik #4, Google'ning «self-serving review» siyosatiga zid edi).
+- ❌ `openingHoursSpecification` — ish vaqti hali tasdiqlanmagan. Notoʻgʻri vaqt Google'da koʻrinib qolgandan koʻra, vaqt koʻrsatilmagani yaxshi. Tasdiqlangach, `site-config.ts` → `openingHours` ga yozilsa, schema'ga avtomatik qaytadi.
+
+**Tayyor, lekin boʻsh:** `site-config.ts` → `sameAs: []`. Ijtimoiy tarmoq yoki Google Business havolasi qoʻshilsa, `LegalService` va `Person` ga avtomatik chiqadi.
+
+**`Organization` alohida tugun sifatida qoʻshilmadi:** `LegalService` schema.org'da `Organization` ning bir turi. Ikkita tugun boʻlsa, Google bitta byuroni ikki obyekt deb qabul qilishi mumkin. Logo va boshqa `Organization` maydonlari `LegalService` ga qoʻshildi.
+
+**Fayllar:**
+- `lib/schema.ts` (qayta yozildi)
+- `lib/site-config.ts` (`sameAs`, `openingHours`, `serviceArea`)
+- `app/[locale]/layout.tsx`
+- `app/[locale]/advokat-haqida/page.tsx`
+- `app/[locale]/xizmatlar/[slug]/page.tsx`
+- `app/[locale]/blog/[slug]/page.tsx`
+- `messages/*.json` (`aboutPage.alumniName`)
+- `scripts/check-schema.mjs`, `package.json`
+
+## Tekshiruv
+
+Yangi buyruq: `npm run check:schema` (ishlab turgan saytga qarshi, `SITE_URL` bilan).
+
+Sitemap'dagi barcha URL'lar ochilib, quyidagilar tekshiriladi:
+- JSON toʻgʻri tahlil qilinadimi
+- `@id` havolalari shu sahifadagi tugunga mos keladimi
+- Google'ning majburiy maydonlari bormi
+- `aggregateRating` yoki toʻldirilmagan `{phone}` yoʻqmi
+
+Natija (lokal production build):
+
+```
+Tekshirildi: 94 URL
+Turlar: LegalService×94, WebSite×94, Person×114, ProfilePage×4, Service×40,
+        BlogPosting×16, FAQPage×44, BreadcrumbList×90, ...
+Muammo topilmadi ✓
+```
+
+## Qoʻlda tekshirish: Rich Results Test va Schema Validator
+
+Deploy'dan keyin quyidagi URL'larni ikkita vositada tekshiring:
+- https://search.google.com/test/rich-results
+- https://validator.schema.org
+
+| # | URL | Nima kutiladi |
+|---|---|---|
+| 1 | `https://maxjustice.uz/` | Rich Results: LocalBusiness (LegalService). Validator: LegalService, WebSite, Person — xatosiz |
+| 2 | `https://maxjustice.uz/ru` | Xuddi shu, ruscha nomlar bilan |
+| 3 | `https://maxjustice.uz/advokat-haqida` | Rich Results: Profile page. Person: alumniOf, hasCredential |
+| 4 | `https://maxjustice.uz/xizmatlar/jinoiy-ishlar` | Breadcrumbs + FAQ. Validator: Service |
+| 5 | `https://maxjustice.uz/ru/xizmatlar/oila-va-meros` | Xuddi shu, ruscha |
+| 6 | `https://maxjustice.uz/savol-javob` | FAQ + Breadcrumbs |
+| 7 | `https://maxjustice.uz/blog/tintuv-paytida-huquqlar` | Rich Results: Article (BlogPosting) + Breadcrumbs |
+| 8 | `https://maxjustice.uz/kr/blog/hibsga-olinsa-qanday-harakat-qilish-kerak` | Article, kirill |
+
+**Eslatmalar:**
+- Rich Results Test'da `LegalService` «Local business» deb koʻrinadi. «Ish vaqti yoʻq» degan **ogohlantirish** (xato emas) chiqadi — bu ataylab qilingan, ish vaqti tasdiqlanishi kutilyapti.
+- FAQ: 2023-yildan beri Google FAQ rich result'larni asosan davlat va sogʻliqni saqlash saytlariga koʻrsatadi. Schema toʻgʻri va AI qidiruvi uchun foydali, lekin Google natijalarida savol-javob kengaymasi chiqmasligi mumkin.
+- `ProfilePage` va `Person` uchun advokat fotosi (`image`) hali yoʻq. Foto kelgach qoʻshiladi.
+
+## Ochiq qolganlar
+
+- Ish vaqti tasdiqlansa → `site-config.ts` → `openingHours`.
+- Ijtimoiy tarmoq va Google Business havolalari → `site-config.ts` → `sameAs`.
+- Advokat va ofis fotosi → `LegalService.image`, `Person.image`.
+- `alumniOf` saytdagi matndan olindi («Ichki Ishlar Vazirligi Akademiyasi» / «Академия МВД»). Rasmiy toʻliq nomi tasdiqlansa, `messages/*.json` → `aboutPage.alumniName` da yangilanadi.
+- Blog maqolalariga `FAQPage` B1 bosqichida (frontmatter `faq` bilan) qoʻshiladi.
