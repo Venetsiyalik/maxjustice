@@ -1,5 +1,7 @@
 "use server";
 
+import { saveLead } from "@/lib/leads";
+
 export type ContactFormState = {
   status: "idle" | "success" | "error";
   errorReason?: "validation" | "config" | "network";
@@ -28,10 +30,20 @@ export async function submitContactForm(
     return { status: "error", errorReason: "validation", fieldErrors };
   }
 
+  // Ariza admin panel uchun Redis'ga ham saqlanadi (sozlangan bo'lsa).
+  // Telegram yoki Redis'dan biri ishlasa — ariza yo'qolmagan hisoblanadi.
+  let savedToAdmin = false;
+  try {
+    savedToAdmin = await saveLead({ name, phone, message, source, locale });
+  } catch (err) {
+    console.error("[contact] Arizani Redis'ga saqlashda xatolik:", err);
+  }
+
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
   if (!token || !chatId) {
+    if (savedToAdmin) return { status: "success" };
     console.error(
       "[contact] TELEGRAM_BOT_TOKEN yoki TELEGRAM_CHAT_ID muhit o'zgaruvchilari sozlanmagan (.env.example ga qarang)"
     );
@@ -62,12 +74,12 @@ export async function submitContactForm(
 
     if (!res.ok) {
       console.error("[contact] Telegram API xatosi:", await res.text());
-      return { status: "error", errorReason: "network" };
+      return savedToAdmin ? { status: "success" } : { status: "error", errorReason: "network" };
     }
 
     return { status: "success" };
   } catch (err) {
     console.error("[contact] Telegramga yuborishda xatolik:", err);
-    return { status: "error", errorReason: "network" };
+    return savedToAdmin ? { status: "success" } : { status: "error", errorReason: "network" };
   }
 }

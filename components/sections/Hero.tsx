@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -44,12 +45,16 @@ export function Hero() {
           </div>
         </div>
 
-        {/* TODO: advokatning studiya sifatidagi professional fotosi bilan almashtirish (8.3-band) */}
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--color-navy-900)] to-[var(--color-navy-950)] shadow-xl">
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-white">
-            <span className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-[var(--color-gold-500)] text-3xl font-extrabold">
-              NT
-            </span>
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-[var(--color-navy-950)] shadow-xl">
+          <Image
+            src={siteConfig.founder.photo.src}
+            alt={localizeText(locale, siteConfig.founder.fullName)}
+            fill
+            priority
+            sizes="(min-width: 1024px) 384px, 90vw"
+            className="object-cover object-top"
+          />
+          <div className="absolute inset-x-0 bottom-0 flex flex-col items-center bg-gradient-to-t from-[var(--color-navy-950)] via-[var(--color-navy-950)]/80 to-transparent px-4 pb-5 pt-16 text-white">
             <div className="text-center">
               <p className="text-lg font-bold">
                 {localizeText(

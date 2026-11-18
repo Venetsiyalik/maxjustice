@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -81,13 +82,15 @@ export default async function AboutPage({
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
 
           <div className="mt-6 flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
-            {/* TODO: advokatning professional studiya fotolari bilan almashtirish (8.3-band, 5-6 kadr) */}
-            <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--color-navy-800)] to-[var(--color-navy-950)] sm:w-48">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-[var(--color-gold-500)] text-xl font-extrabold text-white">
-                  NT
-                </span>
-              </div>
+            <div className="relative aspect-[4/5] w-40 shrink-0 overflow-hidden rounded-2xl bg-white shadow-md sm:w-48">
+              <Image
+                src={siteConfig.founder.photo.src}
+                alt={t("heroName")}
+                fill
+                priority
+                sizes="192px"
+                className="object-cover object-top"
+              />
             </div>
             <div>
               <h1 className="text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">

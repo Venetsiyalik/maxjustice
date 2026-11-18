@@ -131,6 +131,7 @@ export function buildSiteGraph(locale: string, text: SiteGraphText) {
     name: text.personName,
     jobTitle: text.jobTitle,
     url: buildCanonicalUrl(locale, "/advokat-haqida"),
+    image: `${siteConfig.url}${siteConfig.founder.photo.src}`,
     worksFor: { "@id": ORG_ID },
   };
 
@@ -169,7 +170,12 @@ export function buildProfilePageSchema(
       jobTitle: person.jobTitle,
       description: person.description,
       url,
-      // TODO: professional foto tayyor bo'lgach `image` qo'shish (8.3-band)
+      image: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}${siteConfig.founder.photo.src}`,
+        width: siteConfig.founder.photo.width,
+        height: siteConfig.founder.photo.height,
+      },
       telephone: phoneE164,
       email: siteConfig.email.founder,
       worksFor: { "@id": ORG_ID },

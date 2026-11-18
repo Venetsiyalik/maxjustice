@@ -1,0 +1,29 @@
+{
+  "phone": "+998 77 018 14 02",
+  "telegramHandle": "Maxjusticebot",
+  "email": {
+    "info": "info@maxjustice.uz",
+    "founder": "tolanboy@maxjustice.uz",
+    "advokat": "advokat@maxjustice.uz"
+  },
+  "address": {
+    "display": "Farg'ona shahri, S. Temur ko'chasi, 43-uy",
+    "short": {
+      "uz": "Farg'ona, S. Temur 43",
+      "ru": "Фергана, С. Темура 43",
+      "en": "Fergana, 43 S. Temur St."
+    },
+    "street": "S. Temur ko'chasi, 43",
+    "locality": "Farg'ona",
+    "region": "Farg'ona viloyati",
+    "postalCode": "150100",
+    "latitude": "40.3894",
+    "longitude": "71.7864"
+  },
+  "openingHours": null,
+  "sameAs": [],
+  "rating": {
+    "value": "5.0",
+    "reviewCount": "7"
+  }
+}

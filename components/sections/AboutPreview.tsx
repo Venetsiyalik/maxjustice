@@ -1,21 +1,26 @@
-import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { siteConfig } from "@/lib/site-config";
+import { localizeText } from "@/lib/localize-text";
 
 export function AboutPreview() {
+  const locale = useLocale();
   const t = useTranslations("home.aboutBlock");
   const cta = useTranslations("cta");
 
   return (
     <section className="py-16 lg:py-24">
       <Container className="grid items-center gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-        {/* TODO: advokatning professional fotosi bilan almashtirish (8.3-band) */}
-        <div className="relative mx-auto aspect-square w-full max-w-xs overflow-hidden rounded-2xl bg-gradient-to-br from-[var(--color-navy-800)] to-[var(--color-navy-950)]">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="flex h-20 w-20 items-center justify-center rounded-full border-2 border-[var(--color-gold-500)] text-2xl font-extrabold text-white">
-              NT
-            </span>
-          </div>
+        <div className="relative mx-auto aspect-square w-full max-w-xs overflow-hidden rounded-2xl bg-[var(--color-surface-alt)]">
+          <Image
+            src={siteConfig.founder.photo.src}
+            alt={localizeText(locale, siteConfig.founder.fullName)}
+            fill
+            sizes="320px"
+            className="object-cover object-top"
+          />
         </div>
 
         <div>
