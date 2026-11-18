@@ -84,6 +84,32 @@ Modda raqamlari saytda ataylab koʻrsatilmagan: lex.uz qidiruvida turli tahrirla
 | 6 | YTHda avval aybdorning majburiy sugʻurtasi boʻyicha sugʻurtachiga murojaat qilinadi | ⚠️ | Transport vositalari egalarining fuqarolik javobgarligini majburiy sugʻurta qilish toʻgʻrisidagi Qonun |
 | 7 | Daʼvo qoida tariqasida javobgarning yashash joyidagi sudga beriladi | ⚠️ | FPK — sudlovlilik qoidalari |
 
+## Mehnat nizolari (`/xizmatlar/mehnat-nizolari`)
+
+| # | Matndagi fakt | Holat | Manba |
+|---|---|---|---|
+| 1 | Ishga tiklash boʻyicha sudga murojaat — boʻshatish buyrugʻi nusxasi topshirilgan kundan uch oy | ✅ | Mehnat kodeksi (2022), 560-m. ([lex.uz](https://lex.uz/docs/6257291)); Plenumning 2023-yil 20-noyabrdagi 26-son qarori ([lex.uz](https://lex.uz/acts/6684617)) |
+| 2 | Boshqa mehnat nizolari (ish haqi va h.k.) boʻyicha — olti oy | ✅ | MK, 560-m. |
+| 3 | Uzrli sabab bilan oʻtkazib yuborilgan muddatni sud tiklashi mumkin | ✅ | Plenumning 26-son qarori |
+| 4 | Xodim mehnat nizolari komissiyasi yoki toʻgʻridan-toʻgʻri sudni tanlashi mumkin | ✅ | MK, 554-m. atrofida (raqam tekshirilsin) |
+| 5 | Mehnat munosabatlaridan kelib chiqadigan talablar boʻyicha xodim sud xarajatlaridan ozod | ✅ | MK, 561-m. |
+| 6 | Noqonuniy boʻshatilganda majburiy progul vaqti uchun haq oʻrtacha ish haqidan hisoblanadi | ⚠️ | MK — tegishli modda qidiruvda topilmadi, **tekshirilsin** |
+| 7 | Bosim yoki aldov bilan yozdirilgan «oʻz xohishim bilan» ariza asosidagi boʻshatishni nizolash mumkin | ⚠️ | Plenumning 26-son qarori — umumiy qoida sifatida |
+
+## Maʼmuriy ishlar (`/xizmatlar/mamuriy-ishlar`)
+
+| # | Matndagi fakt | Holat | Manba |
+|---|---|---|---|
+| 1 | Maʼmuriy jazo haqidagi qaror (sud qaroridan tashqari) ustidan shikoyat — nusxasi olingan kundan oʻn kun | ✅ | MJtK, 316-m. ([lex.uz](https://lex.uz/docs/97661)) |
+| 2 | Shikoyat yuqori organga yoki tuman (shahar) jinoyat ishlari boʻyicha sudiga beriladi | ✅ | MJtK, 314-m. atrofida |
+| 3 | Muddatida berilgan shikoyat ijroni toʻxtatadi; maʼmuriy qamoq va joyida undiriladigan jarima bundan mustasno | ✅ | MJtK |
+| 4 | Sud qarori ustidan alohida tartib va muddat (apellyatsiya, kassatsiya) | ✅ | MJtK, 324³-m.; Plenumning 2024-yil 25-martdagi 8-son qarori ([lex.uz](https://lex.uz/docs/6881551)). Muddat saytda yozilmagan |
+| 5 | Davlat organi qarori/harakati ustidan maʼmuriy sudga — bilgan paytdan olti oy (qonunda boshqa muddat boʻlmasa); muddat tiklanishi mumkin | ✅ | Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks, 186-m. atrofida ([lex.uz](https://lex.uz/acts/3527365)). Oldingi tahrirda — uch oy |
+| 6 | Jarimani erta toʻlash uchun imtiyozli tartib bor | ✅ | MJtK, 332¹-m. (ZRU-830, 2023): 15 kunda 50%, 30 kunda 70%, istisnolar bilan. **Foiz va kunlar saytda ataylab yozilmagan** — istisnolar roʻyxati tekshirilmagan |
+| 7 | Imzodan bosh tortish protokolni bekor qilmaydi, protokolda qayd etiladi | ⚠️ | MJtK — umumiy qoida |
+| 8 | Guvohnomadan mahrum qilishni koʻpincha sud tayinlaydi | ⚠️ | MJtK — umumiy qoida |
+| 9 | Davlat organi ustidan yuqori organga yoki toʻgʻridan-toʻgʻri maʼmuriy sudga shikoyat qilish mumkin | ⚠️ | «Maʼmuriy tartib-taomillar toʻgʻrisida»gi Qonun — tekshirilsin |
+
 ## Saytdagi tasdiqlanmagan vaʼdalar (huquqiy emas, lekin muhim)
 
 - «Birinchi konsultatsiya — bepul» (`messages/*.json` → `servicePage.ctaSubtitle` va boshqa joylar) — [TEKSHIRISH KERAK]

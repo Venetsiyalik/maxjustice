@@ -248,3 +248,120 @@ Har bir sahifa uchun matn yozishdan oldingi reja. Tuzilma barcha sahifalarda bir
 - `services-data.ts`: yangi `huquqiy-konsultatsiya` va `iqtisodiy-nizolar` (`locales: uz, kr, ru`), bogʻliq roʻyxatlar yangilanadi.
 - `messages/*.json`: yangi xizmatlar nomi va karta matni (uz, ru, en).
 - `lib/routes.ts` → `CONTENT_UPDATED_AT` yangilanadi, shunda IndexNow yangi sahifalarni Bing va Yandex'ga yuboradi.
+
+---
+
+## 3-partiya — reja ✅ (yozildi, 2026-11-18)
+
+### 7. `mehnat-nizolari` — kengaytirish (~390 → ~750 soʻz)
+
+- **H1:** «Mehnat nizolari boʻyicha advokat Fargʻonada»
+- **Asosiy yoʻnalishlar:**
+  - Noqonuniy ishdan boʻshatish va ishga tiklanish
+  - Ish haqi, kompensatsiya va boshqa toʻlovlarni undirish
+  - Intizomiy jazoni bekor qildirish
+  - Rasmiylashtirilmagan mehnat munosabatlari
+  - Ish beruvchi tomonidan himoya: xodim daʼvosiga javob
+- **Qisqa javob:**
+  - Ishdan boʻshatish yoki boshqa mehnat huquqi buzilishi ustidan sudga murojaat qilish uchun qonunda **qisqa muddatlar** belgilangan [aniq muddatlar — yangi Mehnat kodeksi, lex.uz].
+  - Boʻshatish haqidagi buyruq nusxasini, mehnat shartnomasini va ish haqi maʼlumotlarini darhol saqlab qoʻying.
+- **Muammo:**
+  - Xodim ish beruvchiga qaraganda kuchsiz holatda.
+  - Koʻpchilik buyruqni «tushunmay» imzolaydi yoki «oʻz xohishim bilan» ariza yozishga koʻndiriladi.
+  - Muddat oʻtib ketadi.
+- **Nima qilish kerak (5):**
+  - Buyruq va hujjatlar nusxasini yozma soʻrang
+  - Bosim ostida «oʻz xohishim bilan» ariza yozmang
+  - Ish vaqti va topshiriqlarni tasdiqlovchi yozishmalarni saqlang
+  - Muddatni hisoblang
+  - Avval ish beruvchiga yozma murojaat qiling
+- **Men qanday yordam beraman:**
+  - Ishdan boʻshatishning qonuniyligini tahlil qilish
+  - Ishga tiklash va majburiy progul uchun haq undirish
+  - Ish haqi va kompensatsiyalarni undirish
+  - Intizomiy jazo ustidan shikoyat
+  - Mehnat munosabatini belgilash (rasmiylashtirilmagan ish)
+  - Ish beruvchi uchun: hujjatlarni tekshirish va xodim daʼvosiga javob
+- **Tergovchilik bloki:** yoʻq.
+- **Kerakli hujjatlar:**
+  - Mehnat shartnomasi
+  - Ishga qabul qilish va boʻshatish haqidagi buyruqlar
+  - Mehnat daftarchasi yoki elektron mehnat daftarchasidan koʻchirma
+  - Ish haqi haqidagi maʼlumotnoma va bank koʻchirmalari
+  - Intizomiy jazo haqidagi buyruq va tushuntirish xati
+  - Yozishmalar, guvohlar maʼlumoti
+- **Jarayon (5):** konsultatsiya → muddat va dalillarni baholash → ish beruvchiga yozma talab → sud → ijro.
+- **FAQ (6–7):**
+  1. Meni noqonuniy boʻshatishdi — qancha muddatda sudga murojaat qilishim kerak?
+  2. Ishga tiklansam, majburiy progul uchun haq toʻlanadimi?
+  3. Ish haqi toʻlanmayapti — nima qilaman?
+  4. «Oʻz xohishim bilan» ariza yozgan boʻlsam ham nizolasha olamanmi?
+  5. Rasmiy ishga olinmagan boʻlsam ham himoya olsa boʻladimi?
+  6. Sudga murojaat uchun davlat boji toʻlanadimi?
+  7. Ish beruvchi bilan sudgacha kelishish mumkinmi?
+- **Bogʻliq:** fuqarolik nizolari, sudda vakillik, huquqiy konsultatsiya.
+- **lex.uz da tekshiriladi (yangi Mehnat kodeksi, 2023-yildan):**
+  - Ishga tiklash va boshqa mehnat nizolari boʻyicha sudga murojaat muddatlari
+  - Majburiy progul haqi
+  - Xodimning davlat bojidan ozod qilinishi
+  - Mehnat nizolari komissiyasi
+
+### 8. `mamuriy-ishlar` — kengaytirish (~390 → ~750 soʻz)
+
+- **H1:** «Maʼmuriy ishlar boʻyicha advokat Fargʻonada»
+- **Ikki yoʻnalish (sahifada aniq ajratiladi):**
+  1. **Maʼmuriy huquqbuzarliklar:**
+     - Protokol va jarima
+     - Haydovchilik guvohnomasidan mahrum qilish
+     - Maʼmuriy qamoq
+     - YHXX jarimalari
+  2. **Davlat organlari bilan nizolar:**
+     - Hokimlik, soliq yoki boshqa organ qarori va harakati ustidan maʼmuriy sudga shikoyat
+- **Tergovchilik bloki:** bor (protokol rasmiylashtirish va dalillar bilan ishlash tajribasi).
+- **Qisqa javob:**
+  - Protokolga eʼtirozingizni yozib qoldiring.
+  - Qaror ustidan shikoyat muddati qisqa [aniq muddat — Maʼmuriy javobgarlik toʻgʻrisidagi kodeks, lex.uz].
+  - Davlat organi qarori ustidan maʼmuriy sudga murojaat qilish mumkin [muddat — lex.uz].
+- **Muammo:**
+  - «Kichik jarima, toʻlab qoʻya qolay» degan fikr.
+  - Lekin takroriy huquqbuzarlik, guvohnomadan mahrum qilish yoki maʼmuriy qamoq jiddiy oqibatlarga olib keladi.
+  - Davlat organi qarori esa biznes yoki mulkka taʼsir qiladi.
+- **Nima qilish kerak (5):**
+  - Protokolni oʻqing, eʼtirozni shu yerga yozing
+  - Nusxasini oling
+  - Dalillarni darhol yigʻing (video, guvoh)
+  - Shikoyat muddatini hisoblang
+  - Qaror nusxasini rasmiy oling
+- **Men qanday yordam beraman:**
+  - Protokol va qaror qonuniyligini tahlil qilish
+  - Ish koʻrilayotganda himoya
+  - Qaror ustidan shikoyat (yuqori organ yoki sud)
+  - Guvohnomadan mahrum qilish va maʼmuriy qamoq ishlarida himoya
+  - Davlat organi qarori yoki harakati ustidan maʼmuriy sudga daʼvo
+- **Kerakli hujjatlar:**
+  - Protokol nusxasi
+  - Qaror nusxasi va u topshirilgan sana
+  - Video va foto (videoregistrator ham)
+  - Guvohlar maʼlumoti
+  - Haydovchilik guvohnomasi va texpasport (YHXX ishlarida)
+  - Davlat organi bilan yozishmalar va uning qarori
+- **Jarayon (5):** konsultatsiya → hujjatlar va muddat → eʼtiroz yoki shikoyat → koʻrib chiqishda ishtirok → keyingi instansiya.
+- **FAQ (7):**
+  1. Maʼmuriy jarimaga qancha muddatda shikoyat qilish mumkin?
+  2. Protokolga imzo qoʻymasam nima boʻladi?
+  3. Jarimani kamaytirish yoki bekor qilish mumkinmi?
+  4. Haydovchilik guvohnomasidan mahrum qilishga qarshi himoya bormi?
+  5. Davlat organi qaroriga qayerga shikoyat qilinadi?
+  6. Shikoyat paytida jarimani toʻlash kerakmi?
+  7. Ish qancha davom etadi?
+- **Bogʻliq:** tergovga qadar tekshiruv, sudda vakillik, jinoiy ishlar.
+- **lex.uz da tekshiriladi:**
+  - MJtK: shikoyat muddati, shikoyat kimga beriladi, protokolga eʼtiroz
+  - Maʼmuriy sud ishlarini yuritish toʻgʻrisidagi kodeks: davlat organi qarori ustidan murojaat muddati
+  - Jarimani muddatida toʻlash imtiyozi (bor-yoʻqligi)
+
+### Texnik
+
+- Kontent fayllari (uz + ru) qayta yoziladi. `en` versiyasi eski matn bilan qoladi (indekslanadi).
+- `CONTENT_UPDATED_AT` yangilanadi, IndexNow avtomatik yuboradi.
+- Bu partiyadan keyin 4-bosqichning asosiy 8 ta xizmati tugaydi. Qolgan 5 ta sahifa (`tergovga-qadar`, `tadbirkor-himoyasi`, `iqtisodiy-jinoyatlar`, `shartnomalar`, `sudda-vakillik`) keyinroq.

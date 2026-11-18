@@ -106,7 +106,7 @@ export const SERVICES: ServiceMeta[] = [
     slug: "mehnat-nizolari",
     icon: HandshakeIcon,
     onHomepage: false,
-    related: ["fuqarolik-ishlari", "sudda-vakillik"],
+    related: ["fuqarolik-ishlari", "sudda-vakillik", "huquqiy-konsultatsiya"],
   },
   {
     slug: "shartnomalar",
