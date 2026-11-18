@@ -45,24 +45,30 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl bg-[var(--color-navy-950)] shadow-xl">
-          <Image
-            src={siteConfig.founder.photo.src}
-            alt={localizeText(locale, siteConfig.founder.fullName)}
-            fill
-            priority
-            sizes="(min-width: 1024px) 384px, 90vw"
-            className="object-cover object-top"
+        <div className="relative mx-auto w-full max-w-sm">
+          {/* Dekorativ oltin ramka — portret ortida, biroz siljigan */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border-2 border-[var(--color-gold-500)]/70 sm:translate-x-4 sm:translate-y-4"
           />
-          <div className="absolute inset-x-0 bottom-0 flex flex-col items-center bg-gradient-to-t from-[var(--color-navy-950)] via-[var(--color-navy-950)]/80 to-transparent px-4 pb-5 pt-16 text-white">
-            <div className="text-center">
-              <p className="text-lg font-bold">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#7d8a98] shadow-2xl ring-1 ring-black/5">
+            <Image
+              src={siteConfig.founder.photo.src}
+              alt={localizeText(locale, siteConfig.founder.fullName)}
+              fill
+              priority
+              sizes="(min-width: 1024px) 384px, 90vw"
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-navy-950)]/95 via-[var(--color-navy-950)]/60 to-transparent px-5 pb-5 pt-20 text-white">
+              <span className="mb-2 block h-0.5 w-10 rounded-full bg-[var(--color-gold-500)]" />
+              <p className="text-lg font-bold leading-tight">
                 {localizeText(
                   locale,
                   siteConfig.founder.fullName.split(" ").slice(0, 2).join(" ")
                 )}
               </p>
-              <p className="text-sm text-white/60">{common("jobTitle")}</p>
+              <p className="mt-0.5 text-sm text-white/70">{common("jobTitle")}</p>
             </div>
           </div>
         </div>

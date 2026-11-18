@@ -13,14 +13,20 @@ export function AboutPreview() {
   return (
     <section className="py-16 lg:py-24">
       <Container className="grid items-center gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-        <div className="relative mx-auto aspect-square w-full max-w-xs overflow-hidden rounded-2xl bg-[var(--color-surface-alt)]">
-          <Image
-            src={siteConfig.founder.photo.src}
-            alt={localizeText(locale, siteConfig.founder.fullName)}
-            fill
-            sizes="320px"
-            className="object-cover object-top"
+        <div className="relative mx-auto w-full max-w-xs">
+          <div
+            aria-hidden="true"
+            className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-[var(--color-gold-500)]/25 to-transparent"
           />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#7d8a98] shadow-lg ring-1 ring-black/5">
+            <Image
+              src={siteConfig.founder.photo.src}
+              alt={localizeText(locale, siteConfig.founder.fullName)}
+              fill
+              sizes="320px"
+              className="object-cover object-top"
+            />
+          </div>
         </div>
 
         <div>

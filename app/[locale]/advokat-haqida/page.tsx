@@ -82,13 +82,13 @@ export default async function AboutPage({
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
 
           <div className="mt-6 flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
-            <div className="relative aspect-[4/5] w-40 shrink-0 overflow-hidden rounded-2xl bg-white shadow-md sm:w-48">
+            <div className="relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl bg-[#7d8a98] shadow-lg ring-4 ring-white sm:w-56">
               <Image
                 src={siteConfig.founder.photo.src}
                 alt={t("heroName")}
                 fill
                 priority
-                sizes="192px"
+                sizes="224px"
                 className="object-cover object-top"
               />
             </div>

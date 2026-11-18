@@ -23,7 +23,7 @@ export const siteConfig = {
     fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
     jobTitle: "Advokat",
     // Rasmiy portret (public/ ichida), 4:5, 960×1200
-    photo: { src: "/images/nasrdinov-tolanboy.jpg", width: 960, height: 1200 },
+    photo: { src: "/images/nasrdinov-tolanboy-advokat.jpg", width: 960, height: 1200 },
   },
   license: {
     // Advokatlik litsenziyasi raqami (buyurtmachi tasdiqlagan, 7.3-band).
