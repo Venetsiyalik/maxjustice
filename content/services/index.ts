@@ -17,6 +17,8 @@ const uzLoaders: Record<ServiceSlug, Loader> = {
   "mehnat-nizolari": () => import("./uz/mehnat-nizolari"),
   shartnomalar: () => import("./uz/shartnomalar"),
   "sudda-vakillik": () => import("./uz/sudda-vakillik"),
+  "iqtisodiy-nizolar": () => import("./uz/iqtisodiy-nizolar"),
+  "huquqiy-konsultatsiya": () => import("./uz/huquqiy-konsultatsiya"),
 };
 
 // ru/en: haqiqiy tarjima tayyor bo'lmagan xizmatlar vaqtincha uz kontentini
@@ -35,6 +37,8 @@ const ruLoaders: Partial<Record<ServiceSlug, Loader>> = {
   "mehnat-nizolari": () => import("./ru/mehnat-nizolari"),
   shartnomalar: () => import("./ru/shartnomalar"),
   "sudda-vakillik": () => import("./ru/sudda-vakillik"),
+  "iqtisodiy-nizolar": () => import("./ru/iqtisodiy-nizolar"),
+  "huquqiy-konsultatsiya": () => import("./ru/huquqiy-konsultatsiya"),
 };
 
 const enLoaders: Partial<Record<ServiceSlug, Loader>> = {

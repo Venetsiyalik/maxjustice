@@ -151,3 +151,100 @@ Har bir sahifa uchun matn yozishdan oldingi reja. Tuzilma barcha sahifalarda bir
 - `messages/*.json`: yangi xizmatlarning nomi va karta matni (uz, ru, en).
 - `next.config.ts`: `oila-va-meros` → `oilaviy-nizolar` 308 yoʻnaltirishi, barcha til prefikslari bilan.
 - `oila-va-meros` kontent fayllari oʻchiriladi. Boshqa xizmatlarning «bogʻliq» roʻyxatlari yangilanadi.
+
+---
+
+## 2-partiya — ✅ yozildi (2026-11-17)
+
+> Konsultatsiya formati, tili va narxi tasdiqlanmagani uchun sahifada faqat «ofisda» deb yozildi, narx uchun «Narxlar» sahifasiga havola berildi. «Natijani vaʼda qiladigan advokatdan ehtiyot boʻling» degan jumla olib tashlandi: u boshqa advokatlar bilan solishtirish hisoblanadi.
+>
+> **Soʻz soni (faqat kontent):** huquqiy-konsultatsiya uz 683 / ru 705 · iqtisodiy-nizolar uz 736 / ru 728 · fuqarolik-ishlari uz 704 / ru 716.
+
+### 4. `huquqiy-konsultatsiya` — yangi (~750 soʻz)
+
+- **URL:** `/xizmatlar/huquqiy-konsultatsiya`
+- **H1:** «Huquqiy konsultatsiya — advokat Fargʻonada»
+- **Meta title:** «Advokat konsultatsiyasi Fargʻonada | MAXLEGAL» (~44)
+- **Qisqa javob:** konsultatsiya nima beradi — vaziyatga huquqiy baho, xatarlar, harakat rejasi va hujjatlar tahlili. Qayerda: ofisda (S. Temur 43) yoki masofadan [format tasdiqlansin]. Narxi «Narxlar» sahifasida [bepulmi — tasdiqlansin].
+- **Muammo:** odamlar advokatga juda kech murojaat qiladi — hujjat imzolangandan, muddat oʻtgandan yoki birinchi soʻroqdan keyin. Bir martalik konsultatsiya keyinchalik qimmatga tushadigan xatoning oldini olishi mumkin.
+- **Nima qilish kerak (konsultatsiyaga tayyorgarlik, 5):**
+  - Voqealar xronologiyasini yozing
+  - Barcha hujjatlarni olib keling (nusxalari ham boʻladi)
+  - Savollaringizni oldindan tayyorlang
+  - Maqsadingizni aniqlang: nimaga erishmoqchisiz?
+  - Hech narsani yashirmang — advokat sir saqlashga majbur
+- **Men qanday yordam beraman:**
+  - Vaziyatni tinglab, qonun nuqtai nazaridan baho beraman
+  - Hujjatlarni (shartnoma, chaqiruv qogʻozi, qaror) koʻrib chiqaman
+  - Xatarlar va imkoniyatlarni ochiq aytaman — natija vaʼda qilinmaydi
+  - Aniq harakat rejasini taklif qilaman: oʻzingiz qila oladigan qadamlar va advokat kerak boʻladigan qadamlar
+  - Kerak boʻlsa, ariza, shikoyat yoki javob xati loyihasini tayyorlayman
+- **Tergovchilik bloki:** yoʻq.
+- **Kerakli hujjatlar:** pasport; vaziyatga oid barcha hujjatlar (shartnomalar, chaqiruv qogʻozi, sud qarorlari, xatlar); yozishmalar (skrinshotlar); muddatlarni koʻrsatadigan hujjatlar (qaror topshirilgan sana va h.k.).
+- **Jarayon (4):** murojaat (telefon/Telegram/forma) → vaqt kelishiladi → konsultatsiya → keyingi qadamlar (mustaqil yoki advokat bilan).
+- **FAQ (6):**
+  1. Konsultatsiya qancha davom etadi?
+  2. Masofadan (telefon, Telegram) konsultatsiya olsa boʻladimi? [tasdiqlansin]
+  3. Aytganlarim sir saqlanadimi? — advokat sirini saqlash (Advokatura toʻgʻrisidagi qonun — lex.uz da tekshiriladi)
+  4. Konsultatsiyadan keyin advokatni yollashim shartmi? — yoʻq
+  5. Rus tilida konsultatsiya mumkinmi? [tasdiqlansin]
+  6. Narxi qancha? → «Narxlar»
+- **Bogʻliq:** jinoiy ishlar, fuqarolik nizolari, oilaviy nizolar.
+
+### 5. `iqtisodiy-nizolar` — yangi (~850 soʻz)
+
+- **URL:** `/xizmatlar/iqtisodiy-nizolar`
+- **H1:** «Iqtisodiy nizolar boʻyicha advokat Fargʻonada»
+- **Meta title:** «Iqtisodiy nizolar boʻyicha advokat Fargʻonada | MAXLEGAL» (~55)
+- **Farqi:** `tadbirkor-himoyasi` — tadbirkorga nisbatan jinoyat ishi va tekshiruvlar. Bu sahifa — tadbirkorlar oʻrtasidagi fuqarolik-huquqiy nizolar (iqtisodiy sud).
+- **Qisqa javob:** yuridik shaxslar va yakka tartibdagi tadbirkorlar oʻrtasidagi nizolar (qarzdorlik, shartnoma buzilishi, yetkazib berish, ijara, neustoyka) iqtisodiy sudda koʻriladi. Koʻp hollarda sudga murojaatdan oldin pretenziya yuborish talab qilinadi [qaysi hollarda — lex.uz]. Hujjatlar — asosiy dalil.
+- **Muammo:** «ogʻzaki kelishuv», imzolanmagan dalolatnomalar, muddati oʻtgan pretenziya — biznesda pul yoʻqotishning odatiy sabablari.
+- **Nima qilish kerak (5):**
+  - Shartnoma va barcha ilovalarni toʻplang
+  - Solishtirish dalolatnomasini (akt sverki) imzolatishga harakat qiling
+  - Yozishmalarni rasmiy kanal orqali olib boring
+  - Pretenziyani yozma yuboring va yuborilganini isbotlang
+  - Daʼvo muddatini kuzating [umumiy muddat — lex.uz]
+- **Men qanday yordam beraman:**
+  - Shartnoma va hujjatlarni tahlil qilib, pozitsiyani baholayman
+  - Pretenziya va unga javob tayyorlayman
+  - Qarzdorlik, neustoyka va zararni undirish boʻyicha iqtisodiy sudda vakillik qilaman
+  - Daʼvoga qarshi himoya (siz javobgar boʻlsangiz)
+  - Muzokara va kelishuv bitimi
+  - Apellyatsiya va kassatsiya, sud qarori ijrosi
+- **Tergovchilik bloki:** yoʻq.
+- **Kerakli hujjatlar:** shartnoma va ilovalar; hisob-fakturalar va yuk xatlari; bajarilgan ishlar dalolatnomalari; solishtirish dalolatnomasi; toʻlov topshiriqnomalari; yozishmalar; pretenziya va javob; korxona taʼsis hujjatlari va ishonchnoma.
+- **Jarayon (5):** hujjatlar tahlili → pretenziya → muzokara → iqtisodiy sud → ijro.
+- **FAQ (6):**
+  1. Pretenziya yuborish shartmi?
+  2. Qarz undirish uchun qancha vaqt bor? (daʼvo muddati)
+  3. Shartnoma imzolanmagan boʻlsa, qarzni undirish mumkinmi?
+  4. Neustoyka va foizni undirsa boʻladimi?
+  5. Sud xarajatlarini kim toʻlaydi?
+  6. Ish qancha davom etadi?
+- **Bogʻliq:** shartnomalar, tadbirkor himoyasi, fuqarolik nizolari.
+- **lex.uz da tekshiriladi:** pretenziya tartibi (Iqtisodiy protsessual kodeks), umumiy daʼvo muddati (Fuqarolik kodeksi), neustoyka, sud xarajatlarini taqsimlash.
+
+### 6. `fuqarolik-ishlari` — kengaytirish (~390 → ~800 soʻz)
+
+- **H1:** «Fuqarolik nizolari boʻyicha advokat Fargʻonada»
+- **Asosiy yoʻnalishlar (yangi matnda markazda):** qarz undirish (tilxat, qarz shartnomasi), shartnoma nizolari, zararni undirish (YTH, suv bosishi, mulkka zarar), uy-joy va mulk nizolari, isteʼmolchi huquqlari.
+- **Qisqa javob:** fuqarolar oʻrtasidagi mulkiy nizolar fuqarolik ishlari boʻyicha sudda koʻriladi. Muvaffaqiyat asosan dalillarga bogʻliq: tilxat, shartnoma, toʻlov, yozishmalar. Daʼvo muddatini oʻtkazib yubormaslik kerak [muddat — lex.uz].
+- **Nima qilish kerak (5):** tilxat/shartnomani asl holida saqlang; toʻlovlarni bank orqali qiling; yozishmalarni saqlang; zarar boʻlsa — darhol hujjatlashtiring (foto, dalolatnoma, baholash); avval yozma talab yuboring.
+- **Men qanday yordam beraman:** qarz undirish; shartnomani bajarish yoki bekor qilish; zararni undirish (baholash bilan); mulk va uy-joy nizolari; isteʼmolchi huquqlari; daʼvoga qarshi himoya; ijro.
+- **Kerakli hujjatlar:** tilxat yoki qarz shartnomasi; toʻlov hujjatlari; yozishmalar; mulk hujjatlari; zarar haqida dalolatnoma va baholash hisoboti; guvohlar maʼlumoti.
+- **FAQ (6):**
+  1. Tilxat sudda dalil boʻladimi?
+  2. Qarz yozma rasmiylashtirilmagan boʻlsa nima qilish kerak?
+  3. Daʼvo muddati qancha?
+  4. Davlat boji va sud xarajatlarini kim toʻlaydi?
+  5. Sud qarori bajarilmasa nima boʻladi? (MIB)
+  6. Ish qancha davom etadi?
+- **Bogʻliq:** shartnomalar, iqtisodiy nizolar, sudda vakillik.
+- **lex.uz da tekshiriladi:** daʼvo muddati, qarz shartnomasining yozma shakli talabi, sud xarajatlarini taqsimlash.
+
+### Texnik (2-partiya bilan birga)
+
+- `services-data.ts`: yangi `huquqiy-konsultatsiya` va `iqtisodiy-nizolar` (`locales: uz, kr, ru`), bogʻliq roʻyxatlar yangilanadi.
+- `messages/*.json`: yangi xizmatlar nomi va karta matni (uz, ru, en).
+- `lib/routes.ts` → `CONTENT_UPDATED_AT` yangilanadi, shunda IndexNow yangi sahifalarni Bing va Yandex'ga yuboradi.

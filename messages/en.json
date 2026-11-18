@@ -374,6 +374,14 @@
     "sudda-vakillik": {
       "title": "Court Representation",
       "cardText": "You need a representative to defend your interests in court"
+    },
+    "iqtisodiy-nizolar": {
+      "title": "Commercial Disputes",
+      "cardText": "A counterparty won't pay or breached a contract — representation in the economic court"
+    },
+    "huquqiy-konsultatsiya": {
+      "title": "Legal Consultation",
+      "cardText": "You need a legal assessment of your situation and a clear plan"
     }
   },
   "notFound": {

@@ -52,6 +52,38 @@ Modda raqamlari saytda ataylab koʻrsatilmagan: lex.uz qidiruvida turli tahrirla
 | 4 | Bayonnomaga eʼtiroz yozib qoldirish mumkin | ⚠️ | JPK — umumiy qoida |
 | 5 | Hukm ustidan qonunda belgilangan muddatda apellyatsiya va kassatsiya shikoyati | ⚠️ | JPK — muddat saytda yozilmagan |
 
+## Huquqiy konsultatsiya (`/xizmatlar/huquqiy-konsultatsiya`)
+
+| # | Matndagi fakt | Holat | Manba |
+|---|---|---|---|
+| 1 | Advokat mijozdan olgan maʼlumotni oshkor qila olmaydi; murojaat faktining oʻzi ham advokat siri | ✅ | «Advokatura toʻgʻrisida»gi Qonun (349-I), 9-m. ([lex.uz](https://lex.uz/docs/58372)) |
+| 2 | Konsultatsiya ofisda boʻladi, vaqt telefon yoki Telegram orqali kelishiladi | [TEKSHIRISH KERAK] | Masofaviy format, rus tilida konsultatsiya va narx tasdiqlanmagani uchun **saytga yozilmagan** |
+
+## Iqtisodiy nizolar (`/xizmatlar/iqtisodiy-nizolar`)
+
+| # | Matndagi fakt | Holat | Manba |
+|---|---|---|---|
+| 1 | Pretenziya tartibi faqat qonun yoki shartnomada nazarda tutilgan hollarda majburiy; rioya qilinmasa daʼvo qaytariladi | ✅ | Iqtisodiy protsessual kodeks ([lex.uz](https://lex.uz/ru/docs/3523895)); Plenumning 2019-yil 24-maydagi 13-son qarori |
+| 2 | Shartnomada nizolar «muzokara yoʻli bilan hal qilinadi» deb umumiy yozilgan boʻlsa, pretenziya majburiy emas | ✅ | Oʻsha Plenum qarori |
+| 3 | Pretenziya tartibini buzgan tomonga sud xarajatlari ish natijasidan qatʼi nazar yuklanishi mumkin | ✅ | IPK, 118-m. 4-qism (raqam tekshirilsin) |
+| 4 | Umumiy daʼvo muddati — uch yil | ✅ | Fuqarolik kodeksi, 150-m. ([lex.uz](https://lex.uz/docs/111181)) |
+| 5 | Sud xarajatlari qoida tariqasida yutqazgan tomonga yuklanadi | ⚠️ | IPK — umumiy qoida |
+| 6 | Javobgar eʼtirozlarini oʻz vaqtida bermasa, sud ishni mavjud hujjatlar asosida koʻrishi mumkin | ⚠️ | IPK — umumiy qoida |
+| 7 | Kelishuv bitimini sud tasdiqlaydi va u majburiy ijro etilishi mumkin | ⚠️ | IPK |
+| 8 | Neustoyka shartnoma yoki qonunda nazarda tutilgan boʻlsa undiriladi; zarar uchun miqdor va sabab bogʻlanishini isbotlash kerak | ⚠️ | FK — umumiy qoida |
+
+## Fuqarolik nizolari (`/xizmatlar/fuqarolik-ishlari`)
+
+| # | Matndagi fakt | Holat | Manba |
+|---|---|---|---|
+| 1 | Fuqarolar oʻrtasidagi qarz shartnomasi summa belgilangan miqdordan oshsa yozma shaklda tuziladi | ✅ | FK, 733-m. (amaldagi tahrirda — BHMning oʻn baravaridan oshsa; **miqdor saytda koʻrsatilmagan**) |
+| 2 | Qarz oluvchining tilxati yozma hujjat hisoblanadi | ✅ | FK, 733-m. |
+| 3 | Umumiy daʼvo muddati — uch yil | ✅ | FK, 150-m. |
+| 4 | Davlat bojini daʼvogar toʻlaydi; sud xarajatlari qoida tariqasida yutqazgan tomondan undiriladi | ⚠️ | FPK — umumiy qoida |
+| 5 | Sud qarori majburiy ijro byurosi orqali ijro etiladi | ⚠️ | «Sud hujjatlari va boshqa organlar hujjatlarini ijro etish toʻgʻrisida»gi Qonun |
+| 6 | YTHda avval aybdorning majburiy sugʻurtasi boʻyicha sugʻurtachiga murojaat qilinadi | ⚠️ | Transport vositalari egalarining fuqarolik javobgarligini majburiy sugʻurta qilish toʻgʻrisidagi Qonun |
+| 7 | Daʼvo qoida tariqasida javobgarning yashash joyidagi sudga beriladi | ⚠️ | FPK — sudlovlilik qoidalari |
+
 ## Saytdagi tasdiqlanmagan vaʼdalar (huquqiy emas, lekin muhim)
 
 - «Birinchi konsultatsiya — bepul» (`messages/*.json` → `servicePage.ctaSubtitle` va boshqa joylar) — [TEKSHIRISH KERAK]

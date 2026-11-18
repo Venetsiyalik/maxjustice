@@ -21,7 +21,9 @@ export type ServiceSlug =
   | "meros-ishlari"
   | "mehnat-nizolari"
   | "shartnomalar"
-  | "sudda-vakillik";
+  | "sudda-vakillik"
+  | "huquqiy-konsultatsiya"
+  | "iqtisodiy-nizolar";
 
 type ServiceMeta = {
   slug: ServiceSlug;
@@ -70,7 +72,7 @@ export const SERVICES: ServiceMeta[] = [
     icon: BriefcaseIcon,
     onHomepage: true,
     investigatorAdvantage: true,
-    related: ["iqtisodiy-jinoyatlar", "shartnomalar", "tergovga-qadar"],
+    related: ["iqtisodiy-jinoyatlar", "iqtisodiy-nizolar", "tergovga-qadar"],
   },
   {
     slug: "iqtisodiy-jinoyatlar",
@@ -83,7 +85,7 @@ export const SERVICES: ServiceMeta[] = [
     slug: "fuqarolik-ishlari",
     icon: UsersIcon,
     onHomepage: true,
-    related: ["shartnomalar", "sudda-vakillik", "meros-ishlari"],
+    related: ["shartnomalar", "iqtisodiy-nizolar", "sudda-vakillik"],
   },
   {
     slug: "oilaviy-nizolar",
@@ -110,7 +112,22 @@ export const SERVICES: ServiceMeta[] = [
     slug: "shartnomalar",
     icon: HandshakeIcon,
     onHomepage: false,
-    related: ["tadbirkor-himoyasi", "fuqarolik-ishlari"],
+    related: ["iqtisodiy-nizolar", "tadbirkor-himoyasi", "fuqarolik-ishlari"],
+  },
+  {
+    slug: "iqtisodiy-nizolar",
+    icon: BuildingIcon,
+    onHomepage: false,
+    related: ["shartnomalar", "tadbirkor-himoyasi", "fuqarolik-ishlari"],
+    // en matni hali yozilmagan — en sahifa noindex
+    locales: ["uz", "kr", "ru"],
+  },
+  {
+    slug: "huquqiy-konsultatsiya",
+    icon: DocumentSearchIcon,
+    onHomepage: false,
+    related: ["jinoiy-ishlar", "fuqarolik-ishlari", "oilaviy-nizolar"],
+    locales: ["uz", "kr", "ru"],
   },
   {
     slug: "sudda-vakillik",

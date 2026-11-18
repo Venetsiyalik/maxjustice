@@ -14,7 +14,7 @@ import { BLOG_SLUGS, BLOG_LOCALES } from "@/content/blog";
  * Blogdan tashqari sahifalar matni oxirgi marta o'zgargan sana (sitemap
  * `lastmod`). Sahifalar matni o'zgarganda shu sanani yangilang.
  */
-export const CONTENT_UPDATED_AT = "2026-11-17";
+export const CONTENT_UPDATED_AT = "2026-11-18";
 
 export type StaticRoute = {
   path: string;

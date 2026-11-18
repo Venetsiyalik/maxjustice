@@ -374,6 +374,14 @@
     "sudda-vakillik": {
       "title": "Sudda vakillik",
       "cardText": "Sudda o'z manfaatingizni himoya qiladigan vakil izlasangiz"
+    },
+    "iqtisodiy-nizolar": {
+      "title": "Iqtisodiy nizolar",
+      "cardText": "Kontragent qarzni toʻlamasa yoki shartnomani buzsa — iqtisodiy sudda himoya"
+    },
+    "huquqiy-konsultatsiya": {
+      "title": "Huquqiy konsultatsiya",
+      "cardText": "Vaziyatingizga huquqiy baho va aniq harakat rejasi kerak boʻlsa"
     }
   },
   "notFound": {
