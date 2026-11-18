@@ -14,6 +14,7 @@ import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
 import { CheckIcon, PhoneIcon, MailIcon, FileCheckIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { LinkedInLink } from "@/components/ui/LinkedInLink";
 import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/advokat-haqida";
@@ -121,6 +122,7 @@ export default async function AboutPage({
                     {siteConfig.email.founder}
                   </a>
                 </div>
+                <LinkedInLink variant="button" className="mt-3" />
               </div>
             </div>
           </div>

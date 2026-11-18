@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { MapPinIcon, PhoneIcon, MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { LinkedInLink } from "@/components/ui/LinkedInLink";
 import { localizeText } from "@/lib/localize-text";
 
 export function ContactSection() {
@@ -38,6 +39,8 @@ export function ContactSection() {
             <MailIcon className="h-5 w-5 shrink-0 text-[var(--color-gold-600)]" />
             {siteConfig.email.info}
           </a>
+
+          <LinkedInLink variant="row" />
 
           <p className="mt-3 text-sm text-[var(--color-muted)]">
             {footer("workingHours")}

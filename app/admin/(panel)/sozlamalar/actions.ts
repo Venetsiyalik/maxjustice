@@ -30,6 +30,7 @@ export async function saveSettings(_prev: SettingsState, formData: FormData): Pr
   const settings: SiteSettings = {
     phone: normalizePhone(field(formData, "phone")) ?? field(formData, "phone"),
     telegramHandle: field(formData, "telegramHandle").replace(/^@/, ""),
+    linkedin: field(formData, "linkedin"),
     email: {
       info: field(formData, "email.info"),
       founder: field(formData, "email.founder"),

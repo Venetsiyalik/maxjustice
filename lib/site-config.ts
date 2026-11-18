@@ -21,6 +21,8 @@ export const siteConfig = {
   secondBrand: "IMPERIUM LEGAL SOLUTIONS",
   founder: {
     fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    // schema.org Person.alternateName — ism boshqa yozilishlarda qidirilganda
+    alternateNames: ["Toʻlanboy Nasrdinov", "Tulanboy Nasrdinov", "Туланбой Насрдинов"],
     jobTitle: "Advokat",
     // Rasmiy portret (public/ ichida), 4:5, 960×1200
     photo: { src: "/images/nasrdinov-tolanboy-advokat.jpg", width: 960, height: 1200 },
@@ -66,6 +68,9 @@ export const siteConfig = {
     handle: settings.telegramHandle,
     href: `https://t.me/${settings.telegramHandle}`,
   },
+  // Advokatning shaxsiy LinkedIn profili (admin → Sozlamalar). Bo'sh bo'lsa
+  // saytda ham, schema.org Person.sameAs da ham chiqmaydi.
+  linkedin: settings.linkedin || null,
   email: {
     // Ommaviy/asosiy kontakt — Bog'lanish sahifasi, footer, schema.org
     info: settings.email.info,

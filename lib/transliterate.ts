@@ -59,6 +59,7 @@ const PROTECTED_TERMS = [
   "MAXLEGAL",
   "Google",
   "Yandex",
+  "LinkedIn",
 ];
 
 /**

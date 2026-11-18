@@ -30,7 +30,8 @@ export async function GET() {
 
 - Telefon: ${siteConfig.phone.display}
 - Telegram: @${siteConfig.telegram.handle} (${siteConfig.telegram.href})
-- Email: ${siteConfig.email.info}
+${siteConfig.linkedin ? `- LinkedIn (advokat): ${siteConfig.linkedin}
+` : ""}- Email: ${siteConfig.email.info}
 - Manzil: ${siteConfig.address.display}
 - Sayt: ${siteConfig.url}
 

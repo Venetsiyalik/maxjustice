@@ -59,6 +59,12 @@ export function SettingsForm({ initial: initialProp, disabled }: { initial: Site
           name="telegramHandle"
           defaultValue={initial.telegramHandle}
         />
+        <Field
+          label="Advokatning LinkedIn profili"
+          name="linkedin"
+          defaultValue={initial.linkedin ?? ""}
+          hint="https://www.linkedin.com/in/... — boʻsh qoldirilsa saytda koʻrinmaydi"
+        />
         <Field label="Asosiy email" name="email.info" type="email" defaultValue={initial.email.info} />
         <Field
           label="Advokatning emaili («Advokat haqida» sahifasi)"

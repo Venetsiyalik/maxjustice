@@ -7,7 +7,9 @@
   },
   "common": {
     "jobTitle": "Advokat",
-    "legalDisclaimer": "Bu umumiy maʼlumot, yuridik maslahat oʻrnini bosmaydi. Aniq vaziyatingiz uchun advokat bilan bogʻlaning."
+    "legalDisclaimer": "Bu umumiy maʼlumot, yuridik maslahat oʻrnini bosmaydi. Aniq vaziyatingiz uchun advokat bilan bogʻlaning.",
+    "linkedinProfile": "LinkedIn profili",
+    "linkedinAria": "LinkedIn — Toʻlanboy Nasrdinov"
   },
   "nav": {
     "home": "Bosh sahifa",

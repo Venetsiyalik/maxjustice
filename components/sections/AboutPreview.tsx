@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
+import { LinkedInLink } from "@/components/ui/LinkedInLink";
 
 export function AboutPreview() {
   const locale = useLocale();
@@ -39,10 +40,11 @@ export function AboutPreview() {
           <p className="mt-4 text-lg leading-relaxed text-[var(--color-muted)]">
             {t("text")}
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button href="/advokat-haqida" variant="outline">
               {cta("readMore")}
             </Button>
+            <LinkedInLink variant="button" />
           </div>
         </div>
       </Container>

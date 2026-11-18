@@ -5,6 +5,7 @@ import { PhoneIcon, TelegramIcon, MapPinIcon, MailIcon } from "@/components/ui/i
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
 import { CourthouseOrnament, ScalesOrnament } from "@/components/ui/ornaments";
+import { LinkedInLink } from "@/components/ui/LinkedInLink";
 
 const SERVICE_LINKS = [
   { key: "criminal", href: "/xizmatlar/jinoiy-ishlar" },
@@ -69,15 +70,18 @@ export function Footer() {
             <PhoneIcon className="h-4 w-4 shrink-0" />
             {siteConfig.phone.display}
           </a>
-          <a
-            href={siteConfig.telegram.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex min-h-[32px] w-fit items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
-          >
-            <TelegramIcon className="h-4 w-4 shrink-0" />
-            @{siteConfig.telegram.handle}
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href={siteConfig.telegram.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-[32px] w-fit items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"
+            >
+              <TelegramIcon className="h-4 w-4 shrink-0" />
+              @{siteConfig.telegram.handle}
+            </a>
+            <LinkedInLink variant="icon" />
+          </div>
           <a
             href={`mailto:${siteConfig.email.info}`}
             className="flex min-h-[32px] w-fit items-center gap-2 text-sm text-white/80 hover:text-[var(--color-gold-400)]"

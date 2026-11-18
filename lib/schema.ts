@@ -61,6 +61,15 @@ function buildPostalAddress() {
 
 const phoneE164 = siteConfig.phone.href.replace("tel:", "");
 
+/** Advokatning shaxsiy profillari (Person.sameAs) — hozircha LinkedIn */
+const PERSON_SAME_AS = [siteConfig.linkedin].filter((u): u is string => Boolean(u));
+
+/** Person uchun umumiy maydonlar: muqobil yozilishlar va shaxsiy profillar */
+const personIdentity = {
+  alternateName: siteConfig.founder.alternateNames,
+  ...(PERSON_SAME_AS.length > 0 ? { sameAs: PERSON_SAME_AS } : {}),
+};
+
 export type SiteGraphText = {
   /** Byuroning to'liq nomi sahifa tilida (footer.firmName) */
   firmName: string;
@@ -102,6 +111,7 @@ export function buildSiteGraph(locale: string, text: SiteGraphText) {
     areaServed: buildAreaServed(locale),
     knowsAbout: text.serviceNames,
     founder: { "@id": PERSON_ID },
+    employee: { "@id": PERSON_ID },
     priceRange: "$$",
     ...(openingHours
       ? {
@@ -133,6 +143,7 @@ export function buildSiteGraph(locale: string, text: SiteGraphText) {
     url: buildCanonicalUrl(locale, "/advokat-haqida"),
     image: `${siteConfig.url}${siteConfig.founder.photo.src}`,
     worksFor: { "@id": ORG_ID },
+    ...personIdentity,
   };
 
   return {
@@ -183,7 +194,7 @@ export function buildProfilePageSchema(
       knowsAbout: person.knowsAbout,
       hasCredential: buildCredential(),
       address: buildPostalAddress(),
-      ...(siteConfig.sameAs.length > 0 ? { sameAs: siteConfig.sameAs } : {}),
+      ...personIdentity,
     },
   };
 }

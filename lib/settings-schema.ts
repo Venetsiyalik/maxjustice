@@ -7,6 +7,8 @@ export type OpeningHours = { days: string[]; opens: string; closes: string };
 export type SiteSettings = {
   phone: string;
   telegramHandle: string;
+  /** Advokatning LinkedIn profili (bo'sh bo'lsa saytda ko'rsatilmaydi) */
+  linkedin: string;
   email: { info: string; founder: string; advokat: string };
   address: {
     display: string;
@@ -54,6 +56,9 @@ export function validateSettings(s: SiteSettings): string[] {
   const errors: string[] = [];
   if (!normalizePhone(s.phone)) errors.push("Telefon raqami +998 XX XXX XX XX koʻrinishida boʻlsin");
   if (!/^[A-Za-z0-9_]{5,32}$/.test(s.telegramHandle)) errors.push("Telegram nomi notoʻgʻri (@ siz, 5–32 belgi)");
+  if (s.linkedin && !/^https:\/\/(www\.)?linkedin\.com\/in\/[A-Za-z0-9_-]+\/?$/.test(s.linkedin)) {
+    errors.push("LinkedIn havolasi https://www.linkedin.com/in/... koʻrinishida boʻlsin");
+  }
   for (const [key, value] of Object.entries(s.email)) {
     if (!EMAIL.test(value)) errors.push(`Email notoʻgʻri: ${key}`);
   }
