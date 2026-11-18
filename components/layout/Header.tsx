@@ -95,7 +95,7 @@ export function Header() {
               MAXLEGAL <span className="text-[var(--color-gold-500)]">&</span> JUSTICE
             </span>
             <span className="truncate text-[11px] font-medium text-[var(--color-muted)]">
-              {common("jobTitle")} {localizeText(locale, siteConfig.founder.fullName)}
+              {common("jobTitle")} {common("founderName")}
             </span>
           </span>
         </Link>

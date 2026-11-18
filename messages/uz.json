@@ -3,13 +3,14 @@
     "siteName": "MAXLEGAL AND JUSTICE",
     "defaultTitle": "MAXLEGAL AND JUSTICE — advokatlik byurosi, Farg'ona",
     "defaultDescription": "Farg'ona viloyatida jinoiy, ma'muriy va fuqarolik ishlari bo'yicha advokat. Tergov va sudda professional himoya. Tel: {phone}",
-    "homeTitle": "Advokat Farg'ona: Nasrdinov To'lanboy"
+    "homeTitle": "Advokat Farg'ona: Nasrdinov Toʻlanboʻy"
   },
   "common": {
     "jobTitle": "Advokat",
     "legalDisclaimer": "Bu umumiy maʼlumot, yuridik maslahat oʻrnini bosmaydi. Aniq vaziyatingiz uchun advokat bilan bogʻlaning.",
     "linkedinProfile": "LinkedIn profili",
-    "linkedinAria": "LinkedIn — Toʻlanboy Nasrdinov"
+    "linkedinAria": "LinkedIn — Toʻlanboʻy Nasrdinov",
+    "founderName": "Nasrdinov Toʻlanboʻy Baxtiyor oʻgʻli"
   },
   "nav": {
     "home": "Bosh sahifa",
@@ -54,7 +55,7 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Advokat Nasrdinov To'lanboy",
+      "eyebrow": "Advokat Nasrdinov Toʻlanboʻy",
       "title": "Farg'ona viloyatida jinoiy va ma'muriy ishlar bo'yicha advokat",
       "subtitle": "Tergov va sudda professional himoya. IIB tergov organlarida ishlagan tajriba — ayblov tomonining ish uslubini ichkaridan bilaman.",
       "callButton": "{phone}"
@@ -99,10 +100,10 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "Advokat Nasrdinov To'lanboy haqida",
+    "metaTitle": "Advokat Nasrdinov Toʻlanboʻy haqida",
     "metaDescription": "IIB tergov organlarida ishlagan advokat. Ta'lim, tajriba, ixtisoslashuv va faoliyat haqida to'liq ma'lumot. {address}.",
     "title": "Advokat haqida",
-    "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    "heroName": "Nasrdinov Toʻlanboʻy Baxtiyor oʻgʻli",
     "heroSubtitle": "Advokat, \"MAXLEGAL AND JUSTICE\" advokatlik byurosi asoschisi",
     "directContactLabel": "Bevosita bog'lanish",
     "educationTitle": "Ta'lim",
@@ -188,7 +189,7 @@
     "emailsTitle": "Elektron pochta orqali",
     "emailGeneral": "Umumiy so'rovlar",
     "emailLegal": "Huquqiy maslahat",
-    "emailFounder": "To'lanboyga shaxsan"
+    "emailFounder": "Toʻlanboʻyga shaxsan"
   },
   "faqPage": {
     "metaTitle": "Savol-javob",
@@ -328,7 +329,7 @@
     "ctaSubtitle": "Birinchi konsultatsiya — bepul va maxfiy. 15 daqiqa ichida siz bilan bog'lanamiz.",
     "documentsTitle": "Qanday hujjatlar kerak boʻladi",
     "investigatorTitle": "Tergovchilik tajribasi nimasi bilan foydali",
-    "investigatorText": "Advokat Nasrdinov Toʻlanboy advokatlikdan oldin IIB tergov organlarida tergovchi boʻlib ishlagan. Shu sababli tergov qanday tashkil etilishini, dalillar qanday yigʻilishi va rasmiylashtirilishini, qaysi bosqichlarda protsessual xatolar koʻproq uchrashini amalda biladi. Bu himoya strategiyasini dastlabki bosqichdanoq toʻgʻri qurishga yordam beradi. Har bir ishning natijasi uning holatlari va dalillariga bogʻliq.",
+    "investigatorText": "Advokat Nasrdinov Toʻlanboʻy advokatlikdan oldin IIB tergov organlarida tergovchi boʻlib ishlagan. Shu sababli tergov qanday tashkil etilishini, dalillar qanday yigʻilishi va rasmiylashtirilishini, qaysi bosqichlarda protsessual xatolar koʻproq uchrashini amalda biladi. Bu himoya strategiyasini dastlabki bosqichdanoq toʻgʻri qurishga yordam beradi. Har bir ishning natijasi uning holatlari va dalillariga bogʻliq.",
     "relatedServicesTitle": "Bogʻliq xizmatlar",
     "relatedArticlesTitle": "Mavzuga oid maqolalar"
   },

@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Tadbirkorga nisbatan jinoiy ish qo'zg'atilganda: xotirjamlikni saqlang, korxona va shaxsiy javobgarlik chegaralarini aniqlashtiring, barcha moliyaviy hujjatlarni tartibga soling va imkon qadar tezroq advokatga murojaat qiling — bu biznesning omon qolishi uchun hal qiluvchi ahamiyatga ega.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "tadbirkor-himoyasi",
   body: [
     {

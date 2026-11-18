@@ -20,9 +20,19 @@ export const siteConfig = {
   brandName: "MAXLEGAL AND JUSTICE",
   secondBrand: "IMPERIUM LEGAL SOLUTIONS",
   founder: {
-    fullName: "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    // Pasportdagi yozilish (uz-lotin). kr — avtomatik: "Тўланбўй".
+    // ru/en sahifalarda messages/*.json → common.founderName ("Туланбой" / "Tulanboy").
+    fullName: "Nasrdinov Toʻlanboʻy Baxtiyor oʻgʻli",
     // schema.org Person.alternateName — ism boshqa yozilishlarda qidirilganda
-    alternateNames: ["Toʻlanboy Nasrdinov", "Tulanboy Nasrdinov", "Туланбой Насрдинов"],
+    alternateNames: [
+      "Toʻlanboʻy Nasrdinov",
+      "Тўланбўй Насрдинов",
+      "To'lanboy",
+      "Tulanboy",
+      "Toʻlanboy Nasrdinov",
+      "Tulanboy Nasrdinov",
+      "Туланбой Насрдинов",
+    ],
     jobTitle: "Advokat",
     // Rasmiy portret (public/ ichida), 4:5, 960×1200
     photo: { src: "/images/nasrdinov-tolanboy-advokat.jpg", width: 960, height: 1200 },

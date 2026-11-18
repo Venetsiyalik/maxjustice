@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Tintuv qonunda belgilangan tartibda, tegishli rasmiy hujjat asosida o'tkazilishi shart. Sizda tintuv o'tkazuvchilarning hujjatlarini ko'rish, tintuvda guvohlar ishtirokini talab qilish va bayonnoma bilan tanishish huquqi bor.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "tergovga-qadar",
   body: [
     {

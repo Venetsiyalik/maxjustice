@@ -3,13 +3,14 @@
     "siteName": "MAXLEGAL AND JUSTICE",
     "defaultTitle": "MAXLEGAL AND JUSTICE — Law Firm, Fergana",
     "defaultDescription": "Criminal, administrative and civil defense attorney in the Fergana region. Professional defense during investigation and in court. Tel: {phone}",
-    "homeTitle": "Fergana Attorney Nasrdinov To'lanboy"
+    "homeTitle": "Fergana Attorney Nasrdinov Tulanboy"
   },
   "common": {
     "jobTitle": "Attorney",
     "legalDisclaimer": "This is general information and does not replace legal advice. For your specific situation, contact an attorney.",
     "linkedinProfile": "LinkedIn profile",
-    "linkedinAria": "LinkedIn — Toʻlanboy Nasrdinov"
+    "linkedinAria": "LinkedIn — Tulanboy Nasrdinov",
+    "founderName": "Nasrdinov Tulanboy Baxtiyor o'g'li"
   },
   "nav": {
     "home": "Home",
@@ -54,7 +55,7 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Attorney Nasrdinov To'lanboy",
+      "eyebrow": "Attorney Nasrdinov Tulanboy",
       "title": "Criminal and administrative defense attorney in the Fergana region",
       "subtitle": "Professional defense during investigation and in court. Former investigator with the Ministry of Internal Affairs — I know the prosecution's methods from the inside.",
       "callButton": "{phone}"
@@ -99,10 +100,10 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "About Attorney Nasrdinov To'lanboy",
+    "metaTitle": "About Attorney Nasrdinov Tulanboy",
     "metaDescription": "Attorney with experience in the MIA investigative bodies. Education, experience, specialization and practice. {address}.",
     "title": "About the Lawyer",
-    "heroName": "Nasrdinov To'lanboy Baxtiyor o'g'li",
+    "heroName": "Nasrdinov Tulanboy Baxtiyor o'g'li",
     "heroSubtitle": "Attorney, founder of \"MAXLEGAL AND JUSTICE\" law firm",
     "directContactLabel": "Direct contact",
     "educationTitle": "Education",
@@ -188,7 +189,7 @@
     "emailsTitle": "By email",
     "emailGeneral": "General inquiries",
     "emailLegal": "Legal advice",
-    "emailFounder": "Directly to To'lanboy"
+    "emailFounder": "Directly to Tulanboy"
   },
   "faqPage": {
     "metaTitle": "FAQ",
@@ -328,7 +329,7 @@
     "ctaSubtitle": "The first consultation is free and confidential. We'll contact you within 15 minutes.",
     "documentsTitle": "Documents you will need",
     "investigatorTitle": "Why investigator experience helps",
-    "investigatorText": "Before practicing as an attorney, To'lanboy Nasrdinov worked as an investigator in the Ministry of Internal Affairs. He therefore knows from practice how investigations are organized, how evidence is gathered and documented, and at which stages procedural errors occur most often. This helps build the right defense strategy from the very start. The outcome of every case depends on its circumstances and evidence.",
+    "investigatorText": "Before practicing as an attorney, Tulanboy Nasrdinov worked as an investigator in the Ministry of Internal Affairs. He therefore knows from practice how investigations are organized, how evidence is gathered and documented, and at which stages procedural errors occur most often. This helps build the right defense strategy from the very start. The outcome of every case depends on its circumstances and evidence.",
     "relatedServicesTitle": "Related services",
     "relatedArticlesTitle": "Related articles"
   },

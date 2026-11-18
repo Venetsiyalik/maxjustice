@@ -1,17 +1,16 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import { GoldDivider } from "@/components/ui/ornaments";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site-config";
-import { localizeText } from "@/lib/localize-text";
 import { LinkedInLink } from "@/components/ui/LinkedInLink";
 
 export function AboutPreview() {
-  const locale = useLocale();
   const t = useTranslations("home.aboutBlock");
   const cta = useTranslations("cta");
+  const common = useTranslations("common");
 
   return (
     <section className="py-16 lg:py-24">
@@ -24,7 +23,7 @@ export function AboutPreview() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#7d8a98] shadow-lg ring-1 ring-black/5">
             <Image
               src={siteConfig.founder.photo.src}
-              alt={localizeText(locale, siteConfig.founder.fullName)}
+              alt={common("founderName")}
               fill
               sizes="320px"
               className="object-cover object-top"

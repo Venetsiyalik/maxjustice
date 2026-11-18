@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Soliq tekshiruvi natijasiga (aktiga) rozi bo'lmasangiz, avvalo aktni sinchkovlik bilan tahlil qiling, e'tirozlaringizni yozma shaklda taqdim eting va zarur bo'lsa, qonunda belgilangan muddatda yuqori instansiya yoki sudga shikoyat bering.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "iqtisodiy-jinoyatlar",
   body: [
     {

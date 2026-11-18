@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Sud hukmi yoki qaroriga rozi bo'lmasangiz, qonunda belgilangan muddatda yuqori sud instansiyasiga (apellyatsiya, keyin zarur bo'lsa kassatsiya) shikoyat berish orqali uni qayta ko'rib chiqishni so'rashingiz mumkin. Muddatni o'tkazib yubormaslik hal qiluvchi ahamiyatga ega.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "sudda-vakillik",
   body: [
     {

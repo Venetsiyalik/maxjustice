@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Tergovga chaqirilganingizda: chaqiruv qog'ozini diqqat bilan o'qing, qanday maqomda (guvoh, gumon qilinuvchi) chaqirilayotganingizni aniqlang, va imkon qadar advokat bilan birga boring. Yolg'iz va tayyorgarliksiz borish — eng ko'p uchraydigan xato.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "tergovga-qadar",
   body: [
     {

@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Advokatga tergov yoki sud boshlanishini kutmasdan, muammoning birinchi belgisi paydo bo'lgan zahoti murojaat qiling: chaqiruv qog'ozi kelganda, tekshiruv boshlanganda, shartnoma tuzishdan oldin yoki har qanday huquqiy noaniqlik yuzaga kelganda.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   body: [
     {
       type: "paragraph",

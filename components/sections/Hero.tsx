@@ -1,18 +1,16 @@
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { PhoneIcon, TelegramIcon, FileCheckIcon } from "@/components/ui/icons";
 import { CourthouseOrnament, ScalesOrnament } from "@/components/ui/ornaments";
 import { siteConfig } from "@/lib/site-config";
-import { localizeText } from "@/lib/localize-text";
 
 export function Hero() {
   const t = useTranslations("home.hero");
   const cta = useTranslations("cta");
   const common = useTranslations("common");
   const footer = useTranslations("footer");
-  const locale = useLocale();
 
   return (
     <section className="gold-glow relative isolate overflow-hidden text-white">
@@ -76,7 +74,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#7d8a98] shadow-[0_30px_60px_-20px_rgb(0_0_0/0.6)] ring-1 ring-white/10">
             <Image
               src={siteConfig.founder.photo.src}
-              alt={localizeText(locale, siteConfig.founder.fullName)}
+              alt={common("founderName")}
               fill
               priority
               sizes="(min-width: 1024px) 384px, 90vw"
@@ -85,10 +83,7 @@ export function Hero() {
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[var(--color-navy-950)]/95 via-[var(--color-navy-950)]/60 to-transparent px-5 pb-5 pt-20 text-white">
               <span className="mb-2 block h-0.5 w-10 rounded-full bg-[var(--color-gold-500)]" />
               <p className="font-display text-xl leading-tight">
-                {localizeText(
-                  locale,
-                  siteConfig.founder.fullName.split(" ").slice(0, 2).join(" ")
-                )}
+                {common("founderName").split(" ").slice(0, 2).join(" ")}
               </p>
               <p className="mt-0.5 text-sm text-white/70">{common("jobTitle")}</p>
             </div>

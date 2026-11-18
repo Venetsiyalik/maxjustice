@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Hibsga olinganingizda xotirjam bo'lishga harakat qiling, hibsga olinish sababi va huquqlaringiz sizga e'lon qilinishini talab qiling, darhol advokat huquqidan foydalaning va advokat kelmaguncha ishning mohiyati bo'yicha izoh berishdan tiyilib turing.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "jinoiy-ishlar",
   body: [
     {

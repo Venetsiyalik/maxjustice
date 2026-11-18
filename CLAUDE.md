@@ -3,7 +3,7 @@
 # maxjustice.uz — loyiha konteksti
 
 ## Mijoz
-- Advokat: Nasrdinov Toʻlanboy Baxtiyor oʻgʻli
+- Advokat: Nasrdinov Toʻlanboʻy Baxtiyor oʻgʻli (pasport boʻyicha; ru — Туланбой, en — Tulanboy)
 - Byuro: «MAXLEGAL AND JUSTICE» advokatlik byurosi
 - Joylashuv: Fargʻona shahri, S. Temur koʻchasi, 43-uy
 - Telefon: +998 77 018 14 02, Telegram: @Maxjusticebot, Email: info@maxjustice.uz

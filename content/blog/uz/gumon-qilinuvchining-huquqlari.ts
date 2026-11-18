@@ -11,7 +11,7 @@ const article: BlogArticle = {
   quickAnswer:
     "Gumon qilinuvchi sifatida sizda: advokat tanlash, o'ziga yoki yaqinlariga qarshi guvohlik berishdan bosh tortish, ish materiallari bilan tanishish (qonunda belgilangan hajmda) va shikoyat berish huquqi mavjud. Bu huquqlarni bilish himoyangiz uchun muhim.",
   publishedAt: "2026-09-01",
-  author: "Nasrdinov To'lanboy",
+  author: "Nasrdinov Toʻlanboʻy",
   relatedService: "jinoiy-ishlar",
   body: [
     {
