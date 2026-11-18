@@ -27,7 +27,7 @@ export function ArticlesPreview({ articles }: { articles: ArticlePreviewItem[] }
   if (articles.length === 0) return null;
 
   return (
-    <section className="bg-[var(--color-surface-alt)] py-16 lg:py-24">
+    <section className="paper-texture bg-[var(--color-surface-alt)] py-16 lg:py-24">
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading title={t("title")} />
@@ -42,7 +42,7 @@ export function ArticlesPreview({ articles }: { articles: ArticlePreviewItem[] }
               key={article.slug}
               slug={article.slug}
               uzOnly={uzOnly}
-              className="flex flex-col gap-3 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-shadow hover:shadow-md"
+              className="card-gold-rule flex flex-col gap-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_-18px_rgb(10_22_40/0.35)]"
             >
               <time className="text-xs font-semibold uppercase tracking-wide text-[var(--color-muted)]">
                 {article.date}
@@ -52,7 +52,7 @@ export function ArticlesPreview({ articles }: { articles: ArticlePreviewItem[] }
                   {blog("uzOnlyBadge")}
                 </span>
               )}
-              <h3 className="text-lg font-bold text-[var(--color-navy-950)]">
+              <h3 className="font-display text-xl leading-snug text-[var(--color-navy-950)]">
                 {article.title}
               </h3>
               <p className="text-sm text-[var(--color-muted)]">{article.excerpt}</p>

@@ -14,6 +14,7 @@ import { buildNotFoundMetadata } from "@/lib/not-found-metadata";
 import { BLOG_SLUGS, BLOG_LOCALES, isBlogLocale, getBlogArticle, type BlogSlug } from "@/content/blog";
 import { BlogBody } from "@/components/blog/BlogBody";
 import { serviceHref } from "@/lib/services-data";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 function isBlogSlug(value: string): value is BlogSlug {
   return (BLOG_SLUGS as readonly string[]).includes(value);
@@ -106,8 +107,9 @@ export default async function BlogArticlePage({
         })}
       />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
-        <Container className="max-w-3xl">
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
+        <PageHeaderOrnament />
+        <Container className="relative max-w-3xl">
           <Breadcrumbs
             items={[
               { label: nav("home"), href: "/" },
@@ -118,6 +120,7 @@ export default async function BlogArticlePage({
           <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {article.title}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
           {!isBlogLocale(locale) && (
             <p className="mt-4 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2 text-sm text-[var(--color-ink)]">
               {blogPage("uzOnlyNotice")}

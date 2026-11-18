@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { PhoneIcon, TelegramIcon, MapPinIcon, MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
+import { CourthouseOrnament, ScalesOrnament } from "@/components/ui/ornaments";
 
 const SERVICE_LINKS = [
   { key: "criminal", href: "/xizmatlar/jinoiy-ishlar" },
@@ -19,10 +20,16 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--color-line)] bg-[var(--color-navy-950)] text-white">
-      <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="relative overflow-hidden border-t-[3px] border-[var(--color-gold-500)] bg-[var(--color-navy-950)] text-white">
+      {/* Sud binosi silueti — fonda, juda xira */}
+      <CourthouseOrnament
+        strokeWidth={1}
+        className="pointer-events-none absolute -bottom-6 right-[-60px] hidden w-[520px] text-white/[0.05] lg:block"
+      />
+      <Container className="relative grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
-          <span className="text-lg font-extrabold tracking-tight">
+          <ScalesOrnament className="h-10 w-10 text-[var(--color-gold-400)]" />
+          <span className="font-display text-xl tracking-wide">
             MAXLEGAL <span className="text-[var(--color-gold-400)]">&</span> JUSTICE
           </span>
           <p className="text-sm leading-relaxed text-white/70">
@@ -32,7 +39,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white/60">
+          <h3 className="border-b border-white/10 pb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold-400)]">
             {nav("services")}
           </h3>
           <ul className="flex flex-col text-sm text-white/80">
@@ -52,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white/60">
+          <h3 className="border-b border-white/10 pb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-gold-400)]">
             {nav("contact")}
           </h3>
           <a
@@ -86,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <div className="flex flex-col gap-1 text-sm text-white/80">
+          <div className="flex flex-col gap-1 rounded-md border border-[var(--color-gold-500)]/30 bg-white/[0.03] p-4 text-sm text-white/80">
             <p className="font-bold text-white">{t("firmName")}</p>
             <p>
               {t("licensePrefix")} {siteConfig.license.number}
@@ -111,7 +118,7 @@ export function Footer() {
         </div>
       </Container>
 
-      <div className="border-t border-white/10">
+      <div className="relative border-t border-white/10">
         <Container className="flex flex-col gap-2 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {siteConfig.legalName}. {t("rightsReserved")}

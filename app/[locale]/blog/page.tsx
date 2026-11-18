@@ -9,6 +9,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { getAllBlogArticles, BLOG_LOCALES, isBlogLocale } from "@/content/blog";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/blog";
 
@@ -62,12 +63,14 @@ export default async function BlogHubPage({
     <>
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {t("title")}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
           <p className="mt-3 max-w-2xl text-lg text-[var(--color-muted)]">{t("intro")}</p>
           {!isBlogLocale(locale) && (
             <p className="mt-4 inline-block rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] px-4 py-2 text-sm text-[var(--color-ink)]">
@@ -84,7 +87,7 @@ export default async function BlogHubPage({
               key={article.slug}
               slug={article.slug}
               uzOnly={!isBlogLocale(locale)}
-              className="flex flex-col gap-3 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-shadow hover:shadow-md"
+              className="card-gold-rule flex flex-col gap-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_-18px_rgb(10_22_40/0.35)]"
             >
               <time
                 dateTime={article.publishedAt}

@@ -14,6 +14,7 @@ import { HOMEPAGE_SERVICES, serviceHref } from "@/lib/services-data";
 import { Link } from "@/i18n/navigation";
 import { CheckIcon, PhoneIcon, MailIcon, FileCheckIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/advokat-haqida";
 
@@ -77,8 +78,9 @@ export default async function AboutPage({
         })}
       />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
 
           <div className="mt-6 flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
@@ -96,6 +98,7 @@ export default async function AboutPage({
               <h1 className="text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
                 {t("heroName")}
               </h1>
+          <GoldDivider className="mt-4" align="left" />
               <p className="mt-2 text-lg text-[var(--color-muted)]">{t("heroSubtitle")}</p>
 
               <div className="mt-4 flex flex-col items-center gap-1 sm:items-start">

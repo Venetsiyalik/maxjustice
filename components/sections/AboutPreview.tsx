@@ -1,4 +1,6 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
+import { GoldDivider } from "@/components/ui/ornaments";
 import { useLocale, useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -13,7 +15,7 @@ export function AboutPreview() {
   return (
     <section className="py-16 lg:py-24">
       <Container className="grid items-center gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-        <div className="relative mx-auto w-full max-w-xs">
+        <div data-reveal className="relative mx-auto w-full max-w-xs">
           <div
             aria-hidden="true"
             className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-[var(--color-gold-500)]/25 to-transparent"
@@ -29,10 +31,11 @@ export function AboutPreview() {
           </div>
         </div>
 
-        <div>
-          <h2 className="text-2xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-3xl">
+        <div data-reveal style={{ "--reveal-delay": "0.12s" } as CSSProperties}>
+          <h2 className="text-3xl leading-tight text-[var(--color-navy-950)] sm:text-4xl">
             {t("title")}
           </h2>
+          <GoldDivider className="mt-4" align="left" />
           <p className="mt-4 text-lg leading-relaxed text-[var(--color-muted)]">
             {t("text")}
           </p>

@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema } from "@/lib/schema";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
 import { SERVICES, serviceHref } from "@/lib/services-data";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/xizmatlar";
 
@@ -54,14 +55,16 @@ export default async function ServicesHubPage({
     <>
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs
             items={[{ label: nav("home"), href: "/" }, { label: t("title") }]}
           />
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {t("title")}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
           <p className="mt-3 max-w-2xl text-lg text-[var(--color-muted)]">
             {t("subtitle")}
           </p>
@@ -74,7 +77,7 @@ export default async function ServicesHubPage({
             <Link
               key={slug}
               href={serviceHref(slug)}
-              className="group flex flex-col gap-3 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-all hover:-translate-y-0.5 hover:border-[var(--color-navy-700)] hover:shadow-md"
+              data-reveal className="card-gold-rule group flex flex-col gap-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-[var(--color-gold-500)]/50 hover:shadow-[0_18px_40px_-18px_rgb(10_22_40/0.35)]"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--color-navy-950)] text-[var(--color-gold-400)]">
                 <Icon className="h-5 w-5" />

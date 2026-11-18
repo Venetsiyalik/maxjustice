@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Playfair_Display } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
@@ -10,6 +10,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyCallButton } from "@/components/layout/StickyCallButton";
+import { RevealObserver, REVEAL_BOOTSTRAP } from "@/components/layout/RevealObserver";
 import { LanguageSuggestionBanner } from "@/components/layout/LanguageSuggestionBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
@@ -20,6 +21,14 @@ import "../globals.css";
 const bodyFont = Manrope({
   subsets: ["latin", "cyrillic"],
   variable: "--font-body",
+  display: "swap",
+});
+
+// Sarlavhalar uchun klassik serif (h1, h2) — faqat bitta qalinlik (yuklash yengil bo'lsin)
+const headingFont = Playfair_Display({
+  subsets: ["latin", "cyrillic"],
+  weight: "700",
+  variable: "--font-heading",
   display: "swap",
 });
 
@@ -106,8 +115,14 @@ export default async function LocaleLayout({
   );
 
   return (
-    <html lang={LOCALE_HREFLANG[locale]} className={bodyFont.variable}>
+    <html
+      lang={LOCALE_HREFLANG[locale]}
+      className={`${bodyFont.variable} ${headingFont.variable}`}
+      suppressHydrationWarning
+    >
       <body className="flex min-h-screen flex-col antialiased">
+        <script dangerouslySetInnerHTML={{ __html: REVEAL_BOOTSTRAP }} />
+        <RevealObserver />
         <Analytics />
         <JsonLd data={siteGraph} />
         <NextIntlClientProvider messages={clientMessages}>

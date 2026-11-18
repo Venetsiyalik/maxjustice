@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -27,13 +27,33 @@ export function Header() {
   const common = useTranslations("common");
   const locale = useLocale();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Aylantirilganda header ixchamlashadi va soya oladi
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-surface)]/95 backdrop-blur">
-      <Container wide className="flex h-16 items-center justify-between gap-4 lg:h-20">
+    <header
+      className={`sticky top-0 z-40 border-t-[3px] border-t-[var(--color-gold-500)] bg-[var(--color-surface)]/95 backdrop-blur transition-shadow duration-300 ${
+        scrolled
+          ? "border-b border-b-transparent shadow-[0_6px_24px_-12px_rgb(10_22_40/0.35)]"
+          : "border-b border-b-[var(--color-line)]"
+      }`}
+    >
+      <Container
+        wide
+        className={`flex items-center justify-between gap-3 transition-[height] duration-300 ${
+          scrolled ? "h-14 lg:h-16" : "h-16 lg:h-20"
+        }`}
+      >
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2.5"
+          className="flex min-w-0 items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
           <Image
@@ -44,11 +64,11 @@ export function Header() {
             className="h-8 w-8 shrink-0 lg:h-10 lg:w-10"
             priority
           />
-          <span className="flex flex-col leading-tight">
-            <span className="text-base font-extrabold tracking-tight text-[var(--color-navy-950)] lg:text-lg">
+          <span className="flex min-w-0 flex-col leading-tight">
+            <span className="whitespace-nowrap text-[15px] font-extrabold tracking-[0.04em] text-[var(--color-navy-950)] sm:text-base lg:text-lg">
               MAXLEGAL <span className="text-[var(--color-gold-500)]">&</span> JUSTICE
             </span>
-            <span className="text-[11px] font-medium text-[var(--color-muted)]">
+            <span className="truncate text-[11px] font-medium text-[var(--color-muted)]">
               {common("jobTitle")} {localizeText(locale, siteConfig.founder.fullName)}
             </span>
           </span>
@@ -62,7 +82,7 @@ export function Header() {
             <Link
               key={item.key}
               href={item.href}
-              className="whitespace-nowrap text-sm font-semibold text-[var(--color-ink)] transition-colors hover:text-[var(--color-navy-700)]"
+              className="relative whitespace-nowrap py-2 text-sm font-semibold text-[var(--color-ink)] transition-colors after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:origin-left after:scale-x-0 after:bg-[var(--color-gold-500)] after:transition-transform after:duration-300 hover:text-[var(--color-navy-700)] hover:after:scale-x-100"
             >
               {t(item.key)}
             </Link>

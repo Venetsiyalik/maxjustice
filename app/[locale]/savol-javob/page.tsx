@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema";
 import { buildCanonicalUrl, buildPageMetadata } from "@/lib/seo";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/savol-javob";
 
@@ -56,12 +57,14 @@ export default async function FaqPage({
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
       <JsonLd data={buildFaqSchema(items)} />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {t("title")}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
           <p className="mt-4 max-w-2xl text-lg text-[var(--color-muted)]">{t("intro")}</p>
         </Container>
       </div>

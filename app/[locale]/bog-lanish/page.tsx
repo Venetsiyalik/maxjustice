@@ -11,6 +11,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ContactFormSection } from "@/components/sections/ContactFormSection";
 import { MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 const PATH = "/bog-lanish";
 
@@ -54,12 +55,14 @@ export default async function ContactPage({
     <>
       <JsonLd data={buildBreadcrumbSchema(breadcrumbUrls)} />
 
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-10">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs items={[{ label: nav("home"), href: "/" }, { label: t("title") }]} />
           <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {t("title")}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
         </Container>
       </div>
 

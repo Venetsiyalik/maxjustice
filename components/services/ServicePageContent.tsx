@@ -14,6 +14,7 @@ import { Link } from "@/i18n/navigation";
 import { ArticleLink } from "@/components/blog/ArticleLink";
 import { siteConfig } from "@/lib/site-config";
 import type { ServiceContent } from "@/content/services/types";
+import { GoldDivider, PageHeaderOrnament } from "@/components/ui/ornaments";
 
 export type RelatedLink = { href: string; title: string };
 export type RelatedArticle = { slug: string; title: string };
@@ -42,12 +43,14 @@ export function ServicePageContent({
 
   return (
     <>
-      <div className="border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
-        <Container>
+      <div className="paper-texture relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface-alt)] py-8">
+        <PageHeaderOrnament />
+        <Container className="relative">
           <Breadcrumbs items={breadcrumbs} />
           <h1 className="mt-4 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-[var(--color-navy-950)] sm:text-4xl">
             {content.h1}
           </h1>
+          <GoldDivider className="mt-4" align="left" />
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Button href={siteConfig.phone.href} icon={<PhoneIcon className="h-5 w-5" />}>
