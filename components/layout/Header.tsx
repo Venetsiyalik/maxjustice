@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
-import { PhoneIcon, TelegramIcon, MenuIcon, CloseIcon } from "@/components/ui/icons";
+import { PhoneIcon, TelegramIcon, MenuIcon, CloseIcon, MapPinIcon, MailIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { localizeText } from "@/lib/localize-text";
 import { trackEvent } from "@/lib/analytics";
@@ -40,11 +40,37 @@ export function Header() {
   return (
     <header
       className={`sticky top-0 z-40 border-t-[3px] border-t-[var(--color-gold-500)] bg-[var(--color-surface)]/95 backdrop-blur transition-shadow duration-300 ${
+        scrolled ? "" : "xl:border-t-0"
+      } ${
         scrolled
           ? "border-b border-b-transparent shadow-[0_6px_24px_-12px_rgb(10_22_40/0.35)]"
           : "border-b border-b-[var(--color-line)]"
       }`}
     >
+      {/* xl+: ingichka yuqori satr — manzil, email, tillar. Aylantirilganda yig'iladi */}
+      <div
+        className={`hidden overflow-hidden border-b-[3px] border-[var(--color-gold-500)] bg-[var(--color-navy-950)] text-white/70 transition-[max-height,opacity] duration-300 xl:block ${
+          scrolled ? "max-h-0 border-b-0 opacity-0" : "max-h-12 opacity-100"
+        }`}
+      >
+        <Container wide className="flex h-9 items-center justify-between text-xs">
+          <div className="flex items-center gap-6">
+            <span className="flex items-center gap-1.5">
+              <MapPinIcon className="h-3.5 w-3.5 text-[var(--color-gold-400)]" />
+              {localizeText(locale, siteConfig.address.display)}
+            </span>
+            <a
+              href={`mailto:${siteConfig.email.info}`}
+              className="flex items-center gap-1.5 transition-colors hover:text-white"
+            >
+              <MailIcon className="h-3.5 w-3.5 text-[var(--color-gold-400)]" />
+              {siteConfig.email.info}
+            </a>
+          </div>
+          <LanguageSwitcher tone="dark" />
+        </Container>
+      </div>
+
       <Container
         wide
         className={`flex items-center justify-between gap-3 transition-[height] duration-300 ${
@@ -53,7 +79,7 @@ export function Header() {
       >
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-2.5"
+          className="flex min-w-0 items-center gap-2.5 xl:shrink-0"
           onClick={() => setOpen(false)}
         >
           <Image
@@ -76,7 +102,7 @@ export function Header() {
 
         <nav
           aria-label={t("home")}
-          className="hidden items-center gap-4 2xl:flex 2xl:gap-6"
+          className="hidden items-center gap-5 xl:flex 2xl:gap-7"
         >
           {NAV_ITEMS.map((item) => (
             <Link
@@ -89,10 +115,8 @@ export function Header() {
           ))}
         </nav>
 
-        {/* xl+: to'liq kontakt guruhi (til, Telegram, telefon) — nav hali yashirin
-            bo'lsa ham (2xl gacha), bu guruh uchun joy yetarli */}
-        <div className="hidden items-center gap-2 xl:flex 2xl:gap-3">
-          <LanguageSwitcher />
+        {/* xl+: Telegram va telefon (tillar yuqori satrda) */}
+        <div className="hidden shrink-0 items-center gap-2 xl:flex 2xl:gap-3">
           <a
             href={siteConfig.telegram.href}
             target="_blank"
@@ -118,25 +142,25 @@ export function Header() {
           href={siteConfig.phone.href}
           aria-label={cta("call")}
           onClick={() => trackEvent("phone_click")}
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-gold-500)] text-[var(--color-navy-950)] xl:hidden"
+          className="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-gold-500)] text-[var(--color-navy-950)] xl:hidden"
         >
           <PhoneIcon className="h-5 w-5" />
         </a>
 
-        {/* Nav 2xl dan pastda yashirin bo'lsa, uni menyu orqali ochish tugmasi */}
+        {/* xl dan pastda nav yashirin — menyu tugmasi */}
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? t("menuClose") : t("menuOpen")}
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--color-line)] text-[var(--color-navy-900)] 2xl:hidden"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--color-line)] text-[var(--color-navy-900)] xl:hidden"
         >
           {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
         </button>
       </Container>
 
       {open && (
-        <div className="border-t border-[var(--color-line)] bg-[var(--color-surface)] 2xl:hidden">
+        <div className="border-t border-[var(--color-line)] bg-[var(--color-surface)] xl:hidden">
           <Container wide className="flex flex-col gap-1 py-4">
             {NAV_ITEMS.map((item) => (
               <Link
